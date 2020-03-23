@@ -14,8 +14,8 @@ module hpi_io_intf( input        Clk, Reset,
 logic [15:0] from_sw_data_out_buffer;
 
 // TODO: Fill in the blanks below. 
-//always_ff @ (posedge Clk)
-//begin
+always_ff @ (posedge Clk)
+	begin
 //    if(Reset)
 //    begin
 //        from_sw_data_out_buffer <= 
@@ -28,18 +28,18 @@ logic [15:0] from_sw_data_out_buffer;
 //    end
 //    else 
 //    begin
-//        from_sw_data_out_buffer <= 
-//        OTG_ADDR                <= 
-//        OTG_RD_N                <= 
-//        OTG_WR_N                <= 
-//        OTG_CS_N                <= 
-//        OTG_RST_N               <= 
-//        from_sw_data_in         <= 
+        from_sw_data_out_buffer <= from_sw_data_out;
+        OTG_ADDR                <= from_sw_address;
+        OTG_RD_N                <= from_sw_r;
+        OTG_WR_N                <= from_sw_w;
+        OTG_CS_N                <= from_sw_cs;
+        OTG_RST_N               <= from_sw_reset;
+        from_sw_data_in         <= OTG_DATA;
 //    end
-//end
+	end
 
 // OTG_DATA should be high Z (tristated) when NIOS is not writing to OTG_DATA inout bus.
 // Look at tristate.sv in lab 6 for an example.
-//assign OTG_DATA = 
+assign OTG_DATA = from_sw_W ? {N{1'bZ}} : from_sw_data_out_buffer;
 
 endmodule 
