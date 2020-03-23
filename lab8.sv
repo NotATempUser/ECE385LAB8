@@ -55,6 +55,7 @@ module lab8( input               CLOCK_50,
     end
 	 
 	 logic [9:0] DrawX, DrawY;
+	 logic is_ball;
     
     logic [1:0] hpi_addr;
     logic [15:0] hpi_data_in, hpi_data_out;
@@ -113,9 +114,9 @@ module lab8( input               CLOCK_50,
     VGA_controller vga_controller_instance(*);
     
     // Which signal should be frame_clk?
-    ball ball_instance(.Clk(Clk), .Reset(Reset_h), .frame_clk(VGA_CLK), .DrawX(DrawX), DrawY(DrawY));
+    ball ball_instance(.Clk(Clk), .Reset(Reset_h), .frame_clk(VGA_CLK), .DrawX(DrawX), DrawY(DrawY), .is_ball(is_ball));
     
-    color_mapper color_instance();
+    color_mapper color_instance(*);
     
     // Display keycode on hex display
     HexDriver hex_inst_0 (keycode[3:0], HEX0);
