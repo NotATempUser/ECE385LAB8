@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 22, 2020 6:09:29 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1584918569954</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 22, 2020 6:31:22 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1584919882970</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>F:\lab8_provided_bat\software\usb_kb_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\nois_system.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>nios2_gen2_0</Cpu>
