@@ -1,5 +1,5 @@
 Timing Analyzer report for lab8
-Sun Mar 22 18:01:54 2020
+Sun Mar 22 18:51:16 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -107,13 +107,13 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 1.30        ;
+; Average used               ; 1.29        ;
 ; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   4.4%      ;
-;     Processors 3-8         ;   4.3%      ;
+;     Processor 2            ;   4.3%      ;
+;     Processors 3-8         ;   4.1%      ;
 +----------------------------+-------------+
 
 
@@ -122,12 +122,15 @@ refer to the applicable agreement for further details.
 +------------------------------------------------------------------------------------------------+--------+--------------------------+
 ; SDC File Path                                                                                  ; Status ; Read at                  ;
 +------------------------------------------------------------------------------------------------+--------+--------------------------+
-; lab8_soc/synthesis/submodules/altera_reset_controller.sdc                                      ; OK     ; Sun Mar 22 18:01:52 2020 ;
-; lab8_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc                     ; OK     ; Sun Mar 22 18:01:52 2020 ;
-; lab8_soc/synthesis/submodules/lab8_soc_nios2_gen2_0_cpu.sdc                                    ; OK     ; Sun Mar 22 18:01:52 2020 ;
-; f:/lab8_provided_bat/db/ip/nois_system/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Sun Mar 22 18:01:52 2020 ;
-; f:/lab8_provided_bat/db/ip/nois_system/submodules/altera_reset_controller.sdc                  ; OK     ; Sun Mar 22 18:01:52 2020 ;
-; f:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc             ; OK     ; Sun Mar 22 18:01:52 2020 ;
+; lab8_soc/synthesis/submodules/altera_reset_controller.sdc                                      ; OK     ; Sun Mar 22 18:51:13 2020 ;
+; lab8_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc                     ; OK     ; Sun Mar 22 18:51:13 2020 ;
+; lab8_soc/synthesis/submodules/lab8_soc_nios2_gen2_0_cpu.sdc                                    ; OK     ; Sun Mar 22 18:51:13 2020 ;
+; f:/lab8/ece385lab8/db/ip/nois_system/submodules/altera_avalon_st_handshake_clock_crosser.sdc   ; OK     ; Sun Mar 22 18:51:13 2020 ;
+; f:/lab8/ece385lab8/db/ip/nois_system/submodules/altera_reset_controller.sdc                    ; OK     ; Sun Mar 22 18:51:13 2020 ;
+; f:/lab8/ece385lab8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc               ; OK     ; Sun Mar 22 18:51:13 2020 ;
+; f:/lab8_provided_bat/db/ip/nois_system/submodules/altera_avalon_st_handshake_clock_crosser.sdc ; OK     ; Sun Mar 22 18:51:13 2020 ;
+; f:/lab8_provided_bat/db/ip/nois_system/submodules/altera_reset_controller.sdc                  ; OK     ; Sun Mar 22 18:51:13 2020 ;
+; f:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc             ; OK     ; Sun Mar 22 18:51:13 2020 ;
 +------------------------------------------------------------------------------------------------+--------+--------------------------+
 
 
@@ -2408,7 +2411,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Mar 22 18:01:48 2020
+    Info: Processing started: Sun Mar 22 18:51:10 2020
 Info: Command: quartus_sta lab8 -c lab8
 Info: qsta_default_script.tcl version: #1
 Warning (20013): Ignored 27 assignments for entity "DE2_115_Default" -- entity does not exist in design
@@ -2479,42 +2482,67 @@ Info (332164): Evaluating HDL-embedded SDC commands
 Info (332104): Reading SDC File: 'lab8_soc/synthesis/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'lab8_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.sdc'
 Info (332104): Reading SDC File: 'lab8_soc/synthesis/submodules/lab8_soc_nios2_gen2_0_cpu.sdc'
+Info (332104): Reading SDC File: 'f:/lab8/ece385lab8/db/ip/nois_system/submodules/altera_avalon_st_handshake_clock_crosser.sdc'
+Info (332104): Reading SDC File: 'f:/lab8/ece385lab8/db/ip/nois_system/submodules/altera_reset_controller.sdc'
+Info (332104): Reading SDC File: 'f:/lab8/ece385lab8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc'
+Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(46): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_nios2_oci_break:the_nois_system_nios2_gen2_0_cpu_nios2_oci_break|break_readreg* could not be matched with a keeper File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 46
+Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(46): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_tck:the_nois_system_nios2_gen2_0_cpu_debug_slave_tck|*sr* could not be matched with a keeper File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 46
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(46): Argument <from> is an empty collection File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 46
+    Info (332050): set_false_path -from [get_keepers *$nois_system_nios2_gen2_0_cpu_oci_break_path|break_readreg*] -to [get_keepers *$nois_system_nios2_gen2_0_cpu_jtag_sr*] File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 46
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(46): Argument <to> is an empty collection File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 46
+Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(47): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nois_system_nios2_gen2_0_cpu_nios2_oci_debug|*resetlatch could not be matched with a keeper File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 47
+Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(47): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_tck:the_nois_system_nios2_gen2_0_cpu_debug_slave_tck|*sr[33] could not be matched with a keeper File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 47
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(47): Argument <from> is an empty collection File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 47
+    Info (332050): set_false_path -from [get_keepers *$nois_system_nios2_gen2_0_cpu_oci_debug_path|*resetlatch]     -to [get_keepers *$nois_system_nios2_gen2_0_cpu_jtag_sr[33]] File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 47
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(47): Argument <to> is an empty collection File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 47
+Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(48): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nois_system_nios2_gen2_0_cpu_nios2_oci_debug|monitor_ready could not be matched with a keeper File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 48
+Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(48): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_tck:the_nois_system_nios2_gen2_0_cpu_debug_slave_tck|*sr[0] could not be matched with a keeper File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 48
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(48): Argument <from> is an empty collection File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 48
+    Info (332050): set_false_path -from [get_keepers *$nois_system_nios2_gen2_0_cpu_oci_debug_path|monitor_ready]  -to [get_keepers *$nois_system_nios2_gen2_0_cpu_jtag_sr[0]] File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 48
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(48): Argument <to> is an empty collection File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 48
+Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(49): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nois_system_nios2_gen2_0_cpu_nios2_oci_debug|monitor_error could not be matched with a keeper File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 49
+Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(49): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_tck:the_nois_system_nios2_gen2_0_cpu_debug_slave_tck|*sr[34] could not be matched with a keeper File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 49
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(49): Argument <from> is an empty collection File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 49
+    Info (332050): set_false_path -from [get_keepers *$nois_system_nios2_gen2_0_cpu_oci_debug_path|monitor_error]  -to [get_keepers *$nois_system_nios2_gen2_0_cpu_jtag_sr[34]] File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 49
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(49): Argument <to> is an empty collection File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 49
+Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(50): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_nios2_ocimem:the_nois_system_nios2_gen2_0_cpu_nios2_ocimem|*MonDReg* could not be matched with a keeper File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 50
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(50): Argument <from> is an empty collection File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 50
+    Info (332050): set_false_path -from [get_keepers *$nois_system_nios2_gen2_0_cpu_ocimem_path|*MonDReg*] -to [get_keepers *$nois_system_nios2_gen2_0_cpu_jtag_sr*] File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 50
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(50): Argument <to> is an empty collection File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 50
+Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(51): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_tck:the_nois_system_nios2_gen2_0_cpu_debug_slave_tck|*sr* could not be matched with a clock or keeper or register or port or pin or cell or partition File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 51
+Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(51): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nois_system_nios2_gen2_0_cpu_debug_slave_sysclk|*jdo* could not be matched with a clock or keeper or register or port or pin or cell or partition File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 51
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(51): Argument <from> is not an object ID File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 51
+    Info (332050): set_false_path -from *$nois_system_nios2_gen2_0_cpu_jtag_sr*    -to *$nois_system_nios2_gen2_0_cpu_jtag_sysclk_path|*jdo* File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 51
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(51): Argument <to> is not an object ID File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 51
+Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(52): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nois_system_nios2_gen2_0_cpu_debug_slave_sysclk|ir* could not be matched with a clock or keeper or register or port or pin or cell or partition File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 52
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(52): Argument <to> is not an object ID File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 52
+    Info (332050): set_false_path -from sld_hub:*|irf_reg* -to *$nois_system_nios2_gen2_0_cpu_jtag_sysclk_path|ir* File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 52
+Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(53): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nois_system_nios2_gen2_0_cpu_nios2_oci_debug|monitor_go could not be matched with a clock or keeper or register or port or pin or cell or partition File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 53
+Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(53): Argument <to> is not an object ID File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 53
+    Info (332050): set_false_path -from sld_hub:*|sld_shadow_jsm:shadow_jsm|state[1] -to *$nois_system_nios2_gen2_0_cpu_oci_debug_path|monitor_go File: F:/Lab8/ECE385LAB8/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 53
 Info (332104): Reading SDC File: 'f:/lab8_provided_bat/db/ip/nois_system/submodules/altera_avalon_st_handshake_clock_crosser.sdc'
 Info (332104): Reading SDC File: 'f:/lab8_provided_bat/db/ip/nois_system/submodules/altera_reset_controller.sdc'
 Info (332104): Reading SDC File: 'f:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc'
-Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(46): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_nios2_oci_break:the_nois_system_nios2_gen2_0_cpu_nios2_oci_break|break_readreg* could not be matched with a keeper File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 46
-Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(46): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_tck:the_nois_system_nios2_gen2_0_cpu_debug_slave_tck|*sr* could not be matched with a keeper File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 46
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(46): Argument <from> is an empty collection File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 46
     Info (332050): set_false_path -from [get_keepers *$nois_system_nios2_gen2_0_cpu_oci_break_path|break_readreg*] -to [get_keepers *$nois_system_nios2_gen2_0_cpu_jtag_sr*] File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 46
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(46): Argument <to> is an empty collection File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 46
-Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(47): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nois_system_nios2_gen2_0_cpu_nios2_oci_debug|*resetlatch could not be matched with a keeper File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 47
-Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(47): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_tck:the_nois_system_nios2_gen2_0_cpu_debug_slave_tck|*sr[33] could not be matched with a keeper File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 47
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(47): Argument <from> is an empty collection File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 47
     Info (332050): set_false_path -from [get_keepers *$nois_system_nios2_gen2_0_cpu_oci_debug_path|*resetlatch]     -to [get_keepers *$nois_system_nios2_gen2_0_cpu_jtag_sr[33]] File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 47
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(47): Argument <to> is an empty collection File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 47
-Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(48): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nois_system_nios2_gen2_0_cpu_nios2_oci_debug|monitor_ready could not be matched with a keeper File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 48
-Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(48): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_tck:the_nois_system_nios2_gen2_0_cpu_debug_slave_tck|*sr[0] could not be matched with a keeper File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 48
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(48): Argument <from> is an empty collection File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 48
     Info (332050): set_false_path -from [get_keepers *$nois_system_nios2_gen2_0_cpu_oci_debug_path|monitor_ready]  -to [get_keepers *$nois_system_nios2_gen2_0_cpu_jtag_sr[0]] File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 48
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(48): Argument <to> is an empty collection File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 48
-Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(49): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nois_system_nios2_gen2_0_cpu_nios2_oci_debug|monitor_error could not be matched with a keeper File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 49
-Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(49): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_tck:the_nois_system_nios2_gen2_0_cpu_debug_slave_tck|*sr[34] could not be matched with a keeper File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 49
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(49): Argument <from> is an empty collection File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 49
     Info (332050): set_false_path -from [get_keepers *$nois_system_nios2_gen2_0_cpu_oci_debug_path|monitor_error]  -to [get_keepers *$nois_system_nios2_gen2_0_cpu_jtag_sr[34]] File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 49
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(49): Argument <to> is an empty collection File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 49
-Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(50): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_nios2_ocimem:the_nois_system_nios2_gen2_0_cpu_nios2_ocimem|*MonDReg* could not be matched with a keeper File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 50
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(50): Argument <from> is an empty collection File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 50
     Info (332050): set_false_path -from [get_keepers *$nois_system_nios2_gen2_0_cpu_ocimem_path|*MonDReg*] -to [get_keepers *$nois_system_nios2_gen2_0_cpu_jtag_sr*] File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 50
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(50): Argument <to> is an empty collection File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 50
-Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(51): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_tck:the_nois_system_nios2_gen2_0_cpu_debug_slave_tck|*sr* could not be matched with a clock or keeper or register or port or pin or cell or partition File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 51
-Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(51): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nois_system_nios2_gen2_0_cpu_debug_slave_sysclk|*jdo* could not be matched with a clock or keeper or register or port or pin or cell or partition File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 51
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(51): Argument <from> is not an object ID File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 51
     Info (332050): set_false_path -from *$nois_system_nios2_gen2_0_cpu_jtag_sr*    -to *$nois_system_nios2_gen2_0_cpu_jtag_sysclk_path|*jdo* File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 51
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(51): Argument <to> is not an object ID File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 51
-Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(52): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_nois_system_nios2_gen2_0_cpu_debug_slave_wrapper|nois_system_nios2_gen2_0_cpu_debug_slave_sysclk:the_nois_system_nios2_gen2_0_cpu_debug_slave_sysclk|ir* could not be matched with a clock or keeper or register or port or pin or cell or partition File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 52
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(52): Argument <to> is not an object ID File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 52
     Info (332050): set_false_path -from sld_hub:*|irf_reg* -to *$nois_system_nios2_gen2_0_cpu_jtag_sysclk_path|ir* File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 52
-Warning (332174): Ignored filter at nois_system_nios2_gen2_0_cpu.sdc(53): *nois_system_nios2_gen2_0_cpu:*|nois_system_nios2_gen2_0_cpu_nios2_oci:the_nois_system_nios2_gen2_0_cpu_nios2_oci|nois_system_nios2_gen2_0_cpu_nios2_oci_debug:the_nois_system_nios2_gen2_0_cpu_nios2_oci_debug|monitor_go could not be matched with a clock or keeper or register or port or pin or cell or partition File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 53
 Warning (332049): Ignored set_false_path at nois_system_nios2_gen2_0_cpu.sdc(53): Argument <to> is not an object ID File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 53
     Info (332050): set_false_path -from sld_hub:*|sld_shadow_jsm:shadow_jsm|state[1] -to *$nois_system_nios2_gen2_0_cpu_oci_debug_path|monitor_go File: F:/lab8_provided_bat/db/ip/nois_system/submodules/nois_system_nios2_gen2_0_cpu.sdc Line: 53
 Warning (332060): Node: CLOCK_50 was determined to be a clock but was found without an associated clock assignment.
@@ -2648,9 +2676,9 @@ Info (332114): Report Metastability: Found 3 synchronizer chains.
     Info (332114):   - Under typical conditions, an increase of 100ps in available settling time will increase MTBF values by a factor of 10.8
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 86 warnings
-    Info: Peak virtual memory: 4935 megabytes
-    Info: Processing ended: Sun Mar 22 18:01:54 2020
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 100 warnings
+    Info: Peak virtual memory: 4933 megabytes
+    Info: Processing ended: Sun Mar 22 18:51:16 2020
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:07
 
