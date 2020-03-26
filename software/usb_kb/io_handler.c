@@ -23,9 +23,6 @@ void IO_write(alt_u8 Address, alt_u16 Data)
 	*otg_hpi_w=0;						//write enable
 	*otg_hpi_data=Data;			// load data
 	*otg_hpi_w=1;
-	printf("WRITE %x/n", *otg_hpi_address);
-	return();
-
 }
 
 alt_u16 IO_read(alt_u8 Address)

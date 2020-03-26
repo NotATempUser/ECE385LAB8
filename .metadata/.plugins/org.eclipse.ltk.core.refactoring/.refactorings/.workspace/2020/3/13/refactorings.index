@@ -1,2 +1,6 @@
 1584931005359	Delete resource 'usb_kb'
 1584931008600	Delete resource 'usb_kb_bsp'
+1585251309221	Delete resource 'usb_kb'
+1585251312830	Delete resource 'usb_kb_recreate'
+1585251315505	Delete resource 'usb_kb_bsp'
+1585251318259	Delete resource 'usb_kb_recreate_bsp'
