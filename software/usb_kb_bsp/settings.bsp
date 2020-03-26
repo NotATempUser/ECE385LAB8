@@ -2,9 +2,9 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Mar 22, 2020 6:31:22 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1584919882970</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>F:\lab8_provided_bat\software\usb_kb_bsp</BspGeneratedLocation>
+        <BspGeneratedTimeStamp>Mar 26, 2020 1:28:41 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1585247321355</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>F:\Lab8\ECE385LAB8\software\usb_kb_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\nois_system.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>

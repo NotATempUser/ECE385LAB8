@@ -40,8 +40,10 @@
  ******************************************************************************/
 void UsbWrite(alt_u16 Address, alt_u16 Data)
 {
-	IO_write(2,Address);
-	IO_write(0,Data);
+	IO_write(Address,HPI_ADDR);
+	IO_write(Data,HPI_DATA);
+	printf("USB WRITE");
+
 }
 
 /*****************************************************************************/
@@ -59,9 +61,10 @@ void UsbWrite(alt_u16 Address, alt_u16 Data)
  ******************************************************************************/
 alt_u16 UsbRead(alt_u16 Address)
 {
-	IO_write(2,Address);
-	IO_read(0);
-
+	IO_write(Address,HPI_ADDR);
+	IO_read(HPI_DATA);
+	printf("USB Read");
+	return(HPI_DATA); // look into this
 
 }
 
