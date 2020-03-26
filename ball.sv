@@ -88,19 +88,19 @@ module  ball ( input         Clk,                // 50 MHz clock
             else if ( Ball_X_Pos <= Ball_X_Min + Ball_Size )  // Ball is at the left edge, BOUNCE!
                 Ball_X_Motion_in = Ball_X_Step;
 				
-				if(keycode == 8'h77) //Key is 'w'
+				if(keycode == 8'h1A) //Key is 'w'
 					Ball_Y_Motion_in = (~Ball_Y_Step + 1'b1);
 					Ball_X_Motion_in = 0;
 				
-				if(keycode == 8'h73) //Key is 's'
+				if(keycode == 8'h16) //Key is 's'
 					Ball_Y_Motion_in = Ball_Y_Step;
 					Ball_X_Motion_in = 0;
 					
-				if(keycode == 8'h61) //key is 'a'
+				if(keycode == 8'h4) //key is 'a'
 					Ball_X_Motion_in = (~(Ball_X_Step) + 1'b1);
 					Ball_Y_Motion_in = 0; 
 				
-				if(keycode == 8'h64) //key is 'd'
+				if(keycode == 8'h7) //key is 'd'
 					Ball_X_Motion_in = Ball_X_Step;
 					Ball_Y_Motion_in = 0;
 				

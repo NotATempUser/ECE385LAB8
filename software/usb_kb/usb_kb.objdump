@@ -9,10 +9,10 @@ Program Header:
     LOAD off    0x00001000 vaddr 0x10000000 paddr 0x10000000 align 2**12
          filesz 0x00000020 memsz 0x00000020 flags r-x
     LOAD off    0x00001020 vaddr 0x10000020 paddr 0x10000020 align 2**12
-         filesz 0x000124ec memsz 0x000124ec flags r-x
-    LOAD off    0x0001350c vaddr 0x1001250c paddr 0x10013ff8 align 2**12
+         filesz 0x000124d4 memsz 0x000124d4 flags r-x
+    LOAD off    0x000134f4 vaddr 0x100124f4 paddr 0x10013fe0 align 2**12
          filesz 0x00001aec memsz 0x00001aec flags rw-
-    LOAD off    0x00015ae4 vaddr 0x10015ae4 paddr 0x10015ae4 align 2**12
+    LOAD off    0x00015acc vaddr 0x10015acc paddr 0x10015acc align 2**12
          filesz 0x00000000 memsz 0x00000164 flags rw-
 
 Sections:
@@ -23,73 +23,73 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
   2 .text         00011820  10000230  10000230  00001230  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  3 .rodata       00000abc  10011a50  10011a50  00012a50  2**2
+  3 .rodata       00000aa4  10011a50  10011a50  00012a50  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  4 .rwdata       00001aec  1001250c  10013ff8  0001350c  2**2
+  4 .rwdata       00001aec  100124f4  10013fe0  000134f4  2**2
                   CONTENTS, ALLOC, LOAD, DATA, SMALL_DATA
-  5 .bss          00000164  10015ae4  10015ae4  00015ae4  2**2
+  5 .bss          00000164  10015acc  10015acc  00015acc  2**2
                   ALLOC, SMALL_DATA
-  6 .onchip_memory2_0 00000000  00000000  00000000  00014ff8  2**0
+  6 .onchip_memory2_0 00000000  00000000  00000000  00014fe0  2**0
                   CONTENTS
-  7 .sdram        00000000  10015c48  10015c48  00014ff8  2**0
+  7 .sdram        00000000  10015c30  10015c30  00014fe0  2**0
                   CONTENTS
-  8 .comment      00000023  00000000  00000000  00014ff8  2**0
+  8 .comment      00000023  00000000  00000000  00014fe0  2**0
                   CONTENTS, READONLY
-  9 .debug_aranges 00000f18  00000000  00000000  00015020  2**3
+  9 .debug_aranges 00000f18  00000000  00000000  00015008  2**3
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_info   000236ce  00000000  00000000  00015f38  2**0
+ 10 .debug_info   000236fb  00000000  00000000  00015f20  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_abbrev 000090c8  00000000  00000000  00039606  2**0
+ 11 .debug_abbrev 000090c8  00000000  00000000  0003961b  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_line   0000b894  00000000  00000000  000426ce  2**0
+ 12 .debug_line   0000b892  00000000  00000000  000426e3  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_frame  00002384  00000000  00000000  0004df64  2**2
+ 13 .debug_frame  00002384  00000000  00000000  0004df78  2**2
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_str    000039cf  00000000  00000000  000502e8  2**0
+ 14 .debug_str    000039ed  00000000  00000000  000502fc  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_loc    0001786c  00000000  00000000  00053cb7  2**0
+ 15 .debug_loc    0001786c  00000000  00000000  00053ce9  2**0
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_alt_sim_info 00000040  00000000  00000000  0006b524  2**2
+ 16 .debug_alt_sim_info 00000040  00000000  00000000  0006b558  2**2
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_ranges 000018d0  00000000  00000000  0006b568  2**3
+ 17 .debug_ranges 000018d0  00000000  00000000  0006b598  2**3
                   CONTENTS, READONLY, DEBUGGING
- 18 .thread_model 00000003  00000000  00000000  000701d6  2**0
+ 18 .thread_model 00000003  00000000  00000000  00070206  2**0
                   CONTENTS, READONLY
- 19 .cpu          0000000c  00000000  00000000  000701d9  2**0
+ 19 .cpu          0000000c  00000000  00000000  00070209  2**0
                   CONTENTS, READONLY
- 20 .qsys         00000001  00000000  00000000  000701e5  2**0
+ 20 .qsys         00000001  00000000  00000000  00070215  2**0
                   CONTENTS, READONLY
- 21 .simulation_enabled 00000001  00000000  00000000  000701e6  2**0
+ 21 .simulation_enabled 00000001  00000000  00000000  00070216  2**0
                   CONTENTS, READONLY
- 22 .sysid_hash   00000004  00000000  00000000  000701e7  2**0
+ 22 .sysid_hash   00000004  00000000  00000000  00070217  2**0
                   CONTENTS, READONLY
- 23 .sysid_base   00000004  00000000  00000000  000701eb  2**0
+ 23 .sysid_base   00000004  00000000  00000000  0007021b  2**0
                   CONTENTS, READONLY
- 24 .sysid_time   00000004  00000000  00000000  000701ef  2**0
+ 24 .sysid_time   00000004  00000000  00000000  0007021f  2**0
                   CONTENTS, READONLY
- 25 .stderr_dev   0000000b  00000000  00000000  000701f3  2**0
+ 25 .stderr_dev   0000000b  00000000  00000000  00070223  2**0
                   CONTENTS, READONLY
- 26 .stdin_dev    0000000b  00000000  00000000  000701fe  2**0
+ 26 .stdin_dev    0000000b  00000000  00000000  0007022e  2**0
                   CONTENTS, READONLY
- 27 .stdout_dev   0000000b  00000000  00000000  00070209  2**0
+ 27 .stdout_dev   0000000b  00000000  00000000  00070239  2**0
                   CONTENTS, READONLY
- 28 .sopc_system_name 0000000b  00000000  00000000  00070214  2**0
+ 28 .sopc_system_name 0000000b  00000000  00000000  00070244  2**0
                   CONTENTS, READONLY
- 29 .quartus_project_dir 00000012  00000000  00000000  0007021f  2**0
+ 29 .quartus_project_dir 00000021  00000000  00000000  0007024f  2**0
                   CONTENTS, READONLY
- 30 .jdi          00005256  00000000  00000000  00070231  2**0
+ 30 .jdi          00005256  00000000  00000000  00070270  2**0
                   CONTENTS, READONLY
- 31 .sopcinfo     00078dd6  00000000  00000000  00075487  2**0
+ 31 .sopcinfo     0007d072  00000000  00000000  000754c6  2**0
                   CONTENTS, READONLY
 SYMBOL TABLE:
 10000000 l    d  .entry	00000000 .entry
 10000020 l    d  .exceptions	00000000 .exceptions
 10000230 l    d  .text	00000000 .text
 10011a50 l    d  .rodata	00000000 .rodata
-1001250c l    d  .rwdata	00000000 .rwdata
-10015ae4 l    d  .bss	00000000 .bss
+100124f4 l    d  .rwdata	00000000 .rwdata
+10015acc l    d  .bss	00000000 .bss
 00000000 l    d  .onchip_memory2_0	00000000 .onchip_memory2_0
-10015c48 l    d  .sdram	00000000 .sdram
+10015c30 l    d  .sdram	00000000 .sdram
 00000000 l    d  .comment	00000000 .comment
 00000000 l    d  .debug_aranges	00000000 .debug_aranges
 00000000 l    d  .debug_info	00000000 .debug_info
@@ -106,16 +106,16 @@ SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 alt_instruction_exception_entry.c
 00000000 l    df *ABS*	00000000 io_handler.c
 00000000 l    df *ABS*	00000000 main.c
-10015ae4 l     O .bss	00000002 ctl_reg.3589
-10015ae6 l     O .bss	00000002 no_device.3590
+10015acc l     O .bss	00000002 ctl_reg.3589
+10015ace l     O .bss	00000002 no_device.3590
 00000000 l    df *ABS*	00000000 usb.c
 00000000 l    df *ABS*	00000000 printf.c
 00000000 l    df *ABS*	00000000 puts.c
 00000000 l    df *ABS*	00000000 strlen.c
 00000000 l    df *ABS*	00000000 vfprintf.c
-10012252 l     O .rodata	00000010 zeroes.4404
+1001223a l     O .rodata	00000010 zeroes.4404
 100047c0 l     F .text	000000bc __sbprintf
-10012262 l     O .rodata	00000010 blanks.4403
+1001224a l     O .rodata	00000010 blanks.4403
 00000000 l    df *ABS*	00000000 wsetup.c
 00000000 l    df *ABS*	00000000 dtoa.c
 100049d0 l     F .text	00000228 quorem
@@ -128,11 +128,11 @@ SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 fvwrite.c
 00000000 l    df *ABS*	00000000 fwalk.c
 00000000 l    df *ABS*	00000000 impure.c
-1001250c l     O .rwdata	00000424 impure_data
+100124f4 l     O .rwdata	00000424 impure_data
 00000000 l    df *ABS*	00000000 locale.c
-10012950 l     O .rwdata	00000020 lc_ctype_charset
-10012930 l     O .rwdata	00000020 lc_message_charset
-10012970 l     O .rwdata	00000038 lconv
+10012938 l     O .rwdata	00000020 lc_ctype_charset
+10012918 l     O .rwdata	00000020 lc_message_charset
+10012958 l     O .rwdata	00000038 lconv
 00000000 l    df *ABS*	00000000 makebuf.c
 00000000 l    df *ABS*	00000000 mallocr.c
 00000000 l    df *ABS*	00000000 memchr.c
@@ -140,7 +140,7 @@ SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 memmove.c
 00000000 l    df *ABS*	00000000 memset.c
 00000000 l    df *ABS*	00000000 mprec.c
-10012294 l     O .rodata	0000000c p05.2768
+1001227c l     O .rodata	0000000c p05.2768
 00000000 l    df *ABS*	00000000 mallocr.c
 00000000 l    df *ABS*	00000000 s_fpclassify.c
 00000000 l    df *ABS*	00000000 sbrkr.c
@@ -148,9 +148,9 @@ SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 strcmp.c
 00000000 l    df *ABS*	00000000 vfprintf.c
 10009bac l     F .text	000000fc __sprint_r.part.0
-100123b8 l     O .rodata	00000010 zeroes.4349
+100123a0 l     O .rodata	00000010 zeroes.4349
 1000b1e8 l     F .text	000000bc __sbprintf
-100123c8 l     O .rodata	00000010 blanks.4348
+100123b0 l     O .rodata	00000010 blanks.4348
 00000000 l    df *ABS*	00000000 writer.c
 00000000 l    df *ABS*	00000000 closer.c
 00000000 l    df *ABS*	00000000 mallocr.c
@@ -199,13 +199,13 @@ SYMBOL TABLE:
 1000f814 l     F .text	0000003c alt_get_errno
 00000000 l    df *ABS*	00000000 alt_release_fd.c
 00000000 l    df *ABS*	00000000 alt_sbrk.c
-10013fe8 l     O .rwdata	00000004 heap_end
+10013fd0 l     O .rwdata	00000004 heap_end
 00000000 l    df *ABS*	00000000 alt_usleep.c
 00000000 l    df *ABS*	00000000 alt_write.c
 1000fab8 l     F .text	0000003c alt_get_errno
 00000000 l    df *ABS*	00000000 alt_sys_init.c
 1000fbf4 l     F .text	00000034 alt_dev_reg
-10012f58 l     O .rwdata	00001060 jtag_uart_0
+10012f40 l     O .rwdata	00001060 jtag_uart_0
 00000000 l    df *ABS*	00000000 altera_avalon_jtag_uart_fd.c
 00000000 l    df *ABS*	00000000 altera_avalon_jtag_uart_init.c
 1000fed0 l     F .text	0000020c altera_avalon_jtag_uart_irq
@@ -240,18 +240,18 @@ SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 __atexit.c
 00000000 l    df *ABS*	00000000 __call_atexit.c
 00000000 l    df *ABS*	00000000 alt_exit.c
-10015b1c g     O .bss	00000004 alt_instruction_exception_handler
+10015b04 g     O .bss	00000004 alt_instruction_exception_handler
 100091f0 g     F .text	00000074 _mprec_log10
 100092dc g     F .text	0000008c __any_on
 1000b79c g     F .text	00000054 _isatty_r
-100122a0 g     O .rodata	00000028 __mprec_tinytens
+10012288 g     O .rodata	00000028 __mprec_tinytens
 1000f750 g     F .text	0000007c alt_main
 1000235c g     F .text	000000c0 _puts_r
-10015b48 g     O .bss	00000100 alt_irq
+10015b30 g     O .bss	00000100 alt_irq
 1000b7f0 g     F .text	00000060 _lseek_r
-10013ff8 g       *ABS*	00000000 __flash_rwdata_start
+10013fe0 g       *ABS*	00000000 __flash_rwdata_start
 1000dc08 g     F .text	00000088 .hidden __eqdf2
-10015c48 g       *ABS*	00000000 __alt_heap_start
+10015c30 g       *ABS*	00000000 __alt_heap_start
 10002320 g     F .text	0000003c printf
 1000ba08 g     F .text	0000009c _wcrtomb_r
 10009a6c g     F .text	0000005c __sseek
@@ -270,12 +270,12 @@ SYMBOL TABLE:
 10000000 g     F .entry	0000000c __reset
 10000020 g       *ABS*	00000000 __flash_exceptions_start
 1000b740 g     F .text	0000005c _fstat_r
-10015b00 g     O .bss	00000004 errno
+10015ae8 g     O .bss	00000004 errno
 100099e8 g     F .text	00000008 __seofread
-10015b08 g     O .bss	00000004 alt_argv
-1001bfb8 g       *ABS*	00000000 _gp
+10015af0 g     O .bss	00000004 alt_argv
+1001bfa0 g       *ABS*	00000000 _gp
 1000fa88 g     F .text	00000030 usleep
-10012dd8 g     O .rwdata	00000180 alt_fd_list
+10012dc0 g     O .rwdata	00000180 alt_fd_list
 100113c4 g     F .text	00000090 alt_find_dev
 10007ee4 g     F .text	00000148 memcpy
 10006530 g     F .text	0000000c _cleanup_r
@@ -293,32 +293,32 @@ SYMBOL TABLE:
 00000000 g       *ABS*	00000000 __alt_mem_onchip_memory2_0
 1000c8a8 g     F .text	00000064 .hidden __udivsi3
 1000f4a0 g     F .text	000000ac isatty
-100122f0 g     O .rodata	000000c8 __mprec_tens
+100122d8 g     O .rodata	000000c8 __mprec_tens
 100073d8 g     F .text	0000000c __locale_charset
-10015afc g     O .bss	00000004 __malloc_top_pad
+10015ae4 g     O .bss	00000004 __malloc_top_pad
 1000187c g     F .text	00000268 UsbGetConfigDesc2
-10013fc0 g     O .rwdata	00000004 __mb_cur_max
+10013fa8 g     O .rwdata	00000004 __mb_cur_max
 10007408 g     F .text	0000000c _localeconv_r
 100086e4 g     F .text	0000003c __i2b
 10006d0c g     F .text	000004c8 __sfvwrite_r
 10009940 g     F .text	00000054 _sbrk_r
 1000b850 g     F .text	00000060 _read_r
-10013fe0 g     O .rwdata	00000004 alt_max_fd
+10013fc8 g     O .rwdata	00000004 alt_max_fd
 1000b434 g     F .text	000000f0 _fclose_r
 100064f8 g     F .text	00000030 fflush
-10015af8 g     O .bss	00000004 __malloc_max_sbrked_mem
+10015ae0 g     O .bss	00000004 __malloc_max_sbrked_mem
 1000c98c g     F .text	000008ac .hidden __adddf3
 10008ef4 g     F .text	0000010c __b2d
 1000c1ec g     F .text	000005c4 .hidden __umoddi3
 1000f674 g     F .text	000000dc lseek
-10013fb8 g     O .rwdata	00000004 _global_impure_ptr
+10013fa0 g     O .rwdata	00000004 _global_impure_ptr
 10009368 g     F .text	00000564 _realloc_r
-10015c48 g       *ABS*	00000000 __bss_end
+10015c30 g       *ABS*	00000000 __bss_end
 10010d28 g     F .text	000000f0 alt_iic_isr_register
 10011298 g     F .text	00000108 alt_tick
 1000bbf0 g     F .text	000005fc .hidden __udivdi3
 1000b69c g     F .text	00000024 _fputwc_r
-100122c8 g     O .rodata	00000028 __mprec_bigtens
+100122b0 g     O .rodata	00000028 __mprec_bigtens
 100084c8 g     F .text	00000104 __s2b
 1000f124 g     F .text	000000a8 .hidden __floatunsidf
 10008c34 g     F .text	00000060 __mcmp
@@ -326,25 +326,25 @@ SYMBOL TABLE:
 100068a8 g     F .text	00000018 __fp_lock_all
 10010cdc g     F .text	0000004c alt_ic_irq_enabled
 100111fc g     F .text	0000009c alt_alarm_stop
-10015b10 g     O .bss	00000004 alt_irq_active
+10015af8 g     O .bss	00000004 alt_irq_active
 100000fc g     F .exceptions	000000d4 alt_irq_handler
-10012db0 g     O .rwdata	00000028 alt_dev_null
+10012d98 g     O .rwdata	00000028 alt_dev_null
 10010998 g     F .text	00000020 alt_dcache_flush_all
 100085cc g     F .text	00000068 __hi0bits
-10000350 g     F .text	00000054 IO_read
+10000364 g     F .text	00000068 IO_read
 1000efc8 g     F .text	00000080 .hidden __fixdfsi
-10013ff8 g       *ABS*	00000000 __ram_rwdata_end
-10013fd8 g     O .rwdata	00000008 alt_dev_list
+10013fe0 g       *ABS*	00000000 __ram_rwdata_end
+10013fc0 g     O .rwdata	00000008 alt_dev_list
 1000faf4 g     F .text	00000100 write
-1001250c g       *ABS*	00000000 __ram_rodata_end
+100124f4 g       *ABS*	00000000 __ram_rodata_end
 1000f3ac g     F .text	000000b8 fstat
 1000dd6c g     F .text	000000f4 .hidden __ledf2
 10002270 g     F .text	00000080 UsbPrintMem
 100089ac g     F .text	00000140 __pow5mult
 10009cc0 g     F .text	0000150c ___vfiprintf_internal_r
-10015af0 g     O .bss	00000004 __nlocale_changed
+10015ad8 g     O .bss	00000004 __nlocale_changed
 1000c90c g     F .text	00000058 .hidden __umodsi3
-10015c48 g       *ABS*	00000000 end
+10015c30 g       *ABS*	00000000 end
 1000fe10 g     F .text	000000c0 altera_avalon_jtag_uart_init
 100001d0 g     F .exceptions	00000060 alt_instruction_exception_entry
 10011a50 g       *ABS*	00000000 __CTOR_LIST__
@@ -358,21 +358,21 @@ SYMBOL TABLE:
 100069fc g     F .text	00000310 _free_r
 100073e4 g     F .text	00000010 __locale_mb_cur_max
 1001189c g     F .text	00000180 __call_exitprocs
-10015aec g     O .bss	00000004 __mlocale_changed
-10013fc4 g     O .rwdata	00000004 __malloc_sbrk_base
+10015ad4 g     O .bss	00000004 __mlocale_changed
+10013fac g     O .rwdata	00000004 __malloc_sbrk_base
 10000230 g     F .text	0000003c _start
-10015b14 g     O .bss	00000004 _alt_tick_rate
+10015afc g     O .bss	00000004 _alt_tick_rate
 10008aec g     F .text	00000148 __lshift
-10015b18 g     O .bss	00000004 _alt_nticks
+10015b00 g     O .bss	00000004 _alt_nticks
 1000f850 g     F .text	00000104 read
 1000fc60 g     F .text	0000004c alt_sys_init
 10011784 g     F .text	00000118 __register_exitproc
 10008720 g     F .text	0000028c __multiply
 1001017c g     F .text	00000068 altera_avalon_jtag_uart_close
 1000c964 g     F .text	00000028 .hidden __mulsi3
-1001250c g       *ABS*	00000000 __ram_rwdata_start
+100124f4 g       *ABS*	00000000 __ram_rwdata_start
 10011a50 g       *ABS*	00000000 __ram_rodata_start
-10015b20 g     O .bss	00000028 __malloc_current_mallinfo
+10015b08 g     O .bss	00000028 __malloc_current_mallinfo
 10009000 g     F .text	0000014c __d2b
 100013cc g     F .text	00000148 UsbGetDeviceDesc1
 1000fcac g     F .text	00000060 altera_avalon_jtag_uart_read_fd
@@ -381,13 +381,13 @@ SYMBOL TABLE:
 1000b304 g     F .text	00000054 _close_r
 10011708 g     F .text	0000007c memcmp
 1000fd6c g     F .text	00000050 altera_avalon_jtag_uart_close_fd
-10015c48 g       *ABS*	00000000 __alt_stack_base
+10015c30 g       *ABS*	00000000 __alt_stack_base
 1000fdbc g     F .text	00000054 altera_avalon_jtag_uart_ioctl_fd
 1000487c g     F .text	00000154 __swsetup_r
 1000d238 g     F .text	000009d0 .hidden __divdf3
 10006758 g     F .text	00000118 __sfp
 10009264 g     F .text	00000078 __copybits
-100129a8 g     O .rwdata	00000408 __malloc_av_
+10012990 g     O .rwdata	00000408 __malloc_av_
 100068a4 g     F .text	00000004 __sinit_lock_release
 1000de60 g     F .text	0000086c .hidden __muldf3
 10009994 g     F .text	00000054 __sread
@@ -398,11 +398,11 @@ SYMBOL TABLE:
 1000f9d8 g     F .text	000000b0 sbrk
 1000649c g     F .text	0000005c _fflush_r
 1000b358 g     F .text	000000dc _calloc_r
-10015ae4 g       *ABS*	00000000 __bss_start
+10015acc g       *ABS*	00000000 __bss_start
 10008188 g     F .text	00000128 memset
-100003a4 g     F .text	00000db0 main
-10015b0c g     O .bss	00000004 alt_envp
-10015af4 g     O .bss	00000004 __malloc_max_total_mem
+100003cc g     F .text	00000db0 main
+10015af4 g     O .bss	00000004 alt_envp
+10015adc g     O .bss	00000004 __malloc_max_total_mem
 1000fd0c g     F .text	00000060 altera_avalon_jtag_uart_write_fd
 10001ae4 g     F .text	00000100 UsbSetConfig
 1000b9f0 g     F .text	00000018 __swbuf
@@ -412,7 +412,7 @@ SYMBOL TABLE:
 10004bf8 g     F .text	00001688 _dtoa_r
 100075f4 g     F .text	0000080c _malloc_r
 1000bb64 g     F .text	00000030 __ascii_wctomb
-10013fe4 g     O .rwdata	00000004 alt_errno
+10013fcc g     O .rwdata	00000004 alt_errno
 100071d4 g     F .text	000000c4 _fwalk
 1000c7b0 g     F .text	00000084 .hidden __divsi3
 100068d8 g     F .text	00000124 _malloc_trim_r
@@ -422,36 +422,36 @@ SYMBOL TABLE:
 10011a50 g       *ABS*	00000000 __flash_rodata_start
 10011a50 g       *ABS*	00000000 __DTOR_LIST__
 1000dc08 g     F .text	00000088 .hidden __nedf2
-100011c0 g     F .text	00000058 UsbRead
+100011d4 g     F .text	00000044 UsbRead
 1000fc28 g     F .text	00000038 alt_irq_init
 1000f954 g     F .text	00000084 alt_release_fd
-100123d8 g     O .rodata	00000100 .hidden __clz_tab
-10015ae8 g     O .bss	00000004 _PathLocale
+100123c0 g     O .rodata	00000100 .hidden __clz_tab
+10015ad0 g     O .bss	00000004 _PathLocale
 100116bc g     F .text	00000014 atexit
 1000b2a4 g     F .text	00000060 _write_r
 10007414 g     F .text	00000018 setlocale
-10013fbc g     O .rwdata	00000004 _impure_ptr
-10015b04 g     O .bss	00000004 alt_argc
+10013fa4 g     O .rwdata	00000004 _impure_ptr
+10015aec g     O .bss	00000004 alt_argc
 10006280 g     F .text	0000021c __sflush_r
 10010af8 g     F .text	00000060 _do_dtors
 10007400 g     F .text	00000008 __locale_cjk_lang
 10000020 g       .exceptions	00000000 alt_irq_entry
 10008e90 g     F .text	00000064 __ulp
 100068c0 g     F .text	00000018 __fp_unlock_all
-10013fd0 g     O .rwdata	00000008 alt_fs_list
+10013fb8 g     O .rwdata	00000008 alt_fs_list
 10001e2c g     F .text	00000340 UsbGetReportDesc
 10000020 g       *ABS*	00000000 __ram_exceptions_start
 1000742c g     F .text	0000000c localeconv
 10010b78 g     F .text	00000050 alt_ic_isr_register
-10013ff8 g       *ABS*	00000000 _edata
-10015c48 g       *ABS*	00000000 _end
-10001154 g     F .text	0000006c UsbWrite
+10013fe0 g       *ABS*	00000000 _edata
+10015c30 g       *ABS*	00000000 _end
+1000117c g     F .text	00000058 UsbWrite
 1000b538 g     F .text	00000164 __fputwc
 10000230 g       *ABS*	00000000 __ram_exceptions_end
 100101e4 g     F .text	000000f0 altera_avalon_jtag_uart_ioctl
 10010c50 g     F .text	0000008c alt_ic_irq_disable
 100099f0 g     F .text	0000007c __swrite
-10013fc8 g     O .rwdata	00000004 __malloc_trim_threshold
+10013fb0 g     O .rwdata	00000004 __malloc_trim_threshold
 100073f4 g     F .text	0000000c __locale_msgcharset
 100116d0 g     F .text	00000038 exit
 10007298 g     F .text	000000c4 _fwalk_reent
@@ -461,24 +461,24 @@ SYMBOL TABLE:
 10000020 g     F .exceptions	00000000 alt_exception
 1000689c g     F .text	00000004 __sfp_lock_release
 10000000 g       *ABS*	00000000 __alt_mem_sdram
-100002f4 g     F .text	0000005c IO_write
+100002f4 g     F .text	00000070 IO_write
 10011a1c g     F .text	00000034 _exit
 10010714 g     F .text	0000012c alt_alarm_start
 10007438 g     F .text	000001bc __smakebuf_r
 10002430 g     F .text	00000098 strlen
 100110a0 g     F .text	0000015c open
 1000dc90 g     F .text	000000dc .hidden __gedf2
-10013fcc g     O .rwdata	00000004 __wctomb
+10013fb4 g     O .rwdata	00000004 __wctomb
 10009ca8 g     F .text	00000018 __sprint_r
 10010b58 g     F .text	00000020 alt_icache_flush_all
-10013fec g     O .rwdata	00000004 alt_priority_mask
+10013fd4 g     O .rwdata	00000004 alt_priority_mask
 10010bc8 g     F .text	00000088 alt_ic_irq_enable
 100047a4 g     F .text	0000001c __vfprintf_internal
 1000bb94 g     F .text	0000005c _wctomb_r
 1000e6cc g     F .text	000008fc .hidden __subdf3
 10008634 g     F .text	000000b0 __lo0bits
 100016ec g     F .text	00000190 UsbGetConfigDesc1
-10013ff0 g     O .rwdata	00000008 alt_alarm_list
+10013fd8 g     O .rwdata	00000008 alt_alarm_list
 10010a98 g     F .text	00000060 _do_ctors
 10001218 g     F .text	000000b4 UsbSoftReset
 1000baa4 g     F .text	000000c0 wcrtomb
@@ -757,13 +757,13 @@ static ALT_INLINE alt_u32 ALT_ALWAYS_INLINE alt_irq_pending (void)
 #ifdef ALT_ENHANCED_INTERRUPT_API_PRESENT
         alt_irq[i].handler(alt_irq[i].context); 
 1000013c:	00840074 	movhi	r2,4097
-10000140:	1096d204 	addi	r2,r2,23368
+10000140:	1096cc04 	addi	r2,r2,23344
 10000144:	e0fffd17 	ldw	r3,-12(fp)
 10000148:	180690fa 	slli	r3,r3,3
 1000014c:	10c5883a 	add	r2,r2,r3
 10000150:	10c00017 	ldw	r3,0(r2)
 10000154:	00840074 	movhi	r2,4097
-10000158:	1096d204 	addi	r2,r2,23368
+10000158:	1096cc04 	addi	r2,r2,23344
 1000015c:	e13ffd17 	ldw	r4,-12(fp)
 10000160:	200890fa 	slli	r4,r4,3
 10000164:	1105883a 	add	r2,r2,r4
@@ -898,7 +898,7 @@ Disassembly of section .text:
     movhi gp, %hi(_gp)
 10000238:	06840074 	movhi	gp,4097
     ori gp, gp, %lo(_gp)
-1000023c:	d6afee14 	ori	gp,gp,49080
+1000023c:	d6afe814 	ori	gp,gp,49056
  */
 #ifndef ALT_SIM_OPTIMIZE
     /* Log that the BSS is about to be cleared. */
@@ -907,12 +907,12 @@ Disassembly of section .text:
     movhi r2, %hi(__bss_start)
 10000240:	00840074 	movhi	r2,4097
     ori r2, r2, %lo(__bss_start)
-10000244:	1096b914 	ori	r2,r2,23268
+10000244:	1096b314 	ori	r2,r2,23244
 
     movhi r3, %hi(__bss_end)
 10000248:	00c40074 	movhi	r3,4097
     ori r3, r3, %lo(__bss_end)
-1000024c:	18d71214 	ori	r3,r3,23624
+1000024c:	18d70c14 	ori	r3,r3,23600
 
     beq r2, r3, 1f
 10000250:	10c00326 	beq	r2,r3,10000260 <_start+0x30>
@@ -1011,1693 +1011,1698 @@ void IO_write(alt_u8 Address, alt_u16 Data)
 10000304:	2805883a 	mov	r2,r5
 10000308:	e0fffe05 	stb	r3,-8(fp)
 1000030c:	e0bfff0d 	sth	r2,-4(fp)
+
 	*otg_hpi_address=Address;	//set address
 10000310:	00802004 	movi	r2,128
 10000314:	e0fffe03 	ldbu	r3,-8(fp)
 10000318:	10c00015 	stw	r3,0(r2)
-	*otg_hpi_w=0;						//write enable
-1000031c:	00801404 	movi	r2,80
+	*otg_hpi_cs=0;
+1000031c:	00801004 	movi	r2,64
 10000320:	10000005 	stb	zero,0(r2)
+	*otg_hpi_w=0;						//write enable
+10000324:	00801404 	movi	r2,80
+10000328:	10000005 	stb	zero,0(r2)
 	*otg_hpi_data=Data;			// load data
-10000324:	00801c04 	movi	r2,112
-10000328:	e0ffff0b 	ldhu	r3,-4(fp)
-1000032c:	10c00015 	stw	r3,0(r2)
+1000032c:	00801c04 	movi	r2,112
+10000330:	e0ffff0b 	ldhu	r3,-4(fp)
+10000334:	10c00015 	stw	r3,0(r2)
 	*otg_hpi_w=1;
-10000330:	00801404 	movi	r2,80
-10000334:	00c00044 	movi	r3,1
-10000338:	10c00005 	stb	r3,0(r2)
+10000338:	00801404 	movi	r2,80
+1000033c:	00c00044 	movi	r3,1
+10000340:	10c00005 	stb	r3,0(r2)
+	*otg_hpi_cs=1;
+10000344:	00801004 	movi	r2,64
+10000348:	00c00044 	movi	r3,1
+1000034c:	10c00005 	stb	r3,0(r2)
 }
-1000033c:	0001883a 	nop
-10000340:	e037883a 	mov	sp,fp
-10000344:	df000017 	ldw	fp,0(sp)
-10000348:	dec00104 	addi	sp,sp,4
-1000034c:	f800283a 	ret
+10000350:	0001883a 	nop
+10000354:	e037883a 	mov	sp,fp
+10000358:	df000017 	ldw	fp,0(sp)
+1000035c:	dec00104 	addi	sp,sp,4
+10000360:	f800283a 	ret
 
-10000350 <IO_read>:
+10000364 <IO_read>:
 
 alt_u16 IO_read(alt_u8 Address)
 {
-10000350:	defffd04 	addi	sp,sp,-12
-10000354:	df000215 	stw	fp,8(sp)
-10000358:	df000204 	addi	fp,sp,8
-1000035c:	2005883a 	mov	r2,r4
-10000360:	e0bfff05 	stb	r2,-4(fp)
+10000364:	defffd04 	addi	sp,sp,-12
+10000368:	df000215 	stw	fp,8(sp)
+1000036c:	df000204 	addi	fp,sp,8
+10000370:	2005883a 	mov	r2,r4
+10000374:	e0bfff05 	stb	r2,-4(fp)
 	alt_u16 temp;
 
 	*otg_hpi_address= Address;	//set address to PIO block
-10000364:	00802004 	movi	r2,128
-10000368:	e0ffff03 	ldbu	r3,-4(fp)
-1000036c:	10c00015 	stw	r3,0(r2)
+10000378:	00802004 	movi	r2,128
+1000037c:	e0ffff03 	ldbu	r3,-4(fp)
+10000380:	10c00015 	stw	r3,0(r2)
+	*otg_hpi_cs=0;
+10000384:	00801004 	movi	r2,64
+10000388:	10000005 	stb	zero,0(r2)
 	*otg_hpi_r=0;						//enable read
-10000370:	00801804 	movi	r2,96
-10000374:	10000005 	stb	zero,0(r2)
+1000038c:	00801804 	movi	r2,96
+10000390:	10000005 	stb	zero,0(r2)
 	temp=*otg_hpi_data;					//load value into temp
-10000378:	00801c04 	movi	r2,112
-1000037c:	10800017 	ldw	r2,0(r2)
-10000380:	e0bffe0d 	sth	r2,-8(fp)
+10000394:	00801c04 	movi	r2,112
+10000398:	10800017 	ldw	r2,0(r2)
+1000039c:	e0bffe0d 	sth	r2,-8(fp)
 	*otg_hpi_r=1;						//disable read
-10000384:	00801804 	movi	r2,96
-10000388:	00c00044 	movi	r3,1
-1000038c:	10c00005 	stb	r3,0(r2)
+100003a0:	00801804 	movi	r2,96
+100003a4:	00c00044 	movi	r3,1
+100003a8:	10c00005 	stb	r3,0(r2)
+	*otg_hpi_cs=1;
+100003ac:	00801004 	movi	r2,64
+100003b0:	00c00044 	movi	r3,1
+100003b4:	10c00005 	stb	r3,0(r2)
 	//printf("%x\n",temp);
 	return(temp);
-10000390:	e0bffe0b 	ldhu	r2,-8(fp)
+100003b8:	e0bffe0b 	ldhu	r2,-8(fp)
 }
-10000394:	e037883a 	mov	sp,fp
-10000398:	df000017 	ldw	fp,0(sp)
-1000039c:	dec00104 	addi	sp,sp,4
-100003a0:	f800283a 	ret
+100003bc:	e037883a 	mov	sp,fp
+100003c0:	df000017 	ldw	fp,0(sp)
+100003c4:	dec00104 	addi	sp,sp,4
+100003c8:	f800283a 	ret
 
-100003a4 <main>:
+100003cc <main>:
 //
 //                                Main function
 //
 //----------------------------------------------------------------------------------------//
 int main(void)
 {
-100003a4:	defff904 	addi	sp,sp,-28
-100003a8:	dfc00615 	stw	ra,24(sp)
-100003ac:	df000515 	stw	fp,20(sp)
-100003b0:	df000504 	addi	fp,sp,20
+100003cc:	defff904 	addi	sp,sp,-28
+100003d0:	dfc00615 	stw	ra,24(sp)
+100003d4:	df000515 	stw	fp,20(sp)
+100003d8:	df000504 	addi	fp,sp,20
 	IO_init();
-100003b4:	000026c0 	call	1000026c <IO_init>
+100003dc:	000026c0 	call	1000026c <IO_init>
 
 	alt_u16 intStat;
 	alt_u16 usb_ctl_val;
 	static alt_u16 ctl_reg = 0;
 	static alt_u16 no_device = 0;
 	alt_u16 fs_device = 0;
-100003b8:	e03ffc0d 	sth	zero,-16(fp)
+100003e0:	e03ffc0d 	sth	zero,-16(fp)
 	int keycode = 0;
-100003bc:	e03ffd15 	stw	zero,-12(fp)
+100003e4:	e03ffd15 	stw	zero,-12(fp)
 	alt_u8 toggle = 0;
-100003c0:	e03ffb85 	stb	zero,-18(fp)
+100003e8:	e03ffb85 	stb	zero,-18(fp)
 	alt_u8 data_size;
 	alt_u8 hot_plug_count;
 	alt_u16 code;
 
 	printf("USB keyboard setup...\n\n");
-100003c4:	01040074 	movhi	r4,4097
-100003c8:	21069404 	addi	r4,r4,6736
-100003cc:	000241c0 	call	1000241c <puts>
+100003ec:	01040074 	movhi	r4,4097
+100003f0:	21069404 	addi	r4,r4,6736
+100003f4:	000241c0 	call	1000241c <puts>
 
 	//----------------------------------------SIE1 initial---------------------------------------------------//
 	USB_HOT_PLUG:
 	UsbSoftReset();
-100003d0:	00012180 	call	10001218 <UsbSoftReset>
+100003f8:	00012180 	call	10001218 <UsbSoftReset>
 	printf("Test/n");
-100003d4:	01040074 	movhi	r4,4097
-100003d8:	21069a04 	addi	r4,r4,6760
-100003dc:	00023200 	call	10002320 <printf>
+100003fc:	01040074 	movhi	r4,4097
+10000400:	21069a04 	addi	r4,r4,6760
+10000404:	00023200 	call	10002320 <printf>
 	// STEP 1a:
 	UsbWrite (HPI_SIE1_MSG_ADR, 0);
-100003e0:	000b883a 	mov	r5,zero
-100003e4:	01005104 	movi	r4,324
-100003e8:	00011540 	call	10001154 <UsbWrite>
+10000408:	000b883a 	mov	r5,zero
+1000040c:	01005104 	movi	r4,324
+10000410:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite (HOST1_STAT_REG, 0xFFFF);
-100003ec:	017fffd4 	movui	r5,65535
-100003f0:	01302414 	movui	r4,49296
-100003f4:	00011540 	call	10001154 <UsbWrite>
+10000414:	017fffd4 	movui	r5,65535
+10000418:	01302414 	movui	r4,49296
+1000041c:	000117c0 	call	1000117c <UsbWrite>
 
 	/* Set HUSB_pEOT time */
 	UsbWrite(HUSB_pEOT, 600); // adjust the according to your USB device speed
-100003f8:	01409604 	movi	r5,600
-100003fc:	01006d04 	movi	r4,436
-10000400:	00011540 	call	10001154 <UsbWrite>
+10000420:	01409604 	movi	r5,600
+10000424:	01006d04 	movi	r4,436
+10000428:	000117c0 	call	1000117c <UsbWrite>
 
 	usb_ctl_val = SOFEOP1_TO_CPU_EN | RESUME1_TO_HPI_EN;// | SOFEOP1_TO_HPI_EN;
-10000404:	00811004 	movi	r2,1088
-10000408:	e0bffb0d 	sth	r2,-20(fp)
+1000042c:	00811004 	movi	r2,1088
+10000430:	e0bffb0d 	sth	r2,-20(fp)
 	UsbWrite(HPI_IRQ_ROUTING_REG, usb_ctl_val);
-1000040c:	e0bffb0b 	ldhu	r2,-20(fp)
-10000410:	100b883a 	mov	r5,r2
-10000414:	01005084 	movi	r4,322
-10000418:	00011540 	call	10001154 <UsbWrite>
+10000434:	e0bffb0b 	ldhu	r2,-20(fp)
+10000438:	100b883a 	mov	r5,r2
+1000043c:	01005084 	movi	r4,322
+10000440:	000117c0 	call	1000117c <UsbWrite>
 
 	intStat = A_CHG_IRQ_EN | SOF_EOP_IRQ_EN ;
-1000041c:	00808404 	movi	r2,528
-10000420:	e0bffe0d 	sth	r2,-8(fp)
+10000444:	00808404 	movi	r2,528
+10000448:	e0bffe0d 	sth	r2,-8(fp)
 	UsbWrite(HOST1_IRQ_EN_REG, intStat);
-10000424:	e0bffe0b 	ldhu	r2,-8(fp)
-10000428:	100b883a 	mov	r5,r2
-1000042c:	01302314 	movui	r4,49292
-10000430:	00011540 	call	10001154 <UsbWrite>
+1000044c:	e0bffe0b 	ldhu	r2,-8(fp)
+10000450:	100b883a 	mov	r5,r2
+10000454:	01302314 	movui	r4,49292
+10000458:	000117c0 	call	1000117c <UsbWrite>
 	// STEP 1a end
 
 	// STEP 1b begin
 	UsbWrite(COMM_R0,0x0000);//reset time
-10000434:	000b883a 	mov	r5,zero
-10000438:	01007104 	movi	r4,452
-1000043c:	00011540 	call	10001154 <UsbWrite>
+1000045c:	000b883a 	mov	r5,zero
+10000460:	01007104 	movi	r4,452
+10000464:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R1,0x0000);  //port number
-10000440:	000b883a 	mov	r5,zero
-10000444:	01007184 	movi	r4,454
-10000448:	00011540 	call	10001154 <UsbWrite>
+10000468:	000b883a 	mov	r5,zero
+1000046c:	01007184 	movi	r4,454
+10000470:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R2,0x0000);  //r1
-1000044c:	000b883a 	mov	r5,zero
-10000450:	01007204 	movi	r4,456
-10000454:	00011540 	call	10001154 <UsbWrite>
+10000474:	000b883a 	mov	r5,zero
+10000478:	01007204 	movi	r4,456
+1000047c:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R3,0x0000);  //r1
-10000458:	000b883a 	mov	r5,zero
-1000045c:	01007284 	movi	r4,458
-10000460:	00011540 	call	10001154 <UsbWrite>
+10000480:	000b883a 	mov	r5,zero
+10000484:	01007284 	movi	r4,458
+10000488:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R4,0x0000);  //r1
-10000464:	000b883a 	mov	r5,zero
-10000468:	01007304 	movi	r4,460
-1000046c:	00011540 	call	10001154 <UsbWrite>
+1000048c:	000b883a 	mov	r5,zero
+10000490:	01007304 	movi	r4,460
+10000494:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R5,0x0000);  //r1
-10000470:	000b883a 	mov	r5,zero
-10000474:	01007384 	movi	r4,462
-10000478:	00011540 	call	10001154 <UsbWrite>
+10000498:	000b883a 	mov	r5,zero
+1000049c:	01007384 	movi	r4,462
+100004a0:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R6,0x0000);  //r1
-1000047c:	000b883a 	mov	r5,zero
-10000480:	01007404 	movi	r4,464
-10000484:	00011540 	call	10001154 <UsbWrite>
+100004a4:	000b883a 	mov	r5,zero
+100004a8:	01007404 	movi	r4,464
+100004ac:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R7,0x0000);  //r1
-10000488:	000b883a 	mov	r5,zero
-1000048c:	01007484 	movi	r4,466
-10000490:	00011540 	call	10001154 <UsbWrite>
+100004b0:	000b883a 	mov	r5,zero
+100004b4:	01007484 	movi	r4,466
+100004b8:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R8,0x0000);  //r1
-10000494:	000b883a 	mov	r5,zero
-10000498:	01007504 	movi	r4,468
-1000049c:	00011540 	call	10001154 <UsbWrite>
+100004bc:	000b883a 	mov	r5,zero
+100004c0:	01007504 	movi	r4,468
+100004c4:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R9,0x0000);  //r1
-100004a0:	000b883a 	mov	r5,zero
-100004a4:	01007584 	movi	r4,470
-100004a8:	00011540 	call	10001154 <UsbWrite>
+100004c8:	000b883a 	mov	r5,zero
+100004cc:	01007584 	movi	r4,470
+100004d0:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R10,0x0000);  //r1
-100004ac:	000b883a 	mov	r5,zero
-100004b0:	01007604 	movi	r4,472
-100004b4:	00011540 	call	10001154 <UsbWrite>
+100004d4:	000b883a 	mov	r5,zero
+100004d8:	01007604 	movi	r4,472
+100004dc:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R11,0x0000);  //r1
-100004b8:	000b883a 	mov	r5,zero
-100004bc:	01007684 	movi	r4,474
-100004c0:	00011540 	call	10001154 <UsbWrite>
+100004e0:	000b883a 	mov	r5,zero
+100004e4:	01007684 	movi	r4,474
+100004e8:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R12,0x0000);  //r1
-100004c4:	000b883a 	mov	r5,zero
-100004c8:	01007704 	movi	r4,476
-100004cc:	00011540 	call	10001154 <UsbWrite>
+100004ec:	000b883a 	mov	r5,zero
+100004f0:	01007704 	movi	r4,476
+100004f4:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R13,0x0000);  //r1
-100004d0:	000b883a 	mov	r5,zero
-100004d4:	01007784 	movi	r4,478
-100004d8:	00011540 	call	10001154 <UsbWrite>
+100004f8:	000b883a 	mov	r5,zero
+100004fc:	01007784 	movi	r4,478
+10000500:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_INT_NUM,HUSB_SIE1_INIT_INT); //HUSB_SIE1_INIT_INT
-100004dc:	01401c84 	movi	r5,114
-100004e0:	01007084 	movi	r4,450
-100004e4:	00011540 	call	10001154 <UsbWrite>
+10000504:	01401c84 	movi	r5,114
+10000508:	01007084 	movi	r4,450
+1000050c:	000117c0 	call	1000117c <UsbWrite>
 	IO_write(HPI_MAILBOX,COMM_EXEC_INT);
-100004e8:	01738054 	movui	r5,52737
-100004ec:	01000044 	movi	r4,1
-100004f0:	00002f40 	call	100002f4 <IO_write>
+10000510:	01738054 	movui	r5,52737
+10000514:	01000044 	movi	r4,1
+10000518:	00002f40 	call	100002f4 <IO_write>
 
 	while (!(IO_read(HPI_STATUS) & 0xFFFF) )  //read sie1 msg register
-100004f4:	0001883a 	nop
-100004f8:	010000c4 	movi	r4,3
-100004fc:	00003500 	call	10000350 <IO_read>
-10000500:	10bfffcc 	andi	r2,r2,65535
-10000504:	103ffc26 	beq	r2,zero,100004f8 <__alt_data_end+0xf80004f8>
+1000051c:	0001883a 	nop
+10000520:	010000c4 	movi	r4,3
+10000524:	00003640 	call	10000364 <IO_read>
+10000528:	10bfffcc 	andi	r2,r2,65535
+1000052c:	103ffc26 	beq	r2,zero,10000520 <__alt_data_end+0xf8000520>
 	{
 	}
 	while (IO_read(HPI_MAILBOX) != COMM_ACK)
-10000508:	00000806 	br	1000052c <main+0x188>
+10000530:	00000806 	br	10000554 <main+0x188>
 	{
 		printf("[ERROR]:routine mailbox data is %x\n",IO_read(HPI_MAILBOX));
-1000050c:	01000044 	movi	r4,1
-10000510:	00003500 	call	10000350 <IO_read>
-10000514:	10bfffcc 	andi	r2,r2,65535
-10000518:	100b883a 	mov	r5,r2
-1000051c:	01040074 	movhi	r4,4097
-10000520:	21069c04 	addi	r4,r4,6768
-10000524:	00023200 	call	10002320 <printf>
+10000534:	01000044 	movi	r4,1
+10000538:	00003640 	call	10000364 <IO_read>
+1000053c:	10bfffcc 	andi	r2,r2,65535
+10000540:	100b883a 	mov	r5,r2
+10000544:	01040074 	movhi	r4,4097
+10000548:	21069c04 	addi	r4,r4,6768
+1000054c:	00023200 	call	10002320 <printf>
 		goto USB_HOT_PLUG;
-10000528:	003fa906 	br	100003d0 <__alt_data_end+0xf80003d0>
+10000550:	003fa906 	br	100003f8 <__alt_data_end+0xf80003f8>
 	IO_write(HPI_MAILBOX,COMM_EXEC_INT);
 
 	while (!(IO_read(HPI_STATUS) & 0xFFFF) )  //read sie1 msg register
 	{
 	}
 	while (IO_read(HPI_MAILBOX) != COMM_ACK)
-1000052c:	01000044 	movi	r4,1
-10000530:	00003500 	call	10000350 <IO_read>
-10000534:	10bfffcc 	andi	r2,r2,65535
-10000538:	1083fb58 	cmpnei	r2,r2,4077
-1000053c:	103ff31e 	bne	r2,zero,1000050c <__alt_data_end+0xf800050c>
+10000554:	01000044 	movi	r4,1
+10000558:	00003640 	call	10000364 <IO_read>
+1000055c:	10bfffcc 	andi	r2,r2,65535
+10000560:	1083fb58 	cmpnei	r2,r2,4077
+10000564:	103ff31e 	bne	r2,zero,10000534 <__alt_data_end+0xf8000534>
 		printf("[ERROR]:routine mailbox data is %x\n",IO_read(HPI_MAILBOX));
 		goto USB_HOT_PLUG;
 	}
 	// STEP 1b end
 
 	printf("STEP 1 Complete");
-10000540:	01040074 	movhi	r4,4097
-10000544:	2106a504 	addi	r4,r4,6804
-10000548:	00023200 	call	10002320 <printf>
+10000568:	01040074 	movhi	r4,4097
+1000056c:	2106a504 	addi	r4,r4,6804
+10000570:	00023200 	call	10002320 <printf>
 	// STEP 2 begin
 	UsbWrite(COMM_INT_NUM,HUSB_RESET_INT); //husb reset
-1000054c:	01401d04 	movi	r5,116
-10000550:	01007084 	movi	r4,450
-10000554:	00011540 	call	10001154 <UsbWrite>
+10000574:	01401d04 	movi	r5,116
+10000578:	01007084 	movi	r4,450
+1000057c:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R0,0x003c);//reset time
-10000558:	01400f04 	movi	r5,60
-1000055c:	01007104 	movi	r4,452
-10000560:	00011540 	call	10001154 <UsbWrite>
+10000580:	01400f04 	movi	r5,60
+10000584:	01007104 	movi	r4,452
+10000588:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R1,0x0000);  //port number
-10000564:	000b883a 	mov	r5,zero
-10000568:	01007184 	movi	r4,454
-1000056c:	00011540 	call	10001154 <UsbWrite>
+1000058c:	000b883a 	mov	r5,zero
+10000590:	01007184 	movi	r4,454
+10000594:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R2,0x0000);  //r1
-10000570:	000b883a 	mov	r5,zero
-10000574:	01007204 	movi	r4,456
-10000578:	00011540 	call	10001154 <UsbWrite>
+10000598:	000b883a 	mov	r5,zero
+1000059c:	01007204 	movi	r4,456
+100005a0:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R3,0x0000);  //r1
-1000057c:	000b883a 	mov	r5,zero
-10000580:	01007284 	movi	r4,458
-10000584:	00011540 	call	10001154 <UsbWrite>
+100005a4:	000b883a 	mov	r5,zero
+100005a8:	01007284 	movi	r4,458
+100005ac:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R4,0x0000);  //r1
-10000588:	000b883a 	mov	r5,zero
-1000058c:	01007304 	movi	r4,460
-10000590:	00011540 	call	10001154 <UsbWrite>
+100005b0:	000b883a 	mov	r5,zero
+100005b4:	01007304 	movi	r4,460
+100005b8:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R5,0x0000);  //r1
-10000594:	000b883a 	mov	r5,zero
-10000598:	01007384 	movi	r4,462
-1000059c:	00011540 	call	10001154 <UsbWrite>
+100005bc:	000b883a 	mov	r5,zero
+100005c0:	01007384 	movi	r4,462
+100005c4:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R6,0x0000);  //r1
-100005a0:	000b883a 	mov	r5,zero
-100005a4:	01007404 	movi	r4,464
-100005a8:	00011540 	call	10001154 <UsbWrite>
+100005c8:	000b883a 	mov	r5,zero
+100005cc:	01007404 	movi	r4,464
+100005d0:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R7,0x0000);  //r1
-100005ac:	000b883a 	mov	r5,zero
-100005b0:	01007484 	movi	r4,466
-100005b4:	00011540 	call	10001154 <UsbWrite>
+100005d4:	000b883a 	mov	r5,zero
+100005d8:	01007484 	movi	r4,466
+100005dc:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R8,0x0000);  //r1
-100005b8:	000b883a 	mov	r5,zero
-100005bc:	01007504 	movi	r4,468
-100005c0:	00011540 	call	10001154 <UsbWrite>
+100005e0:	000b883a 	mov	r5,zero
+100005e4:	01007504 	movi	r4,468
+100005e8:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R9,0x0000);  //r1
-100005c4:	000b883a 	mov	r5,zero
-100005c8:	01007584 	movi	r4,470
-100005cc:	00011540 	call	10001154 <UsbWrite>
+100005ec:	000b883a 	mov	r5,zero
+100005f0:	01007584 	movi	r4,470
+100005f4:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R10,0x0000);  //r1
-100005d0:	000b883a 	mov	r5,zero
-100005d4:	01007604 	movi	r4,472
-100005d8:	00011540 	call	10001154 <UsbWrite>
+100005f8:	000b883a 	mov	r5,zero
+100005fc:	01007604 	movi	r4,472
+10000600:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R11,0x0000);  //r1
-100005dc:	000b883a 	mov	r5,zero
-100005e0:	01007684 	movi	r4,474
-100005e4:	00011540 	call	10001154 <UsbWrite>
+10000604:	000b883a 	mov	r5,zero
+10000608:	01007684 	movi	r4,474
+1000060c:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R12,0x0000);  //r1
-100005e8:	000b883a 	mov	r5,zero
-100005ec:	01007704 	movi	r4,476
-100005f0:	00011540 	call	10001154 <UsbWrite>
+10000610:	000b883a 	mov	r5,zero
+10000614:	01007704 	movi	r4,476
+10000618:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite(COMM_R13,0x0000);  //r1
-100005f4:	000b883a 	mov	r5,zero
-100005f8:	01007784 	movi	r4,478
-100005fc:	00011540 	call	10001154 <UsbWrite>
+1000061c:	000b883a 	mov	r5,zero
+10000620:	01007784 	movi	r4,478
+10000624:	000117c0 	call	1000117c <UsbWrite>
 
 	IO_write(HPI_MAILBOX,COMM_EXEC_INT);
-10000600:	01738054 	movui	r5,52737
-10000604:	01000044 	movi	r4,1
-10000608:	00002f40 	call	100002f4 <IO_write>
+10000628:	01738054 	movui	r5,52737
+1000062c:	01000044 	movi	r4,1
+10000630:	00002f40 	call	100002f4 <IO_write>
 
 	while (IO_read(HPI_MAILBOX) != COMM_ACK)
-1000060c:	0001883a 	nop
-10000610:	01000044 	movi	r4,1
-10000614:	00003500 	call	10000350 <IO_read>
-10000618:	10bfffcc 	andi	r2,r2,65535
-1000061c:	1083fb58 	cmpnei	r2,r2,4077
-10000620:	10000826 	beq	r2,zero,10000644 <main+0x2a0>
+10000634:	0001883a 	nop
+10000638:	01000044 	movi	r4,1
+1000063c:	00003640 	call	10000364 <IO_read>
+10000640:	10bfffcc 	andi	r2,r2,65535
+10000644:	1083fb58 	cmpnei	r2,r2,4077
+10000648:	10000826 	beq	r2,zero,1000066c <main+0x2a0>
 	{
 		printf("[ERROR]:routine mailbox data is %x\n",IO_read(HPI_MAILBOX));
-10000624:	01000044 	movi	r4,1
-10000628:	00003500 	call	10000350 <IO_read>
-1000062c:	10bfffcc 	andi	r2,r2,65535
-10000630:	100b883a 	mov	r5,r2
-10000634:	01040074 	movhi	r4,4097
-10000638:	21069c04 	addi	r4,r4,6768
-1000063c:	00023200 	call	10002320 <printf>
+1000064c:	01000044 	movi	r4,1
+10000650:	00003640 	call	10000364 <IO_read>
+10000654:	10bfffcc 	andi	r2,r2,65535
+10000658:	100b883a 	mov	r5,r2
+1000065c:	01040074 	movhi	r4,4097
+10000660:	21069c04 	addi	r4,r4,6768
+10000664:	00023200 	call	10002320 <printf>
 		goto USB_HOT_PLUG;
-10000640:	003f6306 	br	100003d0 <__alt_data_end+0xf80003d0>
+10000668:	003f6306 	br	100003f8 <__alt_data_end+0xf80003f8>
 	}
 	// STEP 2 end
 
 	ctl_reg = USB1_CTL_REG;
-10000644:	00b02284 	movi	r2,-16246
-10000648:	d0a6cb0d 	sth	r2,-25812(gp)
+1000066c:	00b02284 	movi	r2,-16246
+10000670:	d0a6cb0d 	sth	r2,-25812(gp)
 	no_device = (A_DP_STAT | A_DM_STAT);
-1000064c:	008c0004 	movi	r2,12288
-10000650:	d0a6cb8d 	sth	r2,-25810(gp)
+10000674:	008c0004 	movi	r2,12288
+10000678:	d0a6cb8d 	sth	r2,-25810(gp)
 	fs_device = A_DP_STAT;
-10000654:	00880004 	movi	r2,8192
-10000658:	e0bffc0d 	sth	r2,-16(fp)
+1000067c:	00880004 	movi	r2,8192
+10000680:	e0bffc0d 	sth	r2,-16(fp)
 	usb_ctl_val = UsbRead(ctl_reg);
-1000065c:	d0a6cb0b 	ldhu	r2,-25812(gp)
-10000660:	10bfffcc 	andi	r2,r2,65535
-10000664:	1009883a 	mov	r4,r2
-10000668:	00011c00 	call	100011c0 <UsbRead>
-1000066c:	e0bffb0d 	sth	r2,-20(fp)
+10000684:	d0a6cb0b 	ldhu	r2,-25812(gp)
+10000688:	10bfffcc 	andi	r2,r2,65535
+1000068c:	1009883a 	mov	r4,r2
+10000690:	00011d40 	call	100011d4 <UsbRead>
+10000694:	e0bffb0d 	sth	r2,-20(fp)
 
 	if (!(usb_ctl_val & no_device))
-10000670:	d0a6cb8b 	ldhu	r2,-25810(gp)
-10000674:	e0fffb0b 	ldhu	r3,-20(fp)
-10000678:	1884703a 	and	r2,r3,r2
-1000067c:	10bfffcc 	andi	r2,r2,65535
-10000680:	1000351e 	bne	r2,zero,10000758 <main+0x3b4>
+10000698:	d0a6cb8b 	ldhu	r2,-25810(gp)
+1000069c:	e0fffb0b 	ldhu	r3,-20(fp)
+100006a0:	1884703a 	and	r2,r3,r2
+100006a4:	10bfffcc 	andi	r2,r2,65535
+100006a8:	1000351e 	bne	r2,zero,10000780 <main+0x3b4>
 	{
 		for(hot_plug_count = 0 ; hot_plug_count < 5 ; hot_plug_count++)
-10000684:	e03ffbc5 	stb	zero,-17(fp)
-10000688:	00000f06 	br	100006c8 <main+0x324>
+100006ac:	e03ffbc5 	stb	zero,-17(fp)
+100006b0:	00000f06 	br	100006f0 <main+0x324>
 		{
 			usleep(5*1000);
-1000068c:	0104e204 	movi	r4,5000
-10000690:	000fa880 	call	1000fa88 <usleep>
+100006b4:	0104e204 	movi	r4,5000
+100006b8:	000fa880 	call	1000fa88 <usleep>
 			usb_ctl_val = UsbRead(ctl_reg);
-10000694:	d0a6cb0b 	ldhu	r2,-25812(gp)
-10000698:	10bfffcc 	andi	r2,r2,65535
-1000069c:	1009883a 	mov	r4,r2
-100006a0:	00011c00 	call	100011c0 <UsbRead>
-100006a4:	e0bffb0d 	sth	r2,-20(fp)
+100006bc:	d0a6cb0b 	ldhu	r2,-25812(gp)
+100006c0:	10bfffcc 	andi	r2,r2,65535
+100006c4:	1009883a 	mov	r4,r2
+100006c8:	00011d40 	call	100011d4 <UsbRead>
+100006cc:	e0bffb0d 	sth	r2,-20(fp)
 			if(usb_ctl_val & no_device) break;
-100006a8:	d0a6cb8b 	ldhu	r2,-25810(gp)
-100006ac:	e0fffb0b 	ldhu	r3,-20(fp)
-100006b0:	1884703a 	and	r2,r3,r2
-100006b4:	10bfffcc 	andi	r2,r2,65535
-100006b8:	1000071e 	bne	r2,zero,100006d8 <main+0x334>
+100006d0:	d0a6cb8b 	ldhu	r2,-25810(gp)
+100006d4:	e0fffb0b 	ldhu	r3,-20(fp)
+100006d8:	1884703a 	and	r2,r3,r2
+100006dc:	10bfffcc 	andi	r2,r2,65535
+100006e0:	1000071e 	bne	r2,zero,10000700 <main+0x334>
 	fs_device = A_DP_STAT;
 	usb_ctl_val = UsbRead(ctl_reg);
 
 	if (!(usb_ctl_val & no_device))
 	{
 		for(hot_plug_count = 0 ; hot_plug_count < 5 ; hot_plug_count++)
-100006bc:	e0bffbc3 	ldbu	r2,-17(fp)
-100006c0:	10800044 	addi	r2,r2,1
-100006c4:	e0bffbc5 	stb	r2,-17(fp)
-100006c8:	e0bffbc3 	ldbu	r2,-17(fp)
-100006cc:	10800170 	cmpltui	r2,r2,5
-100006d0:	103fee1e 	bne	r2,zero,1000068c <__alt_data_end+0xf800068c>
-100006d4:	00000106 	br	100006dc <main+0x338>
+100006e4:	e0bffbc3 	ldbu	r2,-17(fp)
+100006e8:	10800044 	addi	r2,r2,1
+100006ec:	e0bffbc5 	stb	r2,-17(fp)
+100006f0:	e0bffbc3 	ldbu	r2,-17(fp)
+100006f4:	10800170 	cmpltui	r2,r2,5
+100006f8:	103fee1e 	bne	r2,zero,100006b4 <__alt_data_end+0xf80006b4>
+100006fc:	00000106 	br	10000704 <main+0x338>
 		{
 			usleep(5*1000);
 			usb_ctl_val = UsbRead(ctl_reg);
 			if(usb_ctl_val & no_device) break;
-100006d8:	0001883a 	nop
+10000700:	0001883a 	nop
 		}
 		if(!(usb_ctl_val & no_device))
-100006dc:	d0a6cb8b 	ldhu	r2,-25810(gp)
-100006e0:	e0fffb0b 	ldhu	r3,-20(fp)
-100006e4:	1884703a 	and	r2,r3,r2
-100006e8:	10bfffcc 	andi	r2,r2,65535
-100006ec:	1000261e 	bne	r2,zero,10000788 <main+0x3e4>
+10000704:	d0a6cb8b 	ldhu	r2,-25810(gp)
+10000708:	e0fffb0b 	ldhu	r3,-20(fp)
+1000070c:	1884703a 	and	r2,r3,r2
+10000710:	10bfffcc 	andi	r2,r2,65535
+10000714:	1000261e 	bne	r2,zero,100007b0 <main+0x3e4>
 		{
 			printf("\n[INFO]: no device is present in SIE1!\n");
-100006f0:	01040074 	movhi	r4,4097
-100006f4:	2106a904 	addi	r4,r4,6820
-100006f8:	000241c0 	call	1000241c <puts>
+10000718:	01040074 	movhi	r4,4097
+1000071c:	2106a904 	addi	r4,r4,6820
+10000720:	000241c0 	call	1000241c <puts>
 			printf("[INFO]: please insert a USB keyboard in SIE1!\n");
-100006fc:	01040074 	movhi	r4,4097
-10000700:	2106b304 	addi	r4,r4,6860
-10000704:	000241c0 	call	1000241c <puts>
+10000724:	01040074 	movhi	r4,4097
+10000728:	2106b304 	addi	r4,r4,6860
+1000072c:	000241c0 	call	1000241c <puts>
 			while (!(usb_ctl_val & no_device))
-10000708:	00000d06 	br	10000740 <main+0x39c>
+10000730:	00000d06 	br	10000768 <main+0x39c>
 			{
 				usb_ctl_val = UsbRead(ctl_reg);
-1000070c:	d0a6cb0b 	ldhu	r2,-25812(gp)
-10000710:	10bfffcc 	andi	r2,r2,65535
-10000714:	1009883a 	mov	r4,r2
-10000718:	00011c00 	call	100011c0 <UsbRead>
-1000071c:	e0bffb0d 	sth	r2,-20(fp)
+10000734:	d0a6cb0b 	ldhu	r2,-25812(gp)
+10000738:	10bfffcc 	andi	r2,r2,65535
+1000073c:	1009883a 	mov	r4,r2
+10000740:	00011d40 	call	100011d4 <UsbRead>
+10000744:	e0bffb0d 	sth	r2,-20(fp)
 				if(usb_ctl_val & no_device)
-10000720:	d0a6cb8b 	ldhu	r2,-25810(gp)
-10000724:	e0fffb0b 	ldhu	r3,-20(fp)
-10000728:	1884703a 	and	r2,r3,r2
-1000072c:	10bfffcc 	andi	r2,r2,65535
-10000730:	10000126 	beq	r2,zero,10000738 <main+0x394>
+10000748:	d0a6cb8b 	ldhu	r2,-25810(gp)
+1000074c:	e0fffb0b 	ldhu	r3,-20(fp)
+10000750:	1884703a 	and	r2,r3,r2
+10000754:	10bfffcc 	andi	r2,r2,65535
+10000758:	10000126 	beq	r2,zero,10000760 <main+0x394>
 					goto USB_HOT_PLUG;
-10000734:	003f2606 	br	100003d0 <__alt_data_end+0xf80003d0>
+1000075c:	003f2606 	br	100003f8 <__alt_data_end+0xf80003f8>
 
 				usleep(2000);
-10000738:	0101f404 	movi	r4,2000
-1000073c:	000fa880 	call	1000fa88 <usleep>
+10000760:	0101f404 	movi	r4,2000
+10000764:	000fa880 	call	1000fa88 <usleep>
 		}
 		if(!(usb_ctl_val & no_device))
 		{
 			printf("\n[INFO]: no device is present in SIE1!\n");
 			printf("[INFO]: please insert a USB keyboard in SIE1!\n");
 			while (!(usb_ctl_val & no_device))
-10000740:	d0a6cb8b 	ldhu	r2,-25810(gp)
-10000744:	e0fffb0b 	ldhu	r3,-20(fp)
-10000748:	1884703a 	and	r2,r3,r2
-1000074c:	10bfffcc 	andi	r2,r2,65535
-10000750:	103fee26 	beq	r2,zero,1000070c <__alt_data_end+0xf800070c>
-10000754:	00000c06 	br	10000788 <main+0x3e4>
+10000768:	d0a6cb8b 	ldhu	r2,-25810(gp)
+1000076c:	e0fffb0b 	ldhu	r3,-20(fp)
+10000770:	1884703a 	and	r2,r3,r2
+10000774:	10bfffcc 	andi	r2,r2,65535
+10000778:	103fee26 	beq	r2,zero,10000734 <__alt_data_end+0xf8000734>
+1000077c:	00000c06 	br	100007b0 <main+0x3e4>
 		}
 	}
 	else
 	{
 		/* check for low speed or full speed by reading D+ and D- lines */
 		if (usb_ctl_val & fs_device)
-10000758:	e0fffb0b 	ldhu	r3,-20(fp)
-1000075c:	e0bffc0b 	ldhu	r2,-16(fp)
-10000760:	1884703a 	and	r2,r3,r2
-10000764:	10bfffcc 	andi	r2,r2,65535
-10000768:	10000426 	beq	r2,zero,1000077c <main+0x3d8>
+10000780:	e0fffb0b 	ldhu	r3,-20(fp)
+10000784:	e0bffc0b 	ldhu	r2,-16(fp)
+10000788:	1884703a 	and	r2,r3,r2
+1000078c:	10bfffcc 	andi	r2,r2,65535
+10000790:	10000426 	beq	r2,zero,100007a4 <main+0x3d8>
 		{
 			printf("[INFO]: full speed device\n");
-1000076c:	01040074 	movhi	r4,4097
-10000770:	2106bf04 	addi	r4,r4,6908
-10000774:	000241c0 	call	1000241c <puts>
-10000778:	00000306 	br	10000788 <main+0x3e4>
+10000794:	01040074 	movhi	r4,4097
+10000798:	2106bf04 	addi	r4,r4,6908
+1000079c:	000241c0 	call	1000241c <puts>
+100007a0:	00000306 	br	100007b0 <main+0x3e4>
 		}
 		else
 		{
 			printf("[INFO]: low speed device\n");
-1000077c:	01040074 	movhi	r4,4097
-10000780:	2106c604 	addi	r4,r4,6936
-10000784:	000241c0 	call	1000241c <puts>
+100007a4:	01040074 	movhi	r4,4097
+100007a8:	2106c604 	addi	r4,r4,6936
+100007ac:	000241c0 	call	1000241c <puts>
 
 
 
 	// STEP 3 begin
 	//------------------------------------------------------set address -----------------------------------------------------------------
 	UsbSetAddress();
-10000788:	00012cc0 	call	100012cc <UsbSetAddress>
+100007b0:	00012cc0 	call	100012cc <UsbSetAddress>
 
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-1000078c:	00000306 	br	1000079c <main+0x3f8>
+100007b4:	00000306 	br	100007c4 <main+0x3f8>
 	{
 		UsbSetAddress();
-10000790:	00012cc0 	call	100012cc <UsbSetAddress>
+100007b8:	00012cc0 	call	100012cc <UsbSetAddress>
 		usleep(10*1000);
-10000794:	0109c404 	movi	r4,10000
-10000798:	000fa880 	call	1000fa88 <usleep>
+100007bc:	0109c404 	movi	r4,10000
+100007c0:	000fa880 	call	1000fa88 <usleep>
 
 	// STEP 3 begin
 	//------------------------------------------------------set address -----------------------------------------------------------------
 	UsbSetAddress();
 
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-1000079c:	010000c4 	movi	r4,3
-100007a0:	00003500 	call	10000350 <IO_read>
-100007a4:	10bfffcc 	andi	r2,r2,65535
-100007a8:	1080040c 	andi	r2,r2,16
-100007ac:	103ff826 	beq	r2,zero,10000790 <__alt_data_end+0xf8000790>
+100007c4:	010000c4 	movi	r4,3
+100007c8:	00003640 	call	10000364 <IO_read>
+100007cc:	10bfffcc 	andi	r2,r2,65535
+100007d0:	1080040c 	andi	r2,r2,16
+100007d4:	103ff826 	beq	r2,zero,100007b8 <__alt_data_end+0xf80007b8>
 	{
 		UsbSetAddress();
 		usleep(10*1000);
 	}
 
 	UsbWaitTDListDone();
-100007b0:	000216c0 	call	1000216c <UsbWaitTDListDone>
+100007d8:	000216c0 	call	1000216c <UsbWaitTDListDone>
 
 	IO_write(HPI_ADDR,0x0506); // i
-100007b4:	01414184 	movi	r5,1286
-100007b8:	01000084 	movi	r4,2
-100007bc:	00002f40 	call	100002f4 <IO_write>
-	printf("[ENUM PROCESS]:step 3 TD Status Byte is %x\n",IO_read(HPI_DATA));
-100007c0:	0009883a 	mov	r4,zero
-100007c4:	00003500 	call	10000350 <IO_read>
-100007c8:	10bfffcc 	andi	r2,r2,65535
-100007cc:	100b883a 	mov	r5,r2
-100007d0:	01040074 	movhi	r4,4097
-100007d4:	2106cd04 	addi	r4,r4,6964
-100007d8:	00023200 	call	10002320 <printf>
-
-	IO_write(HPI_ADDR,0x0508); // n
-100007dc:	01414204 	movi	r5,1288
+100007dc:	01414184 	movi	r5,1286
 100007e0:	01000084 	movi	r4,2
 100007e4:	00002f40 	call	100002f4 <IO_write>
-	usb_ctl_val = IO_read(HPI_DATA);
+	printf("[ENUM PROCESS]:step 3 TD Status Byte is %x\n",IO_read(HPI_DATA));
 100007e8:	0009883a 	mov	r4,zero
-100007ec:	00003500 	call	10000350 <IO_read>
-100007f0:	e0bffb0d 	sth	r2,-20(fp)
+100007ec:	00003640 	call	10000364 <IO_read>
+100007f0:	10bfffcc 	andi	r2,r2,65535
+100007f4:	100b883a 	mov	r5,r2
+100007f8:	01040074 	movhi	r4,4097
+100007fc:	2106cd04 	addi	r4,r4,6964
+10000800:	00023200 	call	10002320 <printf>
+
+	IO_write(HPI_ADDR,0x0508); // n
+10000804:	01414204 	movi	r5,1288
+10000808:	01000084 	movi	r4,2
+1000080c:	00002f40 	call	100002f4 <IO_write>
+	usb_ctl_val = IO_read(HPI_DATA);
+10000810:	0009883a 	mov	r4,zero
+10000814:	00003640 	call	10000364 <IO_read>
+10000818:	e0bffb0d 	sth	r2,-20(fp)
 	printf("[ENUM PROCESS]:step 3 TD Control Byte is %x\n",usb_ctl_val);
-100007f4:	e0bffb0b 	ldhu	r2,-20(fp)
-100007f8:	100b883a 	mov	r5,r2
-100007fc:	01040074 	movhi	r4,4097
-10000800:	2106d804 	addi	r4,r4,7008
-10000804:	00023200 	call	10002320 <printf>
+1000081c:	e0bffb0b 	ldhu	r2,-20(fp)
+10000820:	100b883a 	mov	r5,r2
+10000824:	01040074 	movhi	r4,4097
+10000828:	2106d804 	addi	r4,r4,7008
+1000082c:	00023200 	call	10002320 <printf>
 	while (usb_ctl_val != 0x03) // retries occurred
-10000808:	e0bffb0b 	ldhu	r2,-20(fp)
-1000080c:	108000e0 	cmpeqi	r2,r2,3
-10000810:	1000031e 	bne	r2,zero,10000820 <main+0x47c>
+10000830:	e0bffb0b 	ldhu	r2,-20(fp)
+10000834:	108000e0 	cmpeqi	r2,r2,3
+10000838:	1000031e 	bne	r2,zero,10000848 <main+0x47c>
 	{
 		usb_ctl_val = UsbGetRetryCnt();
-10000814:	00021f00 	call	100021f0 <UsbGetRetryCnt>
-10000818:	e0bffb0d 	sth	r2,-20(fp)
+1000083c:	00021f00 	call	100021f0 <UsbGetRetryCnt>
+10000840:	e0bffb0d 	sth	r2,-20(fp)
 
 		goto USB_HOT_PLUG;
-1000081c:	003eec06 	br	100003d0 <__alt_data_end+0xf80003d0>
+10000844:	003eec06 	br	100003f8 <__alt_data_end+0xf80003f8>
 	}
 
 	printf("------------[ENUM PROCESS]:set address done!---------------\n");
-10000820:	01040074 	movhi	r4,4097
-10000824:	2106e404 	addi	r4,r4,7056
-10000828:	000241c0 	call	1000241c <puts>
+10000848:	01040074 	movhi	r4,4097
+1000084c:	2106e404 	addi	r4,r4,7056
+10000850:	000241c0 	call	1000241c <puts>
 
 	// STEP 4 begin
 	//-------------------------------get device descriptor-1 -----------------------------------//
 	// TASK: Call the appropriate function for this step.
 	UsbGetDeviceDesc1(); 	// Get Device Descriptor -1
-1000082c:	00013cc0 	call	100013cc <UsbGetDeviceDesc1>
+10000854:	00013cc0 	call	100013cc <UsbGetDeviceDesc1>
 
 	//usleep(10*1000);
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000830:	00000306 	br	10000840 <main+0x49c>
+10000858:	00000306 	br	10000868 <main+0x49c>
 	{
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbGetDeviceDesc1();
-10000834:	00013cc0 	call	100013cc <UsbGetDeviceDesc1>
+1000085c:	00013cc0 	call	100013cc <UsbGetDeviceDesc1>
 		usleep(10*1000);
-10000838:	0109c404 	movi	r4,10000
-1000083c:	000fa880 	call	1000fa88 <usleep>
+10000860:	0109c404 	movi	r4,10000
+10000864:	000fa880 	call	1000fa88 <usleep>
 	//-------------------------------get device descriptor-1 -----------------------------------//
 	// TASK: Call the appropriate function for this step.
 	UsbGetDeviceDesc1(); 	// Get Device Descriptor -1
 
 	//usleep(10*1000);
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000840:	010000c4 	movi	r4,3
-10000844:	00003500 	call	10000350 <IO_read>
-10000848:	10bfffcc 	andi	r2,r2,65535
-1000084c:	1080040c 	andi	r2,r2,16
-10000850:	103ff826 	beq	r2,zero,10000834 <__alt_data_end+0xf8000834>
+10000868:	010000c4 	movi	r4,3
+1000086c:	00003640 	call	10000364 <IO_read>
+10000870:	10bfffcc 	andi	r2,r2,65535
+10000874:	1080040c 	andi	r2,r2,16
+10000878:	103ff826 	beq	r2,zero,1000085c <__alt_data_end+0xf800085c>
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbGetDeviceDesc1();
 		usleep(10*1000);
 	}
 
 	UsbWaitTDListDone();
-10000854:	000216c0 	call	1000216c <UsbWaitTDListDone>
+1000087c:	000216c0 	call	1000216c <UsbWaitTDListDone>
 
 	IO_write(HPI_ADDR,0x0506);
-10000858:	01414184 	movi	r5,1286
-1000085c:	01000084 	movi	r4,2
-10000860:	00002f40 	call	100002f4 <IO_write>
-	printf("[ENUM PROCESS]:step 4 TD Status Byte is %x\n",IO_read(HPI_DATA));
-10000864:	0009883a 	mov	r4,zero
-10000868:	00003500 	call	10000350 <IO_read>
-1000086c:	10bfffcc 	andi	r2,r2,65535
-10000870:	100b883a 	mov	r5,r2
-10000874:	01040074 	movhi	r4,4097
-10000878:	2106f304 	addi	r4,r4,7116
-1000087c:	00023200 	call	10002320 <printf>
-
-	IO_write(HPI_ADDR,0x0508);
-10000880:	01414204 	movi	r5,1288
+10000880:	01414184 	movi	r5,1286
 10000884:	01000084 	movi	r4,2
 10000888:	00002f40 	call	100002f4 <IO_write>
-	usb_ctl_val = IO_read(HPI_DATA);
+	printf("[ENUM PROCESS]:step 4 TD Status Byte is %x\n",IO_read(HPI_DATA));
 1000088c:	0009883a 	mov	r4,zero
-10000890:	00003500 	call	10000350 <IO_read>
-10000894:	e0bffb0d 	sth	r2,-20(fp)
+10000890:	00003640 	call	10000364 <IO_read>
+10000894:	10bfffcc 	andi	r2,r2,65535
+10000898:	100b883a 	mov	r5,r2
+1000089c:	01040074 	movhi	r4,4097
+100008a0:	2106f304 	addi	r4,r4,7116
+100008a4:	00023200 	call	10002320 <printf>
+
+	IO_write(HPI_ADDR,0x0508);
+100008a8:	01414204 	movi	r5,1288
+100008ac:	01000084 	movi	r4,2
+100008b0:	00002f40 	call	100002f4 <IO_write>
+	usb_ctl_val = IO_read(HPI_DATA);
+100008b4:	0009883a 	mov	r4,zero
+100008b8:	00003640 	call	10000364 <IO_read>
+100008bc:	e0bffb0d 	sth	r2,-20(fp)
 	printf("[ENUM PROCESS]:step 4 TD Control Byte is %x\n",usb_ctl_val);
-10000898:	e0bffb0b 	ldhu	r2,-20(fp)
-1000089c:	100b883a 	mov	r5,r2
-100008a0:	01040074 	movhi	r4,4097
-100008a4:	2106fe04 	addi	r4,r4,7160
-100008a8:	00023200 	call	10002320 <printf>
+100008c0:	e0bffb0b 	ldhu	r2,-20(fp)
+100008c4:	100b883a 	mov	r5,r2
+100008c8:	01040074 	movhi	r4,4097
+100008cc:	2106fe04 	addi	r4,r4,7160
+100008d0:	00023200 	call	10002320 <printf>
 	while (usb_ctl_val != 0x03)
-100008ac:	e0bffb0b 	ldhu	r2,-20(fp)
-100008b0:	108000e0 	cmpeqi	r2,r2,3
-100008b4:	1000061e 	bne	r2,zero,100008d0 <main+0x52c>
+100008d4:	e0bffb0b 	ldhu	r2,-20(fp)
+100008d8:	108000e0 	cmpeqi	r2,r2,3
+100008dc:	1000061e 	bne	r2,zero,100008f8 <main+0x52c>
 	{
 		usb_ctl_val = UsbGetRetryCnt();
-100008b8:	00021f00 	call	100021f0 <UsbGetRetryCnt>
-100008bc:	e0bffb0d 	sth	r2,-20(fp)
+100008e0:	00021f00 	call	100021f0 <UsbGetRetryCnt>
+100008e4:	e0bffb0d 	sth	r2,-20(fp)
 
 		// Fatal problem; try again
 		printf ("Encountered Fatal Error, restarting\n");
-100008c0:	01040074 	movhi	r4,4097
-100008c4:	21070a04 	addi	r4,r4,7208
-100008c8:	000241c0 	call	1000241c <puts>
+100008e8:	01040074 	movhi	r4,4097
+100008ec:	21070a04 	addi	r4,r4,7208
+100008f0:	000241c0 	call	1000241c <puts>
 		goto USB_HOT_PLUG;
-100008cc:	003ec006 	br	100003d0 <__alt_data_end+0xf80003d0>
+100008f4:	003ec006 	br	100003f8 <__alt_data_end+0xf80003f8>
 	}
 
 	printf("---------------[ENUM PROCESS]:get device descriptor-1 done!-----------------\n");
-100008d0:	01040074 	movhi	r4,4097
-100008d4:	21071304 	addi	r4,r4,7244
-100008d8:	000241c0 	call	1000241c <puts>
+100008f8:	01040074 	movhi	r4,4097
+100008fc:	21071304 	addi	r4,r4,7244
+10000900:	000241c0 	call	1000241c <puts>
 
 
 	//--------------------------------get device descriptor-2---------------------------------------------//
 	//get device descriptor
 	// TASK: Call the appropriate function for this step.
 	UsbGetDeviceDesc2(); 	// Get Device Descriptor -2
-100008dc:	00015140 	call	10001514 <UsbGetDeviceDesc2>
+10000904:	00015140 	call	10001514 <UsbGetDeviceDesc2>
 
 	//if no message
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-100008e0:	00000306 	br	100008f0 <main+0x54c>
+10000908:	00000306 	br	10000918 <main+0x54c>
 	{
 		//resend the get device descriptor
 		//get device descriptor
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbGetDeviceDesc2();
-100008e4:	00015140 	call	10001514 <UsbGetDeviceDesc2>
+1000090c:	00015140 	call	10001514 <UsbGetDeviceDesc2>
 		usleep(10*1000);
-100008e8:	0109c404 	movi	r4,10000
-100008ec:	000fa880 	call	1000fa88 <usleep>
+10000910:	0109c404 	movi	r4,10000
+10000914:	000fa880 	call	1000fa88 <usleep>
 	//get device descriptor
 	// TASK: Call the appropriate function for this step.
 	UsbGetDeviceDesc2(); 	// Get Device Descriptor -2
 
 	//if no message
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-100008f0:	010000c4 	movi	r4,3
-100008f4:	00003500 	call	10000350 <IO_read>
-100008f8:	10bfffcc 	andi	r2,r2,65535
-100008fc:	1080040c 	andi	r2,r2,16
-10000900:	103ff826 	beq	r2,zero,100008e4 <__alt_data_end+0xf80008e4>
+10000918:	010000c4 	movi	r4,3
+1000091c:	00003640 	call	10000364 <IO_read>
+10000920:	10bfffcc 	andi	r2,r2,65535
+10000924:	1080040c 	andi	r2,r2,16
+10000928:	103ff826 	beq	r2,zero,1000090c <__alt_data_end+0xf800090c>
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbGetDeviceDesc2();
 		usleep(10*1000);
 	}
 
 	UsbWaitTDListDone();
-10000904:	000216c0 	call	1000216c <UsbWaitTDListDone>
+1000092c:	000216c0 	call	1000216c <UsbWaitTDListDone>
 
 	IO_write(HPI_ADDR,0x0506);
-10000908:	01414184 	movi	r5,1286
-1000090c:	01000084 	movi	r4,2
-10000910:	00002f40 	call	100002f4 <IO_write>
-	printf("[ENUM PROCESS]:step 4 TD Status Byte is %x\n",IO_read(HPI_DATA));
-10000914:	0009883a 	mov	r4,zero
-10000918:	00003500 	call	10000350 <IO_read>
-1000091c:	10bfffcc 	andi	r2,r2,65535
-10000920:	100b883a 	mov	r5,r2
-10000924:	01040074 	movhi	r4,4097
-10000928:	2106f304 	addi	r4,r4,7116
-1000092c:	00023200 	call	10002320 <printf>
-
-	IO_write(HPI_ADDR,0x0508);
-10000930:	01414204 	movi	r5,1288
+10000930:	01414184 	movi	r5,1286
 10000934:	01000084 	movi	r4,2
 10000938:	00002f40 	call	100002f4 <IO_write>
-	usb_ctl_val = IO_read(HPI_DATA);
+	printf("[ENUM PROCESS]:step 4 TD Status Byte is %x\n",IO_read(HPI_DATA));
 1000093c:	0009883a 	mov	r4,zero
-10000940:	00003500 	call	10000350 <IO_read>
-10000944:	e0bffb0d 	sth	r2,-20(fp)
+10000940:	00003640 	call	10000364 <IO_read>
+10000944:	10bfffcc 	andi	r2,r2,65535
+10000948:	100b883a 	mov	r5,r2
+1000094c:	01040074 	movhi	r4,4097
+10000950:	2106f304 	addi	r4,r4,7116
+10000954:	00023200 	call	10002320 <printf>
+
+	IO_write(HPI_ADDR,0x0508);
+10000958:	01414204 	movi	r5,1288
+1000095c:	01000084 	movi	r4,2
+10000960:	00002f40 	call	100002f4 <IO_write>
+	usb_ctl_val = IO_read(HPI_DATA);
+10000964:	0009883a 	mov	r4,zero
+10000968:	00003640 	call	10000364 <IO_read>
+1000096c:	e0bffb0d 	sth	r2,-20(fp)
 	printf("[ENUM PROCESS]:step 4 TD Control Byte is %x\n",usb_ctl_val);
-10000948:	e0bffb0b 	ldhu	r2,-20(fp)
-1000094c:	100b883a 	mov	r5,r2
-10000950:	01040074 	movhi	r4,4097
-10000954:	2106fe04 	addi	r4,r4,7160
-10000958:	00023200 	call	10002320 <printf>
+10000970:	e0bffb0b 	ldhu	r2,-20(fp)
+10000974:	100b883a 	mov	r5,r2
+10000978:	01040074 	movhi	r4,4097
+1000097c:	2106fe04 	addi	r4,r4,7160
+10000980:	00023200 	call	10002320 <printf>
 	while (usb_ctl_val != 0x03)
-1000095c:	e0bffb0b 	ldhu	r2,-20(fp)
-10000960:	108000e0 	cmpeqi	r2,r2,3
-10000964:	1000061e 	bne	r2,zero,10000980 <main+0x5dc>
+10000984:	e0bffb0b 	ldhu	r2,-20(fp)
+10000988:	108000e0 	cmpeqi	r2,r2,3
+1000098c:	1000061e 	bne	r2,zero,100009a8 <main+0x5dc>
 	{
 		usb_ctl_val = UsbGetRetryCnt();
-10000968:	00021f00 	call	100021f0 <UsbGetRetryCnt>
-1000096c:	e0bffb0d 	sth	r2,-20(fp)
+10000990:	00021f00 	call	100021f0 <UsbGetRetryCnt>
+10000994:	e0bffb0d 	sth	r2,-20(fp)
 
 		// Fatal problem; try again
 		printf ("Encountered Fatal Error, restarting\n");
-10000970:	01040074 	movhi	r4,4097
-10000974:	21070a04 	addi	r4,r4,7208
-10000978:	000241c0 	call	1000241c <puts>
+10000998:	01040074 	movhi	r4,4097
+1000099c:	21070a04 	addi	r4,r4,7208
+100009a0:	000241c0 	call	1000241c <puts>
 		goto USB_HOT_PLUG;
-1000097c:	003e9406 	br	100003d0 <__alt_data_end+0xf80003d0>
+100009a4:	003e9406 	br	100003f8 <__alt_data_end+0xf80003f8>
 	}
 
 	printf("------------[ENUM PROCESS]:get device descriptor-2 done!--------------\n");
-10000980:	01040074 	movhi	r4,4097
-10000984:	21072704 	addi	r4,r4,7324
-10000988:	000241c0 	call	1000241c <puts>
+100009a8:	01040074 	movhi	r4,4097
+100009ac:	21072704 	addi	r4,r4,7324
+100009b0:	000241c0 	call	1000241c <puts>
 
 
 	// STEP 5 begin
 	//-----------------------------------get configuration descriptor -1 ----------------------------------//
 	// TASK: Call the appropriate function for this step.
 	UsbGetConfigDesc1(); 	// Get Configuration Descriptor -1
-1000098c:	00016ec0 	call	100016ec <UsbGetConfigDesc1>
+100009b4:	00016ec0 	call	100016ec <UsbGetConfigDesc1>
 
 	//if no message
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000990:	00000306 	br	100009a0 <main+0x5fc>
+100009b8:	00000306 	br	100009c8 <main+0x5fc>
 	{
 		//resend the get device descriptor
 		//get device descriptor
 
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbGetConfigDesc1();
-10000994:	00016ec0 	call	100016ec <UsbGetConfigDesc1>
+100009bc:	00016ec0 	call	100016ec <UsbGetConfigDesc1>
 		usleep(10*1000);
-10000998:	0109c404 	movi	r4,10000
-1000099c:	000fa880 	call	1000fa88 <usleep>
+100009c0:	0109c404 	movi	r4,10000
+100009c4:	000fa880 	call	1000fa88 <usleep>
 	//-----------------------------------get configuration descriptor -1 ----------------------------------//
 	// TASK: Call the appropriate function for this step.
 	UsbGetConfigDesc1(); 	// Get Configuration Descriptor -1
 
 	//if no message
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-100009a0:	010000c4 	movi	r4,3
-100009a4:	00003500 	call	10000350 <IO_read>
-100009a8:	10bfffcc 	andi	r2,r2,65535
-100009ac:	1080040c 	andi	r2,r2,16
-100009b0:	103ff826 	beq	r2,zero,10000994 <__alt_data_end+0xf8000994>
+100009c8:	010000c4 	movi	r4,3
+100009cc:	00003640 	call	10000364 <IO_read>
+100009d0:	10bfffcc 	andi	r2,r2,65535
+100009d4:	1080040c 	andi	r2,r2,16
+100009d8:	103ff826 	beq	r2,zero,100009bc <__alt_data_end+0xf80009bc>
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbGetConfigDesc1();
 		usleep(10*1000);
 	}
 
 	UsbWaitTDListDone();
-100009b4:	000216c0 	call	1000216c <UsbWaitTDListDone>
+100009dc:	000216c0 	call	1000216c <UsbWaitTDListDone>
 
 	IO_write(HPI_ADDR,0x0506);
-100009b8:	01414184 	movi	r5,1286
-100009bc:	01000084 	movi	r4,2
-100009c0:	00002f40 	call	100002f4 <IO_write>
-	printf("[ENUM PROCESS]:step 5 TD Status Byte is %x\n",IO_read(HPI_DATA));
-100009c4:	0009883a 	mov	r4,zero
-100009c8:	00003500 	call	10000350 <IO_read>
-100009cc:	10bfffcc 	andi	r2,r2,65535
-100009d0:	100b883a 	mov	r5,r2
-100009d4:	01040074 	movhi	r4,4097
-100009d8:	21073904 	addi	r4,r4,7396
-100009dc:	00023200 	call	10002320 <printf>
-
-	IO_write(HPI_ADDR,0x0508);
-100009e0:	01414204 	movi	r5,1288
+100009e0:	01414184 	movi	r5,1286
 100009e4:	01000084 	movi	r4,2
 100009e8:	00002f40 	call	100002f4 <IO_write>
-	usb_ctl_val = IO_read(HPI_DATA);
+	printf("[ENUM PROCESS]:step 5 TD Status Byte is %x\n",IO_read(HPI_DATA));
 100009ec:	0009883a 	mov	r4,zero
-100009f0:	00003500 	call	10000350 <IO_read>
-100009f4:	e0bffb0d 	sth	r2,-20(fp)
+100009f0:	00003640 	call	10000364 <IO_read>
+100009f4:	10bfffcc 	andi	r2,r2,65535
+100009f8:	100b883a 	mov	r5,r2
+100009fc:	01040074 	movhi	r4,4097
+10000a00:	21073904 	addi	r4,r4,7396
+10000a04:	00023200 	call	10002320 <printf>
+
+	IO_write(HPI_ADDR,0x0508);
+10000a08:	01414204 	movi	r5,1288
+10000a0c:	01000084 	movi	r4,2
+10000a10:	00002f40 	call	100002f4 <IO_write>
+	usb_ctl_val = IO_read(HPI_DATA);
+10000a14:	0009883a 	mov	r4,zero
+10000a18:	00003640 	call	10000364 <IO_read>
+10000a1c:	e0bffb0d 	sth	r2,-20(fp)
 	printf("[ENUM PROCESS]:step 5 TD Control Byte is %x\n",usb_ctl_val);
-100009f8:	e0bffb0b 	ldhu	r2,-20(fp)
-100009fc:	100b883a 	mov	r5,r2
-10000a00:	01040074 	movhi	r4,4097
-10000a04:	21074404 	addi	r4,r4,7440
-10000a08:	00023200 	call	10002320 <printf>
+10000a20:	e0bffb0b 	ldhu	r2,-20(fp)
+10000a24:	100b883a 	mov	r5,r2
+10000a28:	01040074 	movhi	r4,4097
+10000a2c:	21074404 	addi	r4,r4,7440
+10000a30:	00023200 	call	10002320 <printf>
 	while (usb_ctl_val != 0x03)
-10000a0c:	e0bffb0b 	ldhu	r2,-20(fp)
-10000a10:	108000e0 	cmpeqi	r2,r2,3
-10000a14:	1000061e 	bne	r2,zero,10000a30 <main+0x68c>
+10000a34:	e0bffb0b 	ldhu	r2,-20(fp)
+10000a38:	108000e0 	cmpeqi	r2,r2,3
+10000a3c:	1000061e 	bne	r2,zero,10000a58 <main+0x68c>
 	{
 		usb_ctl_val = UsbGetRetryCnt();
-10000a18:	00021f00 	call	100021f0 <UsbGetRetryCnt>
-10000a1c:	e0bffb0d 	sth	r2,-20(fp)
+10000a40:	00021f00 	call	100021f0 <UsbGetRetryCnt>
+10000a44:	e0bffb0d 	sth	r2,-20(fp)
 
 		// Fatal problem; try again
 		printf ("Encountered Fatal Error, restarting\n");
-10000a20:	01040074 	movhi	r4,4097
-10000a24:	21070a04 	addi	r4,r4,7208
-10000a28:	000241c0 	call	1000241c <puts>
+10000a48:	01040074 	movhi	r4,4097
+10000a4c:	21070a04 	addi	r4,r4,7208
+10000a50:	000241c0 	call	1000241c <puts>
 		goto USB_HOT_PLUG;
-10000a2c:	003e6806 	br	100003d0 <__alt_data_end+0xf80003d0>
+10000a54:	003e6806 	br	100003f8 <__alt_data_end+0xf80003f8>
 	}
 	printf("------------[ENUM PROCESS]:get configuration descriptor-1 pass------------\n");
-10000a30:	01040074 	movhi	r4,4097
-10000a34:	21075004 	addi	r4,r4,7488
-10000a38:	000241c0 	call	1000241c <puts>
+10000a58:	01040074 	movhi	r4,4097
+10000a5c:	21075004 	addi	r4,r4,7488
+10000a60:	000241c0 	call	1000241c <puts>
 
 	// STEP 6 begin
 	//-----------------------------------get configuration descriptor-2------------------------------------//
 	//get device descriptor
 	// TASK: Call the appropriate function for this step.
 	UsbGetConfigDesc2(); 	// Get Configuration Descriptor -2
-10000a3c:	000187c0 	call	1000187c <UsbGetConfigDesc2>
+10000a64:	000187c0 	call	1000187c <UsbGetConfigDesc2>
 
 	usleep(100*1000);
-10000a40:	010000b4 	movhi	r4,2
-10000a44:	2121a804 	addi	r4,r4,-31072
-10000a48:	000fa880 	call	1000fa88 <usleep>
+10000a68:	010000b4 	movhi	r4,2
+10000a6c:	2121a804 	addi	r4,r4,-31072
+10000a70:	000fa880 	call	1000fa88 <usleep>
 	//if no message
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000a4c:	00000306 	br	10000a5c <main+0x6b8>
+10000a74:	00000306 	br	10000a84 <main+0x6b8>
 	{
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbGetConfigDesc2();
-10000a50:	000187c0 	call	1000187c <UsbGetConfigDesc2>
+10000a78:	000187c0 	call	1000187c <UsbGetConfigDesc2>
 		usleep(10*1000);
-10000a54:	0109c404 	movi	r4,10000
-10000a58:	000fa880 	call	1000fa88 <usleep>
+10000a7c:	0109c404 	movi	r4,10000
+10000a80:	000fa880 	call	1000fa88 <usleep>
 	// TASK: Call the appropriate function for this step.
 	UsbGetConfigDesc2(); 	// Get Configuration Descriptor -2
 
 	usleep(100*1000);
 	//if no message
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000a5c:	010000c4 	movi	r4,3
-10000a60:	00003500 	call	10000350 <IO_read>
-10000a64:	10bfffcc 	andi	r2,r2,65535
-10000a68:	1080040c 	andi	r2,r2,16
-10000a6c:	103ff826 	beq	r2,zero,10000a50 <__alt_data_end+0xf8000a50>
+10000a84:	010000c4 	movi	r4,3
+10000a88:	00003640 	call	10000364 <IO_read>
+10000a8c:	10bfffcc 	andi	r2,r2,65535
+10000a90:	1080040c 	andi	r2,r2,16
+10000a94:	103ff826 	beq	r2,zero,10000a78 <__alt_data_end+0xf8000a78>
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbGetConfigDesc2();
 		usleep(10*1000);
 	}
 
 	UsbWaitTDListDone();
-10000a70:	000216c0 	call	1000216c <UsbWaitTDListDone>
+10000a98:	000216c0 	call	1000216c <UsbWaitTDListDone>
 
 	IO_write(HPI_ADDR,0x0506);
-10000a74:	01414184 	movi	r5,1286
-10000a78:	01000084 	movi	r4,2
-10000a7c:	00002f40 	call	100002f4 <IO_write>
-	printf("[ENUM PROCESS]:step 6 TD Status Byte is %x\n",IO_read(HPI_DATA));
-10000a80:	0009883a 	mov	r4,zero
-10000a84:	00003500 	call	10000350 <IO_read>
-10000a88:	10bfffcc 	andi	r2,r2,65535
-10000a8c:	100b883a 	mov	r5,r2
-10000a90:	01040074 	movhi	r4,4097
-10000a94:	21076304 	addi	r4,r4,7564
-10000a98:	00023200 	call	10002320 <printf>
-
-	IO_write(HPI_ADDR,0x0508);
-10000a9c:	01414204 	movi	r5,1288
+10000a9c:	01414184 	movi	r5,1286
 10000aa0:	01000084 	movi	r4,2
 10000aa4:	00002f40 	call	100002f4 <IO_write>
-	usb_ctl_val = IO_read(HPI_DATA);
+	printf("[ENUM PROCESS]:step 6 TD Status Byte is %x\n",IO_read(HPI_DATA));
 10000aa8:	0009883a 	mov	r4,zero
-10000aac:	00003500 	call	10000350 <IO_read>
-10000ab0:	e0bffb0d 	sth	r2,-20(fp)
+10000aac:	00003640 	call	10000364 <IO_read>
+10000ab0:	10bfffcc 	andi	r2,r2,65535
+10000ab4:	100b883a 	mov	r5,r2
+10000ab8:	01040074 	movhi	r4,4097
+10000abc:	21076304 	addi	r4,r4,7564
+10000ac0:	00023200 	call	10002320 <printf>
+
+	IO_write(HPI_ADDR,0x0508);
+10000ac4:	01414204 	movi	r5,1288
+10000ac8:	01000084 	movi	r4,2
+10000acc:	00002f40 	call	100002f4 <IO_write>
+	usb_ctl_val = IO_read(HPI_DATA);
+10000ad0:	0009883a 	mov	r4,zero
+10000ad4:	00003640 	call	10000364 <IO_read>
+10000ad8:	e0bffb0d 	sth	r2,-20(fp)
 	printf("[ENUM PROCESS]:step 6 TD Control Byte is %x\n",usb_ctl_val);
-10000ab4:	e0bffb0b 	ldhu	r2,-20(fp)
-10000ab8:	100b883a 	mov	r5,r2
-10000abc:	01040074 	movhi	r4,4097
-10000ac0:	21076e04 	addi	r4,r4,7608
-10000ac4:	00023200 	call	10002320 <printf>
+10000adc:	e0bffb0b 	ldhu	r2,-20(fp)
+10000ae0:	100b883a 	mov	r5,r2
+10000ae4:	01040074 	movhi	r4,4097
+10000ae8:	21076e04 	addi	r4,r4,7608
+10000aec:	00023200 	call	10002320 <printf>
 	while (usb_ctl_val != 0x03)
-10000ac8:	e0bffb0b 	ldhu	r2,-20(fp)
-10000acc:	108000e0 	cmpeqi	r2,r2,3
-10000ad0:	1000061e 	bne	r2,zero,10000aec <main+0x748>
+10000af0:	e0bffb0b 	ldhu	r2,-20(fp)
+10000af4:	108000e0 	cmpeqi	r2,r2,3
+10000af8:	1000061e 	bne	r2,zero,10000b14 <main+0x748>
 	{
 		usb_ctl_val = UsbGetRetryCnt();
-10000ad4:	00021f00 	call	100021f0 <UsbGetRetryCnt>
-10000ad8:	e0bffb0d 	sth	r2,-20(fp)
+10000afc:	00021f00 	call	100021f0 <UsbGetRetryCnt>
+10000b00:	e0bffb0d 	sth	r2,-20(fp)
 
 		// Fatal problem; try again
 		printf ("Encountered Fatal Error, restarting\n");
-10000adc:	01040074 	movhi	r4,4097
-10000ae0:	21070a04 	addi	r4,r4,7208
-10000ae4:	000241c0 	call	1000241c <puts>
+10000b04:	01040074 	movhi	r4,4097
+10000b08:	21070a04 	addi	r4,r4,7208
+10000b0c:	000241c0 	call	1000241c <puts>
 		goto USB_HOT_PLUG;
-10000ae8:	003e3906 	br	100003d0 <__alt_data_end+0xf80003d0>
+10000b10:	003e3906 	br	100003f8 <__alt_data_end+0xf80003f8>
 	}
 
 
 	printf("-----------[ENUM PROCESS]:get configuration descriptor-2 done!------------\n");
-10000aec:	01040074 	movhi	r4,4097
-10000af0:	21077a04 	addi	r4,r4,7656
-10000af4:	000241c0 	call	1000241c <puts>
+10000b14:	01040074 	movhi	r4,4097
+10000b18:	21077a04 	addi	r4,r4,7656
+10000b1c:	000241c0 	call	1000241c <puts>
 
 
 	// ---------------------------------get device info---------------------------------------------//
 
 	// TASK: Write the address to read from the memory for byte 7 of the interface descriptor to HPI_ADDR.
 	IO_write(HPI_ADDR,0x056c);
-10000af8:	01415b04 	movi	r5,1388
-10000afc:	01000084 	movi	r4,2
-10000b00:	00002f40 	call	100002f4 <IO_write>
+10000b20:	01415b04 	movi	r5,1388
+10000b24:	01000084 	movi	r4,2
+10000b28:	00002f40 	call	100002f4 <IO_write>
 	code = IO_read(HPI_DATA);
-10000b04:	0009883a 	mov	r4,zero
-10000b08:	00003500 	call	10000350 <IO_read>
-10000b0c:	e0bffe8d 	sth	r2,-6(fp)
+10000b2c:	0009883a 	mov	r4,zero
+10000b30:	00003640 	call	10000364 <IO_read>
+10000b34:	e0bffe8d 	sth	r2,-6(fp)
 	code = code & 0x003;
-10000b10:	e0bffe8b 	ldhu	r2,-6(fp)
-10000b14:	108000cc 	andi	r2,r2,3
-10000b18:	e0bffe8d 	sth	r2,-6(fp)
+10000b38:	e0bffe8b 	ldhu	r2,-6(fp)
+10000b3c:	108000cc 	andi	r2,r2,3
+10000b40:	e0bffe8d 	sth	r2,-6(fp)
 	printf("\ncode = %x\n", code);
-10000b1c:	e0bffe8b 	ldhu	r2,-6(fp)
-10000b20:	100b883a 	mov	r5,r2
-10000b24:	01040074 	movhi	r4,4097
-10000b28:	21078d04 	addi	r4,r4,7732
-10000b2c:	00023200 	call	10002320 <printf>
+10000b44:	e0bffe8b 	ldhu	r2,-6(fp)
+10000b48:	100b883a 	mov	r5,r2
+10000b4c:	01040074 	movhi	r4,4097
+10000b50:	21078d04 	addi	r4,r4,7732
+10000b54:	00023200 	call	10002320 <printf>
 
 	if (code == 0x01)
-10000b30:	e0bffe8b 	ldhu	r2,-6(fp)
-10000b34:	10800058 	cmpnei	r2,r2,1
-10000b38:	1000041e 	bne	r2,zero,10000b4c <main+0x7a8>
+10000b58:	e0bffe8b 	ldhu	r2,-6(fp)
+10000b5c:	10800058 	cmpnei	r2,r2,1
+10000b60:	1000041e 	bne	r2,zero,10000b74 <main+0x7a8>
 	{
 		printf("\n[INFO]:check TD rec data7 \n[INFO]:Keyboard Detected!!!\n\n");
-10000b3c:	01040074 	movhi	r4,4097
-10000b40:	21079004 	addi	r4,r4,7744
-10000b44:	000241c0 	call	1000241c <puts>
-10000b48:	00000306 	br	10000b58 <main+0x7b4>
+10000b64:	01040074 	movhi	r4,4097
+10000b68:	21079004 	addi	r4,r4,7744
+10000b6c:	000241c0 	call	1000241c <puts>
+10000b70:	00000306 	br	10000b80 <main+0x7b4>
 	}
 	else
 	{
 		printf("\n[INFO]:Keyboard Not Detected!!! \n\n");
-10000b4c:	01040074 	movhi	r4,4097
-10000b50:	21079f04 	addi	r4,r4,7804
-10000b54:	000241c0 	call	1000241c <puts>
+10000b74:	01040074 	movhi	r4,4097
+10000b78:	21079f04 	addi	r4,r4,7804
+10000b7c:	000241c0 	call	1000241c <puts>
 	}
 
 	// TASK: Write the address to read from the memory for the endpoint descriptor to HPI_ADDR.
 
 	IO_write(HPI_ADDR,0x0576);
-10000b58:	01415d84 	movi	r5,1398
-10000b5c:	01000084 	movi	r4,2
-10000b60:	00002f40 	call	100002f4 <IO_write>
+10000b80:	01415d84 	movi	r5,1398
+10000b84:	01000084 	movi	r4,2
+10000b88:	00002f40 	call	100002f4 <IO_write>
 	IO_write(HPI_DATA,0x073F);
-10000b64:	0141cfc4 	movi	r5,1855
-10000b68:	0009883a 	mov	r4,zero
-10000b6c:	00002f40 	call	100002f4 <IO_write>
+10000b8c:	0141cfc4 	movi	r5,1855
+10000b90:	0009883a 	mov	r4,zero
+10000b94:	00002f40 	call	100002f4 <IO_write>
 	IO_write(HPI_DATA,0x8105);
-10000b70:	01604154 	movui	r5,33029
-10000b74:	0009883a 	mov	r4,zero
-10000b78:	00002f40 	call	100002f4 <IO_write>
+10000b98:	01604154 	movui	r5,33029
+10000b9c:	0009883a 	mov	r4,zero
+10000ba0:	00002f40 	call	100002f4 <IO_write>
 	IO_write(HPI_DATA,0x0003);
-10000b7c:	014000c4 	movi	r5,3
-10000b80:	0009883a 	mov	r4,zero
-10000b84:	00002f40 	call	100002f4 <IO_write>
+10000ba4:	014000c4 	movi	r5,3
+10000ba8:	0009883a 	mov	r4,zero
+10000bac:	00002f40 	call	100002f4 <IO_write>
 	IO_write(HPI_DATA,0x0008);
-10000b88:	01400204 	movi	r5,8
-10000b8c:	0009883a 	mov	r4,zero
-10000b90:	00002f40 	call	100002f4 <IO_write>
+10000bb0:	01400204 	movi	r5,8
+10000bb4:	0009883a 	mov	r4,zero
+10000bb8:	00002f40 	call	100002f4 <IO_write>
 	IO_write(HPI_DATA,0xAC0A);
-10000b94:	016b0294 	movui	r5,44042
-10000b98:	0009883a 	mov	r4,zero
-10000b9c:	00002f40 	call	100002f4 <IO_write>
+10000bbc:	016b0294 	movui	r5,44042
+10000bc0:	0009883a 	mov	r4,zero
+10000bc4:	00002f40 	call	100002f4 <IO_write>
 	UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0576); //HUSB_SIE1_pCurrentTDPtr
-10000ba0:	01415d84 	movi	r5,1398
-10000ba4:	01006c04 	movi	r4,432
-10000ba8:	00011540 	call	10001154 <UsbWrite>
+10000bc8:	01415d84 	movi	r5,1398
+10000bcc:	01006c04 	movi	r4,432
+10000bd0:	000117c0 	call	1000117c <UsbWrite>
 
 	//data_size = (IO_read(HPI_DATA)>>8)&0x0ff;
 	//data_size = 0x08;//(IO_read(HPI_DATA))&0x0ff;
 	//UsbPrintMem();
 	IO_write(HPI_ADDR,0x057c);
-10000bac:	01415f04 	movi	r5,1404
-10000bb0:	01000084 	movi	r4,2
-10000bb4:	00002f40 	call	100002f4 <IO_write>
+10000bd4:	01415f04 	movi	r5,1404
+10000bd8:	01000084 	movi	r4,2
+10000bdc:	00002f40 	call	100002f4 <IO_write>
 	data_size = (IO_read(HPI_DATA))&0x0ff;
-10000bb8:	0009883a 	mov	r4,zero
-10000bbc:	00003500 	call	10000350 <IO_read>
-10000bc0:	e0bfff05 	stb	r2,-4(fp)
+10000be0:	0009883a 	mov	r4,zero
+10000be4:	00003640 	call	10000364 <IO_read>
+10000be8:	e0bfff05 	stb	r2,-4(fp)
 	printf("[ENUM PROCESS]:data packet size is %d\n",data_size);
-10000bc4:	e0bfff03 	ldbu	r2,-4(fp)
-10000bc8:	100b883a 	mov	r5,r2
-10000bcc:	01040074 	movhi	r4,4097
-10000bd0:	2107a804 	addi	r4,r4,7840
-10000bd4:	00023200 	call	10002320 <printf>
+10000bec:	e0bfff03 	ldbu	r2,-4(fp)
+10000bf0:	100b883a 	mov	r5,r2
+10000bf4:	01040074 	movhi	r4,4097
+10000bf8:	2107a804 	addi	r4,r4,7840
+10000bfc:	00023200 	call	10002320 <printf>
 	// STEP 7 begin
 	//------------------------------------set configuration -----------------------------------------//
 	// TASK: Call the appropriate function for this step.
 	UsbSetConfig();		// Set Configuration
-10000bd8:	0001ae40 	call	10001ae4 <UsbSetConfig>
+10000c00:	0001ae40 	call	10001ae4 <UsbSetConfig>
 
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000bdc:	00000306 	br	10000bec <main+0x848>
+10000c04:	00000306 	br	10000c14 <main+0x848>
 	{
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbSetConfig();		// Set Configuration
-10000be0:	0001ae40 	call	10001ae4 <UsbSetConfig>
+10000c08:	0001ae40 	call	10001ae4 <UsbSetConfig>
 		usleep(10*1000);
-10000be4:	0109c404 	movi	r4,10000
-10000be8:	000fa880 	call	1000fa88 <usleep>
+10000c0c:	0109c404 	movi	r4,10000
+10000c10:	000fa880 	call	1000fa88 <usleep>
 	// STEP 7 begin
 	//------------------------------------set configuration -----------------------------------------//
 	// TASK: Call the appropriate function for this step.
 	UsbSetConfig();		// Set Configuration
 
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000bec:	010000c4 	movi	r4,3
-10000bf0:	00003500 	call	10000350 <IO_read>
-10000bf4:	10bfffcc 	andi	r2,r2,65535
-10000bf8:	1080040c 	andi	r2,r2,16
-10000bfc:	103ff826 	beq	r2,zero,10000be0 <__alt_data_end+0xf8000be0>
+10000c14:	010000c4 	movi	r4,3
+10000c18:	00003640 	call	10000364 <IO_read>
+10000c1c:	10bfffcc 	andi	r2,r2,65535
+10000c20:	1080040c 	andi	r2,r2,16
+10000c24:	103ff826 	beq	r2,zero,10000c08 <__alt_data_end+0xf8000c08>
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbSetConfig();		// Set Configuration
 		usleep(10*1000);
 	}
 
 	UsbWaitTDListDone();
-10000c00:	000216c0 	call	1000216c <UsbWaitTDListDone>
+10000c28:	000216c0 	call	1000216c <UsbWaitTDListDone>
 
 	IO_write(HPI_ADDR,0x0506);
-10000c04:	01414184 	movi	r5,1286
-10000c08:	01000084 	movi	r4,2
-10000c0c:	00002f40 	call	100002f4 <IO_write>
-	printf("[ENUM PROCESS]:step 7 TD Status Byte is %x\n",IO_read(HPI_DATA));
-10000c10:	0009883a 	mov	r4,zero
-10000c14:	00003500 	call	10000350 <IO_read>
-10000c18:	10bfffcc 	andi	r2,r2,65535
-10000c1c:	100b883a 	mov	r5,r2
-10000c20:	01040074 	movhi	r4,4097
-10000c24:	2107b204 	addi	r4,r4,7880
-10000c28:	00023200 	call	10002320 <printf>
-
-	IO_write(HPI_ADDR,0x0508);
-10000c2c:	01414204 	movi	r5,1288
+10000c2c:	01414184 	movi	r5,1286
 10000c30:	01000084 	movi	r4,2
 10000c34:	00002f40 	call	100002f4 <IO_write>
-	usb_ctl_val = IO_read(HPI_DATA);
+	printf("[ENUM PROCESS]:step 7 TD Status Byte is %x\n",IO_read(HPI_DATA));
 10000c38:	0009883a 	mov	r4,zero
-10000c3c:	00003500 	call	10000350 <IO_read>
-10000c40:	e0bffb0d 	sth	r2,-20(fp)
+10000c3c:	00003640 	call	10000364 <IO_read>
+10000c40:	10bfffcc 	andi	r2,r2,65535
+10000c44:	100b883a 	mov	r5,r2
+10000c48:	01040074 	movhi	r4,4097
+10000c4c:	2107b204 	addi	r4,r4,7880
+10000c50:	00023200 	call	10002320 <printf>
+
+	IO_write(HPI_ADDR,0x0508);
+10000c54:	01414204 	movi	r5,1288
+10000c58:	01000084 	movi	r4,2
+10000c5c:	00002f40 	call	100002f4 <IO_write>
+	usb_ctl_val = IO_read(HPI_DATA);
+10000c60:	0009883a 	mov	r4,zero
+10000c64:	00003640 	call	10000364 <IO_read>
+10000c68:	e0bffb0d 	sth	r2,-20(fp)
 	printf("[ENUM PROCESS]:step 7 TD Control Byte is %x\n",usb_ctl_val);
-10000c44:	e0bffb0b 	ldhu	r2,-20(fp)
-10000c48:	100b883a 	mov	r5,r2
-10000c4c:	01040074 	movhi	r4,4097
-10000c50:	2107bd04 	addi	r4,r4,7924
-10000c54:	00023200 	call	10002320 <printf>
+10000c6c:	e0bffb0b 	ldhu	r2,-20(fp)
+10000c70:	100b883a 	mov	r5,r2
+10000c74:	01040074 	movhi	r4,4097
+10000c78:	2107bd04 	addi	r4,r4,7924
+10000c7c:	00023200 	call	10002320 <printf>
 	while (usb_ctl_val != 0x03)
-10000c58:	e0bffb0b 	ldhu	r2,-20(fp)
-10000c5c:	108000e0 	cmpeqi	r2,r2,3
-10000c60:	1000061e 	bne	r2,zero,10000c7c <main+0x8d8>
+10000c80:	e0bffb0b 	ldhu	r2,-20(fp)
+10000c84:	108000e0 	cmpeqi	r2,r2,3
+10000c88:	1000061e 	bne	r2,zero,10000ca4 <main+0x8d8>
 	{
 		usb_ctl_val = UsbGetRetryCnt();
-10000c64:	00021f00 	call	100021f0 <UsbGetRetryCnt>
-10000c68:	e0bffb0d 	sth	r2,-20(fp)
+10000c8c:	00021f00 	call	100021f0 <UsbGetRetryCnt>
+10000c90:	e0bffb0d 	sth	r2,-20(fp)
 
 		// Fatal problem; try again
 		printf ("Encountered Fatal Error, restarting\n");
-10000c6c:	01040074 	movhi	r4,4097
-10000c70:	21070a04 	addi	r4,r4,7208
-10000c74:	000241c0 	call	1000241c <puts>
+10000c94:	01040074 	movhi	r4,4097
+10000c98:	21070a04 	addi	r4,r4,7208
+10000c9c:	000241c0 	call	1000241c <puts>
 		goto USB_HOT_PLUG;
-10000c78:	003dd506 	br	100003d0 <__alt_data_end+0xf80003d0>
+10000ca0:	003dd506 	br	100003f8 <__alt_data_end+0xf80003f8>
 	}
 
 	printf("------------[ENUM PROCESS]:set configuration done!-------------------\n");
-10000c7c:	01040074 	movhi	r4,4097
-10000c80:	2107c904 	addi	r4,r4,7972
-10000c84:	000241c0 	call	1000241c <puts>
+10000ca4:	01040074 	movhi	r4,4097
+10000ca8:	2107c904 	addi	r4,r4,7972
+10000cac:	000241c0 	call	1000241c <puts>
 
 	//----------------------------------------------class request out ------------------------------------------//
 	// TASK: Call the appropriate function for this step.
 	UsbClassRequest();
-10000c88:	0001be40 	call	10001be4 <UsbClassRequest>
+10000cb0:	0001be40 	call	10001be4 <UsbClassRequest>
 
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000c8c:	00000306 	br	10000c9c <main+0x8f8>
+10000cb4:	00000306 	br	10000cc4 <main+0x8f8>
 	{
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbClassRequest();
-10000c90:	0001be40 	call	10001be4 <UsbClassRequest>
+10000cb8:	0001be40 	call	10001be4 <UsbClassRequest>
 		usleep(10*1000);
-10000c94:	0109c404 	movi	r4,10000
-10000c98:	000fa880 	call	1000fa88 <usleep>
+10000cbc:	0109c404 	movi	r4,10000
+10000cc0:	000fa880 	call	1000fa88 <usleep>
 
 	//----------------------------------------------class request out ------------------------------------------//
 	// TASK: Call the appropriate function for this step.
 	UsbClassRequest();
 
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000c9c:	010000c4 	movi	r4,3
-10000ca0:	00003500 	call	10000350 <IO_read>
-10000ca4:	10bfffcc 	andi	r2,r2,65535
-10000ca8:	1080040c 	andi	r2,r2,16
-10000cac:	103ff826 	beq	r2,zero,10000c90 <__alt_data_end+0xf8000c90>
+10000cc4:	010000c4 	movi	r4,3
+10000cc8:	00003640 	call	10000364 <IO_read>
+10000ccc:	10bfffcc 	andi	r2,r2,65535
+10000cd0:	1080040c 	andi	r2,r2,16
+10000cd4:	103ff826 	beq	r2,zero,10000cb8 <__alt_data_end+0xf8000cb8>
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbClassRequest();
 		usleep(10*1000);
 	}
 
 	UsbWaitTDListDone();
-10000cb0:	000216c0 	call	1000216c <UsbWaitTDListDone>
+10000cd8:	000216c0 	call	1000216c <UsbWaitTDListDone>
 
 	IO_write(HPI_ADDR,0x0506);
-10000cb4:	01414184 	movi	r5,1286
-10000cb8:	01000084 	movi	r4,2
-10000cbc:	00002f40 	call	100002f4 <IO_write>
-	printf("[ENUM PROCESS]:step 8 TD Status Byte is %x\n",IO_read(HPI_DATA));
-10000cc0:	0009883a 	mov	r4,zero
-10000cc4:	00003500 	call	10000350 <IO_read>
-10000cc8:	10bfffcc 	andi	r2,r2,65535
-10000ccc:	100b883a 	mov	r5,r2
-10000cd0:	01040074 	movhi	r4,4097
-10000cd4:	2107db04 	addi	r4,r4,8044
-10000cd8:	00023200 	call	10002320 <printf>
-
-	IO_write(HPI_ADDR,0x0508);
-10000cdc:	01414204 	movi	r5,1288
+10000cdc:	01414184 	movi	r5,1286
 10000ce0:	01000084 	movi	r4,2
 10000ce4:	00002f40 	call	100002f4 <IO_write>
-	usb_ctl_val = IO_read(HPI_DATA);
+	printf("[ENUM PROCESS]:step 8 TD Status Byte is %x\n",IO_read(HPI_DATA));
 10000ce8:	0009883a 	mov	r4,zero
-10000cec:	00003500 	call	10000350 <IO_read>
-10000cf0:	e0bffb0d 	sth	r2,-20(fp)
+10000cec:	00003640 	call	10000364 <IO_read>
+10000cf0:	10bfffcc 	andi	r2,r2,65535
+10000cf4:	100b883a 	mov	r5,r2
+10000cf8:	01040074 	movhi	r4,4097
+10000cfc:	2107db04 	addi	r4,r4,8044
+10000d00:	00023200 	call	10002320 <printf>
+
+	IO_write(HPI_ADDR,0x0508);
+10000d04:	01414204 	movi	r5,1288
+10000d08:	01000084 	movi	r4,2
+10000d0c:	00002f40 	call	100002f4 <IO_write>
+	usb_ctl_val = IO_read(HPI_DATA);
+10000d10:	0009883a 	mov	r4,zero
+10000d14:	00003640 	call	10000364 <IO_read>
+10000d18:	e0bffb0d 	sth	r2,-20(fp)
 	printf("[ENUM PROCESS]:step 8 TD Control Byte is %x\n",usb_ctl_val);
-10000cf4:	e0bffb0b 	ldhu	r2,-20(fp)
-10000cf8:	100b883a 	mov	r5,r2
-10000cfc:	01040074 	movhi	r4,4097
-10000d00:	2107e604 	addi	r4,r4,8088
-10000d04:	00023200 	call	10002320 <printf>
+10000d1c:	e0bffb0b 	ldhu	r2,-20(fp)
+10000d20:	100b883a 	mov	r5,r2
+10000d24:	01040074 	movhi	r4,4097
+10000d28:	2107e604 	addi	r4,r4,8088
+10000d2c:	00023200 	call	10002320 <printf>
 	while (usb_ctl_val != 0x03)
-10000d08:	e0bffb0b 	ldhu	r2,-20(fp)
-10000d0c:	108000e0 	cmpeqi	r2,r2,3
-10000d10:	1000061e 	bne	r2,zero,10000d2c <main+0x988>
+10000d30:	e0bffb0b 	ldhu	r2,-20(fp)
+10000d34:	108000e0 	cmpeqi	r2,r2,3
+10000d38:	1000061e 	bne	r2,zero,10000d54 <main+0x988>
 	{
 		usb_ctl_val = UsbGetRetryCnt();
-10000d14:	00021f00 	call	100021f0 <UsbGetRetryCnt>
-10000d18:	e0bffb0d 	sth	r2,-20(fp)
+10000d3c:	00021f00 	call	100021f0 <UsbGetRetryCnt>
+10000d40:	e0bffb0d 	sth	r2,-20(fp)
 
 		// Fatal problem; try again
 		printf ("Encountered Fatal Error, restarting\n");
-10000d1c:	01040074 	movhi	r4,4097
-10000d20:	21070a04 	addi	r4,r4,7208
-10000d24:	000241c0 	call	1000241c <puts>
+10000d44:	01040074 	movhi	r4,4097
+10000d48:	21070a04 	addi	r4,r4,7208
+10000d4c:	000241c0 	call	1000241c <puts>
 		goto USB_HOT_PLUG;
-10000d28:	003da906 	br	100003d0 <__alt_data_end+0xf80003d0>
+10000d50:	003da906 	br	100003f8 <__alt_data_end+0xf80003f8>
 	}
 
 
 	printf("------------[ENUM PROCESS]:class request out done!-------------------\n");
-10000d2c:	01040074 	movhi	r4,4097
-10000d30:	2107f204 	addi	r4,r4,8136
-10000d34:	000241c0 	call	1000241c <puts>
+10000d54:	01040074 	movhi	r4,4097
+10000d58:	2107f204 	addi	r4,r4,8136
+10000d5c:	000241c0 	call	1000241c <puts>
 
 	// STEP 8 begin
 	//----------------------------------get descriptor(class 0x21 = HID) request out --------------------------------//
 	// TASK: Call the appropriate function for this step.
 	UsbGetHidDesc();
-10000d38:	0001ce40 	call	10001ce4 <UsbGetHidDesc>
+10000d60:	0001ce40 	call	10001ce4 <UsbGetHidDesc>
 
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000d3c:	00000306 	br	10000d4c <main+0x9a8>
+10000d64:	00000306 	br	10000d74 <main+0x9a8>
 	{
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbGetHidDesc();
-10000d40:	0001ce40 	call	10001ce4 <UsbGetHidDesc>
+10000d68:	0001ce40 	call	10001ce4 <UsbGetHidDesc>
 		usleep(10*1000);
-10000d44:	0109c404 	movi	r4,10000
-10000d48:	000fa880 	call	1000fa88 <usleep>
+10000d6c:	0109c404 	movi	r4,10000
+10000d70:	000fa880 	call	1000fa88 <usleep>
 	// STEP 8 begin
 	//----------------------------------get descriptor(class 0x21 = HID) request out --------------------------------//
 	// TASK: Call the appropriate function for this step.
 	UsbGetHidDesc();
 
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000d4c:	010000c4 	movi	r4,3
-10000d50:	00003500 	call	10000350 <IO_read>
-10000d54:	10bfffcc 	andi	r2,r2,65535
-10000d58:	1080040c 	andi	r2,r2,16
-10000d5c:	103ff826 	beq	r2,zero,10000d40 <__alt_data_end+0xf8000d40>
+10000d74:	010000c4 	movi	r4,3
+10000d78:	00003640 	call	10000364 <IO_read>
+10000d7c:	10bfffcc 	andi	r2,r2,65535
+10000d80:	1080040c 	andi	r2,r2,16
+10000d84:	103ff826 	beq	r2,zero,10000d68 <__alt_data_end+0xf8000d68>
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbGetHidDesc();
 		usleep(10*1000);
 	}
 
 	UsbWaitTDListDone();
-10000d60:	000216c0 	call	1000216c <UsbWaitTDListDone>
+10000d88:	000216c0 	call	1000216c <UsbWaitTDListDone>
 
 	IO_write(HPI_ADDR,0x0506);
-10000d64:	01414184 	movi	r5,1286
-10000d68:	01000084 	movi	r4,2
-10000d6c:	00002f40 	call	100002f4 <IO_write>
-	printf("[ENUM PROCESS]:step 8 TD Status Byte is %x\n",IO_read(HPI_DATA));
-10000d70:	0009883a 	mov	r4,zero
-10000d74:	00003500 	call	10000350 <IO_read>
-10000d78:	10bfffcc 	andi	r2,r2,65535
-10000d7c:	100b883a 	mov	r5,r2
-10000d80:	01040074 	movhi	r4,4097
-10000d84:	2107db04 	addi	r4,r4,8044
-10000d88:	00023200 	call	10002320 <printf>
-
-	IO_write(HPI_ADDR,0x0508);
-10000d8c:	01414204 	movi	r5,1288
+10000d8c:	01414184 	movi	r5,1286
 10000d90:	01000084 	movi	r4,2
 10000d94:	00002f40 	call	100002f4 <IO_write>
-	usb_ctl_val = IO_read(HPI_DATA);
+	printf("[ENUM PROCESS]:step 8 TD Status Byte is %x\n",IO_read(HPI_DATA));
 10000d98:	0009883a 	mov	r4,zero
-10000d9c:	00003500 	call	10000350 <IO_read>
-10000da0:	e0bffb0d 	sth	r2,-20(fp)
+10000d9c:	00003640 	call	10000364 <IO_read>
+10000da0:	10bfffcc 	andi	r2,r2,65535
+10000da4:	100b883a 	mov	r5,r2
+10000da8:	01040074 	movhi	r4,4097
+10000dac:	2107db04 	addi	r4,r4,8044
+10000db0:	00023200 	call	10002320 <printf>
+
+	IO_write(HPI_ADDR,0x0508);
+10000db4:	01414204 	movi	r5,1288
+10000db8:	01000084 	movi	r4,2
+10000dbc:	00002f40 	call	100002f4 <IO_write>
+	usb_ctl_val = IO_read(HPI_DATA);
+10000dc0:	0009883a 	mov	r4,zero
+10000dc4:	00003640 	call	10000364 <IO_read>
+10000dc8:	e0bffb0d 	sth	r2,-20(fp)
 	printf("[ENUM PROCESS]:step 8 TD Control Byte is %x\n",usb_ctl_val);
-10000da4:	e0bffb0b 	ldhu	r2,-20(fp)
-10000da8:	100b883a 	mov	r5,r2
-10000dac:	01040074 	movhi	r4,4097
-10000db0:	2107e604 	addi	r4,r4,8088
-10000db4:	00023200 	call	10002320 <printf>
+10000dcc:	e0bffb0b 	ldhu	r2,-20(fp)
+10000dd0:	100b883a 	mov	r5,r2
+10000dd4:	01040074 	movhi	r4,4097
+10000dd8:	2107e604 	addi	r4,r4,8088
+10000ddc:	00023200 	call	10002320 <printf>
 	while (usb_ctl_val != 0x03)
-10000db8:	e0bffb0b 	ldhu	r2,-20(fp)
-10000dbc:	108000e0 	cmpeqi	r2,r2,3
-10000dc0:	1000061e 	bne	r2,zero,10000ddc <main+0xa38>
+10000de0:	e0bffb0b 	ldhu	r2,-20(fp)
+10000de4:	108000e0 	cmpeqi	r2,r2,3
+10000de8:	1000061e 	bne	r2,zero,10000e04 <main+0xa38>
 	{
 		usb_ctl_val = UsbGetRetryCnt();
-10000dc4:	00021f00 	call	100021f0 <UsbGetRetryCnt>
-10000dc8:	e0bffb0d 	sth	r2,-20(fp)
+10000dec:	00021f00 	call	100021f0 <UsbGetRetryCnt>
+10000df0:	e0bffb0d 	sth	r2,-20(fp)
 
 		// Fatal problem; try again
 		printf ("Encountered Fatal Error, restarting\n");
-10000dcc:	01040074 	movhi	r4,4097
-10000dd0:	21070a04 	addi	r4,r4,7208
-10000dd4:	000241c0 	call	1000241c <puts>
+10000df4:	01040074 	movhi	r4,4097
+10000df8:	21070a04 	addi	r4,r4,7208
+10000dfc:	000241c0 	call	1000241c <puts>
 		goto USB_HOT_PLUG;
-10000dd8:	003d7d06 	br	100003d0 <__alt_data_end+0xf80003d0>
+10000e00:	003d7d06 	br	100003f8 <__alt_data_end+0xf80003f8>
 	}
 
 	printf("------------[ENUM PROCESS]:get descriptor (class 0x21) done!-------------------\n");
-10000ddc:	01040074 	movhi	r4,4097
-10000de0:	21080404 	addi	r4,r4,8208
-10000de4:	000241c0 	call	1000241c <puts>
+10000e04:	01040074 	movhi	r4,4097
+10000e08:	21080404 	addi	r4,r4,8208
+10000e0c:	000241c0 	call	1000241c <puts>
 
 	// STEP 9 begin
 	//-------------------------------get descriptor (class 0x22 = report)-------------------------------------------//
 	// TASK: Call the appropriate function for this step.
 	UsbGetReportDesc();
-10000de8:	0001e2c0 	call	10001e2c <UsbGetReportDesc>
+10000e10:	0001e2c0 	call	10001e2c <UsbGetReportDesc>
 	//if no message
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000dec:	00000306 	br	10000dfc <main+0xa58>
+10000e14:	00000306 	br	10000e24 <main+0xa58>
 	{
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbGetReportDesc();
-10000df0:	0001e2c0 	call	10001e2c <UsbGetReportDesc>
+10000e18:	0001e2c0 	call	10001e2c <UsbGetReportDesc>
 		usleep(10*1000);
-10000df4:	0109c404 	movi	r4,10000
-10000df8:	000fa880 	call	1000fa88 <usleep>
+10000e1c:	0109c404 	movi	r4,10000
+10000e20:	000fa880 	call	1000fa88 <usleep>
 	// STEP 9 begin
 	//-------------------------------get descriptor (class 0x22 = report)-------------------------------------------//
 	// TASK: Call the appropriate function for this step.
 	UsbGetReportDesc();
 	//if no message
 	while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000dfc:	010000c4 	movi	r4,3
-10000e00:	00003500 	call	10000350 <IO_read>
-10000e04:	10bfffcc 	andi	r2,r2,65535
-10000e08:	1080040c 	andi	r2,r2,16
-10000e0c:	103ff826 	beq	r2,zero,10000df0 <__alt_data_end+0xf8000df0>
+10000e24:	010000c4 	movi	r4,3
+10000e28:	00003640 	call	10000364 <IO_read>
+10000e2c:	10bfffcc 	andi	r2,r2,65535
+10000e30:	1080040c 	andi	r2,r2,16
+10000e34:	103ff826 	beq	r2,zero,10000e18 <__alt_data_end+0xf8000e18>
 		// TASK: Call the appropriate function again if it wasn't processed successfully.
 		UsbGetReportDesc();
 		usleep(10*1000);
 	}
 
 	UsbWaitTDListDone();
-10000e10:	000216c0 	call	1000216c <UsbWaitTDListDone>
+10000e38:	000216c0 	call	1000216c <UsbWaitTDListDone>
 
 	IO_write(HPI_ADDR,0x0506);
-10000e14:	01414184 	movi	r5,1286
-10000e18:	01000084 	movi	r4,2
-10000e1c:	00002f40 	call	100002f4 <IO_write>
-	printf("[ENUM PROCESS]: step 9 TD Status Byte is %x\n",IO_read(HPI_DATA));
-10000e20:	0009883a 	mov	r4,zero
-10000e24:	00003500 	call	10000350 <IO_read>
-10000e28:	10bfffcc 	andi	r2,r2,65535
-10000e2c:	100b883a 	mov	r5,r2
-10000e30:	01040074 	movhi	r4,4097
-10000e34:	21081804 	addi	r4,r4,8288
-10000e38:	00023200 	call	10002320 <printf>
-
-	IO_write(HPI_ADDR,0x0508);
-10000e3c:	01414204 	movi	r5,1288
+10000e3c:	01414184 	movi	r5,1286
 10000e40:	01000084 	movi	r4,2
 10000e44:	00002f40 	call	100002f4 <IO_write>
-	usb_ctl_val = IO_read(HPI_DATA);
+	printf("[ENUM PROCESS]: step 9 TD Status Byte is %x\n",IO_read(HPI_DATA));
 10000e48:	0009883a 	mov	r4,zero
-10000e4c:	00003500 	call	10000350 <IO_read>
-10000e50:	e0bffb0d 	sth	r2,-20(fp)
+10000e4c:	00003640 	call	10000364 <IO_read>
+10000e50:	10bfffcc 	andi	r2,r2,65535
+10000e54:	100b883a 	mov	r5,r2
+10000e58:	01040074 	movhi	r4,4097
+10000e5c:	21081804 	addi	r4,r4,8288
+10000e60:	00023200 	call	10002320 <printf>
+
+	IO_write(HPI_ADDR,0x0508);
+10000e64:	01414204 	movi	r5,1288
+10000e68:	01000084 	movi	r4,2
+10000e6c:	00002f40 	call	100002f4 <IO_write>
+	usb_ctl_val = IO_read(HPI_DATA);
+10000e70:	0009883a 	mov	r4,zero
+10000e74:	00003640 	call	10000364 <IO_read>
+10000e78:	e0bffb0d 	sth	r2,-20(fp)
 	printf("[ENUM PROCESS]: step 9 TD Control Byte is %x\n",usb_ctl_val);
-10000e54:	e0bffb0b 	ldhu	r2,-20(fp)
-10000e58:	100b883a 	mov	r5,r2
-10000e5c:	01040074 	movhi	r4,4097
-10000e60:	21082404 	addi	r4,r4,8336
-10000e64:	00023200 	call	10002320 <printf>
+10000e7c:	e0bffb0b 	ldhu	r2,-20(fp)
+10000e80:	100b883a 	mov	r5,r2
+10000e84:	01040074 	movhi	r4,4097
+10000e88:	21082404 	addi	r4,r4,8336
+10000e8c:	00023200 	call	10002320 <printf>
 	while (usb_ctl_val != 0x03)
-10000e68:	e0bffb0b 	ldhu	r2,-20(fp)
-10000e6c:	108000e0 	cmpeqi	r2,r2,3
-10000e70:	1000061e 	bne	r2,zero,10000e8c <main+0xae8>
+10000e90:	e0bffb0b 	ldhu	r2,-20(fp)
+10000e94:	108000e0 	cmpeqi	r2,r2,3
+10000e98:	1000061e 	bne	r2,zero,10000eb4 <main+0xae8>
 	{
 		usb_ctl_val = UsbGetRetryCnt();
-10000e74:	00021f00 	call	100021f0 <UsbGetRetryCnt>
-10000e78:	e0bffb0d 	sth	r2,-20(fp)
+10000e9c:	00021f00 	call	100021f0 <UsbGetRetryCnt>
+10000ea0:	e0bffb0d 	sth	r2,-20(fp)
 
 		// Fatal problem; try again
 		printf ("Encountered Fatal Error, restarting\n");
-10000e7c:	01040074 	movhi	r4,4097
-10000e80:	21070a04 	addi	r4,r4,7208
-10000e84:	000241c0 	call	1000241c <puts>
+10000ea4:	01040074 	movhi	r4,4097
+10000ea8:	21070a04 	addi	r4,r4,7208
+10000eac:	000241c0 	call	1000241c <puts>
 		goto USB_HOT_PLUG;
-10000e88:	003d5106 	br	100003d0 <__alt_data_end+0xf80003d0>
+10000eb0:	003d5106 	br	100003f8 <__alt_data_end+0xf80003f8>
 	}
 
 	printf("---------------[ENUM PROCESS]:get descriptor (class 0x22) done!----------------\n");
-10000e8c:	01040074 	movhi	r4,4097
-10000e90:	21083004 	addi	r4,r4,8384
-10000e94:	000241c0 	call	1000241c <puts>
+10000eb4:	01040074 	movhi	r4,4097
+10000eb8:	21083004 	addi	r4,r4,8384
+10000ebc:	000241c0 	call	1000241c <puts>
 
 
 
 	//-----------------------------------get keycode value------------------------------------------------//
 	usleep(10000);
-10000e98:	0109c404 	movi	r4,10000
-10000e9c:	000fa880 	call	1000fa88 <usleep>
+10000ec0:	0109c404 	movi	r4,10000
+10000ec4:	000fa880 	call	1000fa88 <usleep>
 	while(1)
 	{
 		toggle++;
-10000ea0:	e0bffb83 	ldbu	r2,-18(fp)
-10000ea4:	10800044 	addi	r2,r2,1
-10000ea8:	e0bffb85 	stb	r2,-18(fp)
+10000ec8:	e0bffb83 	ldbu	r2,-18(fp)
+10000ecc:	10800044 	addi	r2,r2,1
+10000ed0:	e0bffb85 	stb	r2,-18(fp)
 		IO_write(HPI_ADDR,0x0500); //the start address
-10000eac:	01414004 	movi	r5,1280
-10000eb0:	01000084 	movi	r4,2
-10000eb4:	00002f40 	call	100002f4 <IO_write>
+10000ed4:	01414004 	movi	r5,1280
+10000ed8:	01000084 	movi	r4,2
+10000edc:	00002f40 	call	100002f4 <IO_write>
 		//data phase IN-1
 		IO_write(HPI_DATA,0x051c); //500
-10000eb8:	01414704 	movi	r5,1308
-10000ebc:	0009883a 	mov	r4,zero
-10000ec0:	00002f40 	call	100002f4 <IO_write>
+10000ee0:	01414704 	movi	r5,1308
+10000ee4:	0009883a 	mov	r4,zero
+10000ee8:	00002f40 	call	100002f4 <IO_write>
 
 		IO_write(HPI_DATA,0x000f & data_size);//2 data length
-10000ec4:	e0bfff03 	ldbu	r2,-4(fp)
-10000ec8:	108003cc 	andi	r2,r2,15
-10000ecc:	100b883a 	mov	r5,r2
-10000ed0:	0009883a 	mov	r4,zero
-10000ed4:	00002f40 	call	100002f4 <IO_write>
-
-		IO_write(HPI_DATA,0x0291);//4 //endpoint 1
-10000ed8:	0140a444 	movi	r5,657
-10000edc:	0009883a 	mov	r4,zero
-10000ee0:	00002f40 	call	100002f4 <IO_write>
-		if(toggle%2)
-10000ee4:	e0bffb83 	ldbu	r2,-18(fp)
-10000ee8:	1080004c 	andi	r2,r2,1
-10000eec:	10803fcc 	andi	r2,r2,255
-10000ef0:	10000426 	beq	r2,zero,10000f04 <main+0xb60>
-		{
-			IO_write(HPI_DATA,0x0001);//6 //data 1
-10000ef4:	01400044 	movi	r5,1
+10000eec:	e0bfff03 	ldbu	r2,-4(fp)
+10000ef0:	108003cc 	andi	r2,r2,15
+10000ef4:	100b883a 	mov	r5,r2
 10000ef8:	0009883a 	mov	r4,zero
 10000efc:	00002f40 	call	100002f4 <IO_write>
-10000f00:	00000306 	br	10000f10 <main+0xb6c>
+
+		IO_write(HPI_DATA,0x0291);//4 //endpoint 1
+10000f00:	0140a444 	movi	r5,657
+10000f04:	0009883a 	mov	r4,zero
+10000f08:	00002f40 	call	100002f4 <IO_write>
+		if(toggle%2)
+10000f0c:	e0bffb83 	ldbu	r2,-18(fp)
+10000f10:	1080004c 	andi	r2,r2,1
+10000f14:	10803fcc 	andi	r2,r2,255
+10000f18:	10000426 	beq	r2,zero,10000f2c <main+0xb60>
+		{
+			IO_write(HPI_DATA,0x0001);//6 //data 1
+10000f1c:	01400044 	movi	r5,1
+10000f20:	0009883a 	mov	r4,zero
+10000f24:	00002f40 	call	100002f4 <IO_write>
+10000f28:	00000306 	br	10000f38 <main+0xb6c>
 		}
 		else
 		{
 			IO_write(HPI_DATA,0x0041);//6 //data 1
-10000f04:	01401044 	movi	r5,65
-10000f08:	0009883a 	mov	r4,zero
-10000f0c:	00002f40 	call	100002f4 <IO_write>
+10000f2c:	01401044 	movi	r5,65
+10000f30:	0009883a 	mov	r4,zero
+10000f34:	00002f40 	call	100002f4 <IO_write>
 		}
 		IO_write(HPI_DATA,0x0013);//8
-10000f10:	014004c4 	movi	r5,19
-10000f14:	0009883a 	mov	r4,zero
-10000f18:	00002f40 	call	100002f4 <IO_write>
-		IO_write(HPI_DATA,0x0000);//a
-10000f1c:	000b883a 	mov	r5,zero
-10000f20:	0009883a 	mov	r4,zero
-10000f24:	00002f40 	call	100002f4 <IO_write>
-		UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
-10000f28:	01414004 	movi	r5,1280
-10000f2c:	01006c04 	movi	r4,432
-10000f30:	00011540 	call	10001154 <UsbWrite>
-		
-		while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000f34:	00002406 	br	10000fc8 <main+0xc24>
-		{
-			IO_write(HPI_ADDR,0x0500); //the start address
-10000f38:	01414004 	movi	r5,1280
-10000f3c:	01000084 	movi	r4,2
+10000f38:	014004c4 	movi	r5,19
+10000f3c:	0009883a 	mov	r4,zero
 10000f40:	00002f40 	call	100002f4 <IO_write>
-			//data phase IN-1
-			IO_write(HPI_DATA,0x051c); //500
-10000f44:	01414704 	movi	r5,1308
+		IO_write(HPI_DATA,0x0000);//a
+10000f44:	000b883a 	mov	r5,zero
 10000f48:	0009883a 	mov	r4,zero
 10000f4c:	00002f40 	call	100002f4 <IO_write>
+		UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
+10000f50:	01414004 	movi	r5,1280
+10000f54:	01006c04 	movi	r4,432
+10000f58:	000117c0 	call	1000117c <UsbWrite>
+		
+		while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
+10000f5c:	00002406 	br	10000ff0 <main+0xc24>
+		{
+			IO_write(HPI_ADDR,0x0500); //the start address
+10000f60:	01414004 	movi	r5,1280
+10000f64:	01000084 	movi	r4,2
+10000f68:	00002f40 	call	100002f4 <IO_write>
+			//data phase IN-1
+			IO_write(HPI_DATA,0x051c); //500
+10000f6c:	01414704 	movi	r5,1308
+10000f70:	0009883a 	mov	r4,zero
+10000f74:	00002f40 	call	100002f4 <IO_write>
 
 			IO_write(HPI_DATA,0x000f & data_size);//2 data length
-10000f50:	e0bfff03 	ldbu	r2,-4(fp)
-10000f54:	108003cc 	andi	r2,r2,15
-10000f58:	100b883a 	mov	r5,r2
-10000f5c:	0009883a 	mov	r4,zero
-10000f60:	00002f40 	call	100002f4 <IO_write>
-
-			IO_write(HPI_DATA,0x0291);//4 //endpoint 1
-10000f64:	0140a444 	movi	r5,657
-10000f68:	0009883a 	mov	r4,zero
-10000f6c:	00002f40 	call	100002f4 <IO_write>
-			if(toggle%2)
-10000f70:	e0bffb83 	ldbu	r2,-18(fp)
-10000f74:	1080004c 	andi	r2,r2,1
-10000f78:	10803fcc 	andi	r2,r2,255
-10000f7c:	10000426 	beq	r2,zero,10000f90 <main+0xbec>
-			{
-				IO_write(HPI_DATA,0x0001);//6 //data 1
-10000f80:	01400044 	movi	r5,1
+10000f78:	e0bfff03 	ldbu	r2,-4(fp)
+10000f7c:	108003cc 	andi	r2,r2,15
+10000f80:	100b883a 	mov	r5,r2
 10000f84:	0009883a 	mov	r4,zero
 10000f88:	00002f40 	call	100002f4 <IO_write>
-10000f8c:	00000306 	br	10000f9c <main+0xbf8>
+
+			IO_write(HPI_DATA,0x0291);//4 //endpoint 1
+10000f8c:	0140a444 	movi	r5,657
+10000f90:	0009883a 	mov	r4,zero
+10000f94:	00002f40 	call	100002f4 <IO_write>
+			if(toggle%2)
+10000f98:	e0bffb83 	ldbu	r2,-18(fp)
+10000f9c:	1080004c 	andi	r2,r2,1
+10000fa0:	10803fcc 	andi	r2,r2,255
+10000fa4:	10000426 	beq	r2,zero,10000fb8 <main+0xbec>
+			{
+				IO_write(HPI_DATA,0x0001);//6 //data 1
+10000fa8:	01400044 	movi	r5,1
+10000fac:	0009883a 	mov	r4,zero
+10000fb0:	00002f40 	call	100002f4 <IO_write>
+10000fb4:	00000306 	br	10000fc4 <main+0xbf8>
 			}
 			else
 			{
 				IO_write(HPI_DATA,0x0041);//6 //data 1
-10000f90:	01401044 	movi	r5,65
-10000f94:	0009883a 	mov	r4,zero
-10000f98:	00002f40 	call	100002f4 <IO_write>
+10000fb8:	01401044 	movi	r5,65
+10000fbc:	0009883a 	mov	r4,zero
+10000fc0:	00002f40 	call	100002f4 <IO_write>
 			}
 			IO_write(HPI_DATA,0x0013);//8
-10000f9c:	014004c4 	movi	r5,19
-10000fa0:	0009883a 	mov	r4,zero
-10000fa4:	00002f40 	call	100002f4 <IO_write>
+10000fc4:	014004c4 	movi	r5,19
+10000fc8:	0009883a 	mov	r4,zero
+10000fcc:	00002f40 	call	100002f4 <IO_write>
 			IO_write(HPI_DATA,0x0000);//
-10000fa8:	000b883a 	mov	r5,zero
-10000fac:	0009883a 	mov	r4,zero
-10000fb0:	00002f40 	call	100002f4 <IO_write>
+10000fd0:	000b883a 	mov	r5,zero
+10000fd4:	0009883a 	mov	r4,zero
+10000fd8:	00002f40 	call	100002f4 <IO_write>
 			UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
-10000fb4:	01414004 	movi	r5,1280
-10000fb8:	01006c04 	movi	r4,432
-10000fbc:	00011540 	call	10001154 <UsbWrite>
+10000fdc:	01414004 	movi	r5,1280
+10000fe0:	01006c04 	movi	r4,432
+10000fe4:	000117c0 	call	1000117c <UsbWrite>
 			usleep(10*1000);
-10000fc0:	0109c404 	movi	r4,10000
-10000fc4:	000fa880 	call	1000fa88 <usleep>
+10000fe8:	0109c404 	movi	r4,10000
+10000fec:	000fa880 	call	1000fa88 <usleep>
 		}
 		IO_write(HPI_DATA,0x0013);//8
 		IO_write(HPI_DATA,0x0000);//a
 		UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
 		
 		while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
-10000fc8:	010000c4 	movi	r4,3
-10000fcc:	00003500 	call	10000350 <IO_read>
-10000fd0:	10bfffcc 	andi	r2,r2,65535
-10000fd4:	1080040c 	andi	r2,r2,16
-10000fd8:	103fd726 	beq	r2,zero,10000f38 <__alt_data_end+0xf8000f38>
+10000ff0:	010000c4 	movi	r4,3
+10000ff4:	00003640 	call	10000364 <IO_read>
+10000ff8:	10bfffcc 	andi	r2,r2,65535
+10000ffc:	1080040c 	andi	r2,r2,16
+10001000:	103fd726 	beq	r2,zero,10000f60 <__alt_data_end+0xf8000f60>
 			IO_write(HPI_DATA,0x0000);//
 			UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
 			usleep(10*1000);
 		}//end while
 
 		usb_ctl_val = UsbWaitTDListDone();
-10000fdc:	000216c0 	call	1000216c <UsbWaitTDListDone>
-10000fe0:	e0bffb0d 	sth	r2,-20(fp)
+10001004:	000216c0 	call	1000216c <UsbWaitTDListDone>
+10001008:	e0bffb0d 	sth	r2,-20(fp)
 
 		// The first two keycodes are stored in 0x051E. Other keycodes are in 
 		// subsequent addresses.
 		keycode = UsbRead(0x051e);
-10000fe4:	01014784 	movi	r4,1310
-10000fe8:	00011c00 	call	100011c0 <UsbRead>
-10000fec:	10bfffcc 	andi	r2,r2,65535
-10000ff0:	e0bffd15 	stw	r2,-12(fp)
+1000100c:	01014784 	movi	r4,1310
+10001010:	00011d40 	call	100011d4 <UsbRead>
+10001014:	10bfffcc 	andi	r2,r2,65535
+10001018:	e0bffd15 	stw	r2,-12(fp)
 		printf("\nfirst two keycode values are %04x\n",keycode);
-10000ff4:	e17ffd17 	ldw	r5,-12(fp)
-10000ff8:	01040074 	movhi	r4,4097
-10000ffc:	21084404 	addi	r4,r4,8464
-10001000:	00023200 	call	10002320 <printf>
+1000101c:	e17ffd17 	ldw	r5,-12(fp)
+10001020:	01040074 	movhi	r4,4097
+10001024:	21084404 	addi	r4,r4,8464
+10001028:	00023200 	call	10002320 <printf>
 		// We only need the first keycode, which is at the lower byte of keycode.
 		// Send the keycode to hardware via PIO.
 		*keycode_base = keycode & 0xff; 
-10001004:	00802404 	movi	r2,144
-10001008:	e0fffd17 	ldw	r3,-12(fp)
-1000100c:	10c00005 	stb	r3,0(r2)
+1000102c:	00802404 	movi	r2,144
+10001030:	e0fffd17 	ldw	r3,-12(fp)
+10001034:	10c00005 	stb	r3,0(r2)
 
 		usleep(200);//usleep(5000);
-10001010:	01003204 	movi	r4,200
-10001014:	000fa880 	call	1000fa88 <usleep>
+10001038:	01003204 	movi	r4,200
+1000103c:	000fa880 	call	1000fa88 <usleep>
 		usb_ctl_val = UsbRead(ctl_reg);
-10001018:	d0a6cb0b 	ldhu	r2,-25812(gp)
-1000101c:	10bfffcc 	andi	r2,r2,65535
-10001020:	1009883a 	mov	r4,r2
-10001024:	00011c00 	call	100011c0 <UsbRead>
-10001028:	e0bffb0d 	sth	r2,-20(fp)
+10001040:	d0a6cb0b 	ldhu	r2,-25812(gp)
+10001044:	10bfffcc 	andi	r2,r2,65535
+10001048:	1009883a 	mov	r4,r2
+1000104c:	00011d40 	call	100011d4 <UsbRead>
+10001050:	e0bffb0d 	sth	r2,-20(fp)
 
 		if(!(usb_ctl_val & no_device))
-1000102c:	d0a6cb8b 	ldhu	r2,-25810(gp)
-10001030:	e0fffb0b 	ldhu	r3,-20(fp)
-10001034:	1884703a 	and	r2,r3,r2
-10001038:	10bfffcc 	andi	r2,r2,65535
-1000103c:	10003f1e 	bne	r2,zero,1000113c <main+0xd98>
+10001054:	d0a6cb8b 	ldhu	r2,-25810(gp)
+10001058:	e0fffb0b 	ldhu	r3,-20(fp)
+1000105c:	1884703a 	and	r2,r3,r2
+10001060:	10bfffcc 	andi	r2,r2,65535
+10001064:	10003f1e 	bne	r2,zero,10001164 <main+0xd98>
 		{
 			//USB hot plug routine
 			for(hot_plug_count = 0 ; hot_plug_count < 7 ; hot_plug_count++)
-10001040:	e03ffbc5 	stb	zero,-17(fp)
-10001044:	00000f06 	br	10001084 <main+0xce0>
+10001068:	e03ffbc5 	stb	zero,-17(fp)
+1000106c:	00000f06 	br	100010ac <main+0xce0>
 			{
 				usleep(5*1000);
-10001048:	0104e204 	movi	r4,5000
-1000104c:	000fa880 	call	1000fa88 <usleep>
+10001070:	0104e204 	movi	r4,5000
+10001074:	000fa880 	call	1000fa88 <usleep>
 				usb_ctl_val = UsbRead(ctl_reg);
-10001050:	d0a6cb0b 	ldhu	r2,-25812(gp)
-10001054:	10bfffcc 	andi	r2,r2,65535
-10001058:	1009883a 	mov	r4,r2
-1000105c:	00011c00 	call	100011c0 <UsbRead>
-10001060:	e0bffb0d 	sth	r2,-20(fp)
+10001078:	d0a6cb0b 	ldhu	r2,-25812(gp)
+1000107c:	10bfffcc 	andi	r2,r2,65535
+10001080:	1009883a 	mov	r4,r2
+10001084:	00011d40 	call	100011d4 <UsbRead>
+10001088:	e0bffb0d 	sth	r2,-20(fp)
 				if(usb_ctl_val & no_device) break;
-10001064:	d0a6cb8b 	ldhu	r2,-25810(gp)
-10001068:	e0fffb0b 	ldhu	r3,-20(fp)
-1000106c:	1884703a 	and	r2,r3,r2
-10001070:	10bfffcc 	andi	r2,r2,65535
-10001074:	1000071e 	bne	r2,zero,10001094 <main+0xcf0>
+1000108c:	d0a6cb8b 	ldhu	r2,-25810(gp)
+10001090:	e0fffb0b 	ldhu	r3,-20(fp)
+10001094:	1884703a 	and	r2,r3,r2
+10001098:	10bfffcc 	andi	r2,r2,65535
+1000109c:	1000071e 	bne	r2,zero,100010bc <main+0xcf0>
 		usb_ctl_val = UsbRead(ctl_reg);
 
 		if(!(usb_ctl_val & no_device))
 		{
 			//USB hot plug routine
 			for(hot_plug_count = 0 ; hot_plug_count < 7 ; hot_plug_count++)
-10001078:	e0bffbc3 	ldbu	r2,-17(fp)
-1000107c:	10800044 	addi	r2,r2,1
-10001080:	e0bffbc5 	stb	r2,-17(fp)
-10001084:	e0bffbc3 	ldbu	r2,-17(fp)
-10001088:	108001f0 	cmpltui	r2,r2,7
-1000108c:	103fee1e 	bne	r2,zero,10001048 <__alt_data_end+0xf8001048>
-10001090:	00000106 	br	10001098 <main+0xcf4>
+100010a0:	e0bffbc3 	ldbu	r2,-17(fp)
+100010a4:	10800044 	addi	r2,r2,1
+100010a8:	e0bffbc5 	stb	r2,-17(fp)
+100010ac:	e0bffbc3 	ldbu	r2,-17(fp)
+100010b0:	108001f0 	cmpltui	r2,r2,7
+100010b4:	103fee1e 	bne	r2,zero,10001070 <__alt_data_end+0xf8001070>
+100010b8:	00000106 	br	100010c0 <main+0xcf4>
 			{
 				usleep(5*1000);
 				usb_ctl_val = UsbRead(ctl_reg);
 				if(usb_ctl_val & no_device) break;
-10001094:	0001883a 	nop
+100010bc:	0001883a 	nop
 			}
 			if(!(usb_ctl_val & no_device))
-10001098:	d0a6cb8b 	ldhu	r2,-25810(gp)
-1000109c:	e0fffb0b 	ldhu	r3,-20(fp)
-100010a0:	1884703a 	and	r2,r3,r2
-100010a4:	10bfffcc 	andi	r2,r2,65535
-100010a8:	1000241e 	bne	r2,zero,1000113c <main+0xd98>
+100010c0:	d0a6cb8b 	ldhu	r2,-25810(gp)
+100010c4:	e0fffb0b 	ldhu	r3,-20(fp)
+100010c8:	1884703a 	and	r2,r3,r2
+100010cc:	10bfffcc 	andi	r2,r2,65535
+100010d0:	1000241e 	bne	r2,zero,10001164 <main+0xd98>
 			{
 				printf("\n[INFO]: the keyboard has been removed!!! \n");
-100010ac:	01040074 	movhi	r4,4097
-100010b0:	21084d04 	addi	r4,r4,8500
-100010b4:	000241c0 	call	1000241c <puts>
+100010d4:	01040074 	movhi	r4,4097
+100010d8:	21084d04 	addi	r4,r4,8500
+100010dc:	000241c0 	call	1000241c <puts>
 				printf("[INFO]: please insert again!!! \n");
-100010b8:	01040074 	movhi	r4,4097
-100010bc:	21085804 	addi	r4,r4,8544
-100010c0:	000241c0 	call	1000241c <puts>
+100010e0:	01040074 	movhi	r4,4097
+100010e4:	21085804 	addi	r4,r4,8544
+100010e8:	000241c0 	call	1000241c <puts>
 			}
 		}
 
 		while (!(usb_ctl_val & no_device))
-100010c4:	00001d06 	br	1000113c <main+0xd98>
+100010ec:	00001d06 	br	10001164 <main+0xd98>
 		{
 
 			usb_ctl_val = UsbRead(ctl_reg);
-100010c8:	d0a6cb0b 	ldhu	r2,-25812(gp)
-100010cc:	10bfffcc 	andi	r2,r2,65535
-100010d0:	1009883a 	mov	r4,r2
-100010d4:	00011c00 	call	100011c0 <UsbRead>
-100010d8:	e0bffb0d 	sth	r2,-20(fp)
+100010f0:	d0a6cb0b 	ldhu	r2,-25812(gp)
+100010f4:	10bfffcc 	andi	r2,r2,65535
+100010f8:	1009883a 	mov	r4,r2
+100010fc:	00011d40 	call	100011d4 <UsbRead>
+10001100:	e0bffb0d 	sth	r2,-20(fp)
 			usleep(5*1000);
-100010dc:	0104e204 	movi	r4,5000
-100010e0:	000fa880 	call	1000fa88 <usleep>
+10001104:	0104e204 	movi	r4,5000
+10001108:	000fa880 	call	1000fa88 <usleep>
 			usb_ctl_val = UsbRead(ctl_reg);
-100010e4:	d0a6cb0b 	ldhu	r2,-25812(gp)
-100010e8:	10bfffcc 	andi	r2,r2,65535
-100010ec:	1009883a 	mov	r4,r2
-100010f0:	00011c00 	call	100011c0 <UsbRead>
-100010f4:	e0bffb0d 	sth	r2,-20(fp)
+1000110c:	d0a6cb0b 	ldhu	r2,-25812(gp)
+10001110:	10bfffcc 	andi	r2,r2,65535
+10001114:	1009883a 	mov	r4,r2
+10001118:	00011d40 	call	100011d4 <UsbRead>
+1000111c:	e0bffb0d 	sth	r2,-20(fp)
 			usleep(5*1000);
-100010f8:	0104e204 	movi	r4,5000
-100010fc:	000fa880 	call	1000fa88 <usleep>
+10001120:	0104e204 	movi	r4,5000
+10001124:	000fa880 	call	1000fa88 <usleep>
 			usb_ctl_val = UsbRead(ctl_reg);
-10001100:	d0a6cb0b 	ldhu	r2,-25812(gp)
-10001104:	10bfffcc 	andi	r2,r2,65535
-10001108:	1009883a 	mov	r4,r2
-1000110c:	00011c00 	call	100011c0 <UsbRead>
-10001110:	e0bffb0d 	sth	r2,-20(fp)
+10001128:	d0a6cb0b 	ldhu	r2,-25812(gp)
+1000112c:	10bfffcc 	andi	r2,r2,65535
+10001130:	1009883a 	mov	r4,r2
+10001134:	00011d40 	call	100011d4 <UsbRead>
+10001138:	e0bffb0d 	sth	r2,-20(fp)
 			usleep(5*1000);
-10001114:	0104e204 	movi	r4,5000
-10001118:	000fa880 	call	1000fa88 <usleep>
+1000113c:	0104e204 	movi	r4,5000
+10001140:	000fa880 	call	1000fa88 <usleep>
 
 			if(usb_ctl_val & no_device)
-1000111c:	d0a6cb8b 	ldhu	r2,-25810(gp)
-10001120:	e0fffb0b 	ldhu	r3,-20(fp)
-10001124:	1884703a 	and	r2,r3,r2
-10001128:	10bfffcc 	andi	r2,r2,65535
-1000112c:	10000126 	beq	r2,zero,10001134 <main+0xd90>
+10001144:	d0a6cb8b 	ldhu	r2,-25810(gp)
+10001148:	e0fffb0b 	ldhu	r3,-20(fp)
+1000114c:	1884703a 	and	r2,r3,r2
+10001150:	10bfffcc 	andi	r2,r2,65535
+10001154:	10000126 	beq	r2,zero,1000115c <main+0xd90>
 				goto USB_HOT_PLUG;
-10001130:	003ca706 	br	100003d0 <__alt_data_end+0xf80003d0>
+10001158:	003ca706 	br	100003f8 <__alt_data_end+0xf80003f8>
 
 			usleep(200);
-10001134:	01003204 	movi	r4,200
-10001138:	000fa880 	call	1000fa88 <usleep>
+1000115c:	01003204 	movi	r4,200
+10001160:	000fa880 	call	1000fa88 <usleep>
 				printf("\n[INFO]: the keyboard has been removed!!! \n");
 				printf("[INFO]: please insert again!!! \n");
 			}
 		}
 
 		while (!(usb_ctl_val & no_device))
-1000113c:	d0a6cb8b 	ldhu	r2,-25810(gp)
-10001140:	e0fffb0b 	ldhu	r3,-20(fp)
-10001144:	1884703a 	and	r2,r3,r2
-10001148:	10bfffcc 	andi	r2,r2,65535
-1000114c:	103fde26 	beq	r2,zero,100010c8 <__alt_data_end+0xf80010c8>
+10001164:	d0a6cb8b 	ldhu	r2,-25810(gp)
+10001168:	e0fffb0b 	ldhu	r3,-20(fp)
+1000116c:	1884703a 	and	r2,r3,r2
+10001170:	10bfffcc 	andi	r2,r2,65535
+10001174:	103fde26 	beq	r2,zero,100010f0 <__alt_data_end+0xf80010f0>
 				goto USB_HOT_PLUG;
 
 			usleep(200);
 		}
 
 	}//end while
-10001150:	003f5306 	br	10000ea0 <__alt_data_end+0xf8000ea0>
+10001178:	003f5306 	br	10000ec8 <__alt_data_end+0xf8000ec8>
 
-10001154 <UsbWrite>:
+1000117c <UsbWrite>:
  *
  * @note     None
  *
  ******************************************************************************/
 void UsbWrite(alt_u16 Address, alt_u16 Data)
 {
-10001154:	defffc04 	addi	sp,sp,-16
-10001158:	dfc00315 	stw	ra,12(sp)
-1000115c:	df000215 	stw	fp,8(sp)
-10001160:	df000204 	addi	fp,sp,8
-10001164:	2007883a 	mov	r3,r4
-10001168:	2805883a 	mov	r2,r5
-1000116c:	e0fffe0d 	sth	r3,-8(fp)
-10001170:	e0bfff0d 	sth	r2,-4(fp)
-	IO_write(Address,HPI_ADDR);
-10001174:	e0bffe0b 	ldhu	r2,-8(fp)
-10001178:	10803fcc 	andi	r2,r2,255
-1000117c:	01400084 	movi	r5,2
-10001180:	1009883a 	mov	r4,r2
-10001184:	00002f40 	call	100002f4 <IO_write>
-	IO_write(Data,HPI_DATA);
-10001188:	e0bfff0b 	ldhu	r2,-4(fp)
-1000118c:	10803fcc 	andi	r2,r2,255
-10001190:	000b883a 	mov	r5,zero
-10001194:	1009883a 	mov	r4,r2
-10001198:	00002f40 	call	100002f4 <IO_write>
-	printf("USB WRITE\n");
-1000119c:	01040074 	movhi	r4,4097
-100011a0:	21086004 	addi	r4,r4,8576
-100011a4:	000241c0 	call	1000241c <puts>
+1000117c:	defffc04 	addi	sp,sp,-16
+10001180:	dfc00315 	stw	ra,12(sp)
+10001184:	df000215 	stw	fp,8(sp)
+10001188:	df000204 	addi	fp,sp,8
+1000118c:	2007883a 	mov	r3,r4
+10001190:	2805883a 	mov	r2,r5
+10001194:	e0fffe0d 	sth	r3,-8(fp)
+10001198:	e0bfff0d 	sth	r2,-4(fp)
+	IO_write(HPI_ADDR,Address);
+1000119c:	e0bffe0b 	ldhu	r2,-8(fp)
+100011a0:	100b883a 	mov	r5,r2
+100011a4:	01000084 	movi	r4,2
+100011a8:	00002f40 	call	100002f4 <IO_write>
+	IO_write(HPI_DATA,Data);
+100011ac:	e0bfff0b 	ldhu	r2,-4(fp)
+100011b0:	100b883a 	mov	r5,r2
+100011b4:	0009883a 	mov	r4,zero
+100011b8:	00002f40 	call	100002f4 <IO_write>
+	//printf("USB WRITE\n");
 
 
 }
-100011a8:	0001883a 	nop
-100011ac:	e037883a 	mov	sp,fp
-100011b0:	dfc00117 	ldw	ra,4(sp)
-100011b4:	df000017 	ldw	fp,0(sp)
-100011b8:	dec00204 	addi	sp,sp,8
-100011bc:	f800283a 	ret
+100011bc:	0001883a 	nop
+100011c0:	e037883a 	mov	sp,fp
+100011c4:	dfc00117 	ldw	ra,4(sp)
+100011c8:	df000017 	ldw	fp,0(sp)
+100011cc:	dec00204 	addi	sp,sp,8
+100011d0:	f800283a 	ret
 
-100011c0 <UsbRead>:
+100011d4 <UsbRead>:
  *
  * @note     None
  *
  ******************************************************************************/
 alt_u16 UsbRead(alt_u16 Address)
 {
-100011c0:	defffd04 	addi	sp,sp,-12
-100011c4:	dfc00215 	stw	ra,8(sp)
-100011c8:	df000115 	stw	fp,4(sp)
-100011cc:	df000104 	addi	fp,sp,4
-100011d0:	2005883a 	mov	r2,r4
-100011d4:	e0bfff0d 	sth	r2,-4(fp)
-	IO_write(Address,HPI_ADDR);
-100011d8:	e0bfff0b 	ldhu	r2,-4(fp)
-100011dc:	10803fcc 	andi	r2,r2,255
-100011e0:	01400084 	movi	r5,2
-100011e4:	1009883a 	mov	r4,r2
-100011e8:	00002f40 	call	100002f4 <IO_write>
-	IO_read(HPI_DATA);
-100011ec:	0009883a 	mov	r4,zero
-100011f0:	00003500 	call	10000350 <IO_read>
-	printf("USB Read\n");
-100011f4:	01040074 	movhi	r4,4097
-100011f8:	21086304 	addi	r4,r4,8588
-100011fc:	000241c0 	call	1000241c <puts>
-	return(HPI_DATA);
-10001200:	0005883a 	mov	r2,zero
+100011d4:	defffd04 	addi	sp,sp,-12
+100011d8:	dfc00215 	stw	ra,8(sp)
+100011dc:	df000115 	stw	fp,4(sp)
+100011e0:	df000104 	addi	fp,sp,4
+100011e4:	2005883a 	mov	r2,r4
+100011e8:	e0bfff0d 	sth	r2,-4(fp)
+	IO_write(HPI_ADDR,Address);
+100011ec:	e0bfff0b 	ldhu	r2,-4(fp)
+100011f0:	100b883a 	mov	r5,r2
+100011f4:	01000084 	movi	r4,2
+100011f8:	00002f40 	call	100002f4 <IO_write>
+	return IO_read(HPI_DATA);
+100011fc:	0009883a 	mov	r4,zero
+10001200:	00003640 	call	10000364 <IO_read>
+	//printf("USB Read\n");
+
 }
 10001204:	e037883a 	mov	sp,fp
 10001208:	dfc00117 	ldw	ra,4(sp)
@@ -2727,7 +2732,7 @@ void UsbSoftReset()
 1000123c:	000fa880 	call	1000fa88 <usleep>
 	printf("[USB INIT]:reset finished!\n");
 10001240:	01040074 	movhi	r4,4097
-10001244:	21086604 	addi	r4,r4,8600
+10001244:	21086004 	addi	r4,r4,8576
 10001248:	000241c0 	call	1000241c <puts>
 
 	usleep(500000);
@@ -2736,42 +2741,42 @@ void UsbSoftReset()
 10001254:	000fa880 	call	1000fa88 <usleep>
 	printf("[USB INIT]:Clear up the interrupt\r\n");
 10001258:	01040074 	movhi	r4,4097
-1000125c:	21086d04 	addi	r4,r4,8628
+1000125c:	21086704 	addi	r4,r4,8604
 10001260:	000241c0 	call	1000241c <puts>
 	IO_read(HPI_MAILBOX);
 10001264:	01000044 	movi	r4,1
-10001268:	00003500 	call	10000350 <IO_read>
+10001268:	00003640 	call	10000364 <IO_read>
 	IO_read(HPI_STATUS);
 1000126c:	010000c4 	movi	r4,3
-10001270:	00003500 	call	10000350 <IO_read>
+10001270:	00003640 	call	10000364 <IO_read>
 
 	// Had to add the write due to a bug in BIOS where they overwrite
 	// the mailbox after initialization with garbage.  The read clears
 	// any pending interrupts.
 	UsbRead (HPI_SIE1_MSG_ADR);
 10001274:	01005104 	movi	r4,324
-10001278:	00011c00 	call	100011c0 <UsbRead>
+10001278:	00011d40 	call	100011d4 <UsbRead>
 	UsbWrite (HPI_SIE1_MSG_ADR, 0);
 1000127c:	000b883a 	mov	r5,zero
 10001280:	01005104 	movi	r4,324
-10001284:	00011540 	call	10001154 <UsbWrite>
+10001284:	000117c0 	call	1000117c <UsbWrite>
 	UsbRead (HPI_SIE2_MSG_ADR);
 10001288:	01005204 	movi	r4,328
-1000128c:	00011c00 	call	100011c0 <UsbRead>
+1000128c:	00011d40 	call	100011d4 <UsbRead>
 	UsbWrite (HPI_SIE2_MSG_ADR, 0);
 10001290:	000b883a 	mov	r5,zero
 10001294:	01005204 	movi	r4,328
-10001298:	00011540 	call	10001154 <UsbWrite>
+10001298:	000117c0 	call	1000117c <UsbWrite>
 
 
 	UsbWrite (HOST1_STAT_REG, 0xFFFF);
 1000129c:	017fffd4 	movui	r5,65535
 100012a0:	01302414 	movui	r4,49296
-100012a4:	00011540 	call	10001154 <UsbWrite>
+100012a4:	000117c0 	call	1000117c <UsbWrite>
 	UsbWrite (HOST2_STAT_REG, 0xFFFF);
 100012a8:	017fffd4 	movui	r5,65535
 100012ac:	01302c14 	movui	r4,49328
-100012b0:	00011540 	call	10001154 <UsbWrite>
+100012b0:	000117c0 	call	1000117c <UsbWrite>
 }
 100012b4:	0001883a 	nop
 100012b8:	e037883a 	mov	sp,fp
@@ -2868,7 +2873,7 @@ void UsbSetAddress()
 	UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
 100013a8:	01414004 	movi	r5,1280
 100013ac:	01006c04 	movi	r4,432
-100013b0:	00011540 	call	10001154 <UsbWrite>
+100013b0:	000117c0 	call	1000117c <UsbWrite>
 }
 100013b4:	0001883a 	nop
 100013b8:	e037883a 	mov	sp,fp
@@ -2989,7 +2994,7 @@ void UsbGetDeviceDesc1()
 	UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
 100014f0:	01414004 	movi	r5,1280
 100014f4:	01006c04 	movi	r4,432
-100014f8:	00011540 	call	10001154 <UsbWrite>
+100014f8:	000117c0 	call	1000117c <UsbWrite>
 }
 100014fc:	0001883a 	nop
 10001500:	e037883a 	mov	sp,fp
@@ -3161,7 +3166,7 @@ void UsbGetDeviceDesc2()
 	UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
 100016c8:	01414004 	movi	r5,1280
 100016cc:	01006c04 	movi	r4,432
-100016d0:	00011540 	call	10001154 <UsbWrite>
+100016d0:	000117c0 	call	1000117c <UsbWrite>
 }
 100016d4:	0001883a 	nop
 100016d8:	e037883a 	mov	sp,fp
@@ -3308,7 +3313,7 @@ void UsbGetConfigDesc1()
 	UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
 10001858:	01414004 	movi	r5,1280
 1000185c:	01006c04 	movi	r4,432
-10001860:	00011540 	call	10001154 <UsbWrite>
+10001860:	000117c0 	call	1000117c <UsbWrite>
 }
 10001864:	0001883a 	nop
 10001868:	e037883a 	mov	sp,fp
@@ -3533,7 +3538,7 @@ void UsbGetConfigDesc2()
 	UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
 10001ac0:	01414004 	movi	r5,1280
 10001ac4:	01006c04 	movi	r4,432
-10001ac8:	00011540 	call	10001154 <UsbWrite>
+10001ac8:	000117c0 	call	1000117c <UsbWrite>
 }
 10001acc:	0001883a 	nop
 10001ad0:	e037883a 	mov	sp,fp
@@ -3626,7 +3631,7 @@ void UsbSetConfig()
 	UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
 10001bc0:	01414004 	movi	r5,1280
 10001bc4:	01006c04 	movi	r4,432
-10001bc8:	00011540 	call	10001154 <UsbWrite>
+10001bc8:	000117c0 	call	1000117c <UsbWrite>
 
 }
 10001bcc:	0001883a 	nop
@@ -3720,7 +3725,7 @@ void UsbClassRequest()
 	UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
 10001cc0:	01414004 	movi	r5,1280
 10001cc4:	01006c04 	movi	r4,432
-10001cc8:	00011540 	call	10001154 <UsbWrite>
+10001cc8:	000117c0 	call	1000117c <UsbWrite>
 }
 10001ccc:	0001883a 	nop
 10001cd0:	e037883a 	mov	sp,fp
@@ -3841,7 +3846,7 @@ void UsbGetHidDesc()
 	UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
 10001e08:	01414004 	movi	r5,1280
 10001e0c:	01006c04 	movi	r4,432
-10001e10:	00011540 	call	10001154 <UsbWrite>
+10001e10:	000117c0 	call	1000117c <UsbWrite>
 
 }
 10001e14:	0001883a 	nop
@@ -4145,7 +4150,7 @@ void UsbGetReportDesc()
 	UsbWrite(HUSB_SIE1_pCurrentTDPtr,0x0500); //HUSB_SIE1_pCurrentTDPtr
 10002148:	01414004 	movi	r5,1280
 1000214c:	01006c04 	movi	r4,432
-10002150:	00011540 	call	10001154 <UsbWrite>
+10002150:	000117c0 	call	1000117c <UsbWrite>
 
 }
 10002154:	0001883a 	nop
@@ -4168,12 +4173,12 @@ alt_u16 UsbWaitTDListDone()
 
 	usb_ctl_val = UsbRead(HPI_SIE1_MSG_ADR); // STEP 3 j
 1000217c:	01005104 	movi	r4,324
-10002180:	00011c00 	call	100011c0 <UsbRead>
+10002180:	00011d40 	call	100011d4 <UsbRead>
 10002184:	e0bfff0d 	sth	r2,-4(fp)
 	UsbWrite(HPI_SIE1_MSG_ADR, 0);
 10002188:	000b883a 	mov	r5,zero
 1000218c:	01005104 	movi	r4,324
-10002190:	00011540 	call	10001154 <UsbWrite>
+10002190:	000117c0 	call	1000117c <UsbWrite>
 	while (usb_ctl_val != HUSB_TDListDone)  // k, read sie1 msg register
 10002194:	00000d06 	br	100021cc <UsbWaitTDListDone+0x60>
 	{
@@ -4188,17 +4193,17 @@ alt_u16 UsbWaitTDListDone()
 100021a0:	e0bfff0b 	ldhu	r2,-4(fp)
 100021a4:	100b883a 	mov	r5,r2
 100021a8:	01040074 	movhi	r4,4097
-100021ac:	21087604 	addi	r4,r4,8664
+100021ac:	21087004 	addi	r4,r4,8640
 100021b0:	00023200 	call	10002320 <printf>
 		}
 		usb_ctl_val = UsbRead(HPI_SIE1_MSG_ADR);
 100021b4:	01005104 	movi	r4,324
-100021b8:	00011c00 	call	100011c0 <UsbRead>
+100021b8:	00011d40 	call	100011d4 <UsbRead>
 100021bc:	e0bfff0d 	sth	r2,-4(fp)
 		UsbWrite(HPI_SIE1_MSG_ADR, 0);
 100021c0:	000b883a 	mov	r5,zero
 100021c4:	01005104 	movi	r4,324
-100021c8:	00011540 	call	10001154 <UsbWrite>
+100021c8:	000117c0 	call	1000117c <UsbWrite>
 {
 	alt_u16 usb_ctl_val;
 
@@ -4235,10 +4240,10 @@ alt_u16 UsbGetRetryCnt()
 
 	IO_read(HPI_STATUS);
 10002200:	010000c4 	movi	r4,3
-10002204:	00003500 	call	10000350 <IO_read>
+10002204:	00003640 	call	10000364 <IO_read>
 	if(UsbRead(HPI_SIE1_MSG_ADR) == HUSB_TDListDone)
 10002208:	01005104 	movi	r4,324
-1000220c:	00011c00 	call	100011c0 <UsbRead>
+1000220c:	00011d40 	call	100011d4 <UsbRead>
 10002210:	10bfffcc 	andi	r2,r2,65535
 10002214:	10840018 	cmpnei	r2,r2,4096
 10002218:	1000091e 	bne	r2,zero,10002240 <UsbGetRetryCnt+0x50>
@@ -4246,12 +4251,12 @@ alt_u16 UsbGetRetryCnt()
 		UsbWrite(HPI_SIE1_MSG_ADR, 0);
 1000221c:	000b883a 	mov	r5,zero
 10002220:	01005104 	movi	r4,324
-10002224:	00011540 	call	10001154 <UsbWrite>
+10002224:	000117c0 	call	1000117c <UsbWrite>
 
 		while (!(IO_read(HPI_STATUS) & HPI_STATUS_SIE1msg_FLAG) )  //read sie1 msg register
 10002228:	0001883a 	nop
 1000222c:	010000c4 	movi	r4,3
-10002230:	00003500 	call	10000350 <IO_read>
+10002230:	00003640 	call	10000364 <IO_read>
 10002234:	10bfffcc 	andi	r2,r2,65535
 10002238:	1080040c 	andi	r2,r2,16
 1000223c:	103ffb26 	beq	r2,zero,1000222c <__alt_data_end+0xf800222c>
@@ -4265,7 +4270,7 @@ alt_u16 UsbGetRetryCnt()
 10002248:	00002f40 	call	100002f4 <IO_write>
 	usb_ctl_val = IO_read(HPI_DATA);
 1000224c:	0009883a 	mov	r4,zero
-10002250:	00003500 	call	10000350 <IO_read>
+10002250:	00003640 	call	10000364 <IO_read>
 10002254:	e0bfff0d 	sth	r2,-4(fp)
 
 	return usb_ctl_val;
@@ -4297,7 +4302,7 @@ void UsbPrintMem()
 	{
 		code = IO_read(HPI_DATA);
 10002294:	0009883a 	mov	r4,zero
-10002298:	00003500 	call	10000350 <IO_read>
+10002298:	00003640 	call	10000364 <IO_read>
 1000229c:	10bfffcc 	andi	r2,r2,65535
 100022a0:	e0bfff15 	stw	r2,-4(fp)
 		printf("\naddr %x = %04x\n", 0x0500+i, code);
@@ -4306,7 +4311,7 @@ void UsbPrintMem()
 100022ac:	e1bfff17 	ldw	r6,-4(fp)
 100022b0:	100b883a 	mov	r5,r2
 100022b4:	01040074 	movhi	r4,4097
-100022b8:	21087e04 	addi	r4,r4,8696
+100022b8:	21087804 	addi	r4,r4,8672
 100022bc:	00023200 	call	10002320 <printf>
 
 void UsbPrintMem()
@@ -4353,7 +4358,7 @@ void UsbPrintMem()
 1000232c:	d9800215 	stw	r6,8(sp)
 10002330:	d9c00315 	stw	r7,12(sp)
 10002334:	00840074 	movhi	r2,4097
-10002338:	108fef04 	addi	r2,r2,16316
+10002338:	108fe904 	addi	r2,r2,16292
 1000233c:	10800017 	ldw	r2,0(r2)
 10002340:	200b883a 	mov	r5,r4
 10002344:	d9800104 	addi	r6,sp,4
@@ -4375,7 +4380,7 @@ void UsbPrintMem()
 1000237c:	10c00044 	addi	r3,r2,1
 10002380:	d8800115 	stw	r2,4(sp)
 10002384:	00840074 	movhi	r2,4097
-10002388:	10888304 	addi	r2,r2,8716
+10002388:	10887d04 	addi	r2,r2,8692
 1000238c:	d8800215 	stw	r2,8(sp)
 10002390:	00800044 	movi	r2,1
 10002394:	d8800315 	stw	r2,12(sp)
@@ -4415,7 +4420,7 @@ void UsbPrintMem()
 
 1000241c <puts>:
 1000241c:	00840074 	movhi	r2,4097
-10002420:	108fef04 	addi	r2,r2,16316
+10002420:	108fe904 	addi	r2,r2,16292
 10002424:	200b883a 	mov	r5,r4
 10002428:	11000017 	ldw	r4,0(r2)
 1000242c:	000235c1 	jmpi	1000235c <_puts_r>
@@ -4505,7 +4510,7 @@ void UsbPrintMem()
 1000256c:	d8c00404 	addi	r3,sp,16
 10002570:	05040074 	movhi	r20,4097
 10002574:	d9001e04 	addi	r4,sp,120
-10002578:	a5089484 	addi	r20,r20,8786
+10002578:	a5088e84 	addi	r20,r20,8762
 1000257c:	d8c01e15 	stw	r3,120(sp)
 10002580:	d8002015 	stw	zero,128(sp)
 10002584:	d8001f15 	stw	zero,124(sp)
@@ -4683,7 +4688,7 @@ void UsbPrintMem()
 10002834:	94800094 	ori	r18,r18,2
 10002838:	9802b41e 	bne	r19,zero,1000330c <___vfprintf_internal_r+0xe44>
 1000283c:	01440074 	movhi	r5,4097
-10002840:	29488d04 	addi	r5,r5,8756
+10002840:	29488704 	addi	r5,r5,8732
 10002844:	d9403915 	stw	r5,228(sp)
 10002848:	04401e04 	movi	r17,120
 1000284c:	d8802a17 	ldw	r2,168(sp)
@@ -4871,7 +4876,7 @@ void UsbPrintMem()
 10002b24:	008011c4 	movi	r2,71
 10002b28:	1445580e 	bge	r2,r17,1000408c <___vfprintf_internal_r+0x1bc4>
 10002b2c:	04040074 	movhi	r16,4097
-10002b30:	84088504 	addi	r16,r16,8724
+10002b30:	84087f04 	addi	r16,r16,8700
 10002b34:	00c000c4 	movi	r3,3
 10002b38:	00bfdfc4 	movi	r2,-129
 10002b3c:	d8c02915 	stw	r3,164(sp)
@@ -4963,7 +4968,7 @@ void UsbPrintMem()
 10002c94:	d8801f17 	ldw	r2,124(sp)
 10002c98:	4cc52f0e 	bge	r9,r19,10004158 <___vfprintf_internal_r+0x1c90>
 10002c9c:	01440074 	movhi	r5,4097
-10002ca0:	29489884 	addi	r5,r5,8802
+10002ca0:	29489284 	addi	r5,r5,8778
 10002ca4:	dc403b15 	stw	r17,236(sp)
 10002ca8:	d9403515 	stw	r5,212(sp)
 10002cac:	9823883a 	mov	r17,r19
@@ -4979,7 +4984,7 @@ void UsbPrintMem()
 10002cd4:	01040074 	movhi	r4,4097
 10002cd8:	18c00404 	addi	r3,r3,16
 10002cdc:	10800044 	addi	r2,r2,1
-10002ce0:	21089884 	addi	r4,r4,8802
+10002ce0:	21089284 	addi	r4,r4,8778
 10002ce4:	41000015 	stw	r4,0(r8)
 10002ce8:	45800115 	stw	r22,4(r8)
 10002cec:	d8c02015 	stw	r3,128(sp)
@@ -5048,7 +5053,7 @@ void UsbPrintMem()
 10002de8:	d8801f17 	ldw	r2,124(sp)
 10002dec:	e584360e 	bge	fp,r22,10003ec8 <___vfprintf_internal_r+0x1a00>
 10002df0:	01440074 	movhi	r5,4097
-10002df4:	29489484 	addi	r5,r5,8786
+10002df4:	29488e84 	addi	r5,r5,8762
 10002df8:	dc402a15 	stw	r17,168(sp)
 10002dfc:	d9402c15 	stw	r5,176(sp)
 10002e00:	b023883a 	mov	r17,r22
@@ -5116,7 +5121,7 @@ void UsbPrintMem()
 10002ef8:	d8801f17 	ldw	r2,124(sp)
 10002efc:	8c04c40e 	bge	r17,r16,10004210 <___vfprintf_internal_r+0x1d48>
 10002f00:	01440074 	movhi	r5,4097
-10002f04:	29489884 	addi	r5,r5,8802
+10002f04:	29489284 	addi	r5,r5,8778
 10002f08:	d9403515 	stw	r5,212(sp)
 10002f0c:	048001c4 	movi	r18,7
 10002f10:	dcc02d17 	ldw	r19,180(sp)
@@ -5127,7 +5132,7 @@ void UsbPrintMem()
 10002f24:	01040074 	movhi	r4,4097
 10002f28:	18c00404 	addi	r3,r3,16
 10002f2c:	10800044 	addi	r2,r2,1
-10002f30:	21089884 	addi	r4,r4,8802
+10002f30:	21089284 	addi	r4,r4,8778
 10002f34:	41000015 	stw	r4,0(r8)
 10002f38:	44400115 	stw	r17,4(r8)
 10002f3c:	d8c02015 	stw	r3,128(sp)
@@ -5205,7 +5210,7 @@ void UsbPrintMem()
 1000305c:	84003fcc 	andi	r16,r16,255
 10003060:	8005ba1e 	bne	r16,zero,1000474c <___vfprintf_internal_r+0x2284>
 10003064:	01040074 	movhi	r4,4097
-10003068:	21088804 	addi	r4,r4,8736
+10003068:	21088204 	addi	r4,r4,8712
 1000306c:	d9003915 	stw	r4,228(sp)
 10003070:	9080080c 	andi	r2,r18,32
 10003074:	10006126 	beq	r2,zero,100031fc <___vfprintf_internal_r+0xd34>
@@ -5302,7 +5307,7 @@ void UsbPrintMem()
 100031e0:	84003fcc 	andi	r16,r16,255
 100031e4:	8005661e 	bne	r16,zero,10004780 <___vfprintf_internal_r+0x22b8>
 100031e8:	01040074 	movhi	r4,4097
-100031ec:	21088d04 	addi	r4,r4,8756
+100031ec:	21088704 	addi	r4,r4,8732
 100031f0:	d9003915 	stw	r4,228(sp)
 100031f4:	9080080c 	andi	r2,r18,32
 100031f8:	103f9f1e 	bne	r2,zero,10003078 <__alt_data_end+0xf8003078>
@@ -5375,7 +5380,7 @@ void UsbPrintMem()
 10003304:	0039883a 	mov	fp,zero
 10003308:	003e5306 	br	10002c58 <__alt_data_end+0xf8002c58>
 1000330c:	01040074 	movhi	r4,4097
-10003310:	21088d04 	addi	r4,r4,8756
+10003310:	21088704 	addi	r4,r4,8732
 10003314:	0039883a 	mov	fp,zero
 10003318:	d9003915 	stw	r4,228(sp)
 1000331c:	04401e04 	movi	r17,120
@@ -5392,7 +5397,7 @@ void UsbPrintMem()
 10003348:	d8002785 	stb	zero,158(sp)
 1000334c:	003fe906 	br	100032f4 <__alt_data_end+0xf80032f4>
 10003350:	01440074 	movhi	r5,4097
-10003354:	29488d04 	addi	r5,r5,8756
+10003354:	29488704 	addi	r5,r5,8732
 10003358:	d9403915 	stw	r5,228(sp)
 1000335c:	d8c02e15 	stw	r3,184(sp)
 10003360:	1025883a 	mov	r18,r2
@@ -5423,7 +5428,7 @@ void UsbPrintMem()
 100033c4:	1000f71e 	bne	r2,zero,100037a4 <___vfprintf_internal_r+0x12dc>
 100033c8:	d8801f17 	ldw	r2,124(sp)
 100033cc:	01040074 	movhi	r4,4097
-100033d0:	21089404 	addi	r4,r4,8784
+100033d0:	21088e04 	addi	r4,r4,8760
 100033d4:	18c00044 	addi	r3,r3,1
 100033d8:	10800044 	addi	r2,r2,1
 100033dc:	41000015 	stw	r4,0(r8)
@@ -5459,7 +5464,7 @@ void UsbPrintMem()
 10003454:	d8801f17 	ldw	r2,124(sp)
 10003458:	8c00880e 	bge	r17,r16,1000367c <___vfprintf_internal_r+0x11b4>
 1000345c:	01440074 	movhi	r5,4097
-10003460:	29489484 	addi	r5,r5,8786
+10003460:	29488e84 	addi	r5,r5,8762
 10003464:	d9402c15 	stw	r5,176(sp)
 10003468:	058001c4 	movi	r22,7
 1000346c:	dcc02d17 	ldw	r19,180(sp)
@@ -5491,7 +5496,7 @@ void UsbPrintMem()
 100034d4:	d8801f17 	ldw	r2,124(sp)
 100034d8:	e5838f0e 	bge	fp,r22,10004318 <___vfprintf_internal_r+0x1e50>
 100034dc:	01440074 	movhi	r5,4097
-100034e0:	29489484 	addi	r5,r5,8786
+100034e0:	29488e84 	addi	r5,r5,8762
 100034e4:	dc403015 	stw	r17,192(sp)
 100034e8:	d9402c15 	stw	r5,176(sp)
 100034ec:	b023883a 	mov	r17,r22
@@ -5595,7 +5600,7 @@ void UsbPrintMem()
 10003674:	b2000204 	addi	r8,r22,8
 10003678:	003e1806 	br	10002edc <__alt_data_end+0xf8002edc>
 1000367c:	01040074 	movhi	r4,4097
-10003680:	21089484 	addi	r4,r4,8786
+10003680:	21088e84 	addi	r4,r4,8762
 10003684:	d9002c15 	stw	r4,176(sp)
 10003688:	d9002c17 	ldw	r4,176(sp)
 1000368c:	1c07883a 	add	r3,r3,r16
@@ -5693,7 +5698,7 @@ void UsbPrintMem()
 100037fc:	d8801f17 	ldw	r2,124(sp)
 10003800:	b4419d0e 	bge	r22,r17,10003e78 <___vfprintf_internal_r+0x19b0>
 10003804:	01040074 	movhi	r4,4097
-10003808:	21089484 	addi	r4,r4,8786
+10003808:	21088e84 	addi	r4,r4,8762
 1000380c:	d9002c15 	stw	r4,176(sp)
 10003810:	070001c4 	movi	fp,7
 10003814:	dcc02d17 	ldw	r19,180(sp)
@@ -5764,7 +5769,7 @@ void UsbPrintMem()
 10003918:	07000404 	movi	fp,16
 1000391c:	e400810e 	bge	fp,r16,10003b24 <___vfprintf_internal_r+0x165c>
 10003920:	01440074 	movhi	r5,4097
-10003924:	29489484 	addi	r5,r5,8786
+10003924:	29488e84 	addi	r5,r5,8762
 10003928:	d9402c15 	stw	r5,176(sp)
 1000392c:	01c001c4 	movi	r7,7
 10003930:	dcc02d17 	ldw	r19,180(sp)
@@ -5856,7 +5861,7 @@ void UsbPrintMem()
 10003a88:	d8801f17 	ldw	r2,124(sp)
 10003a8c:	8c3efb0e 	bge	r17,r16,1000367c <__alt_data_end+0xf800367c>
 10003a90:	01440074 	movhi	r5,4097
-10003a94:	29489484 	addi	r5,r5,8786
+10003a94:	29488e84 	addi	r5,r5,8762
 10003a98:	d9402c15 	stw	r5,176(sp)
 10003a9c:	058001c4 	movi	r22,7
 10003aa0:	dcc02d17 	ldw	r19,180(sp)
@@ -5893,7 +5898,7 @@ void UsbPrintMem()
 10003b1c:	45800204 	addi	r22,r8,8
 10003b20:	003eca06 	br	1000364c <__alt_data_end+0xf800364c>
 10003b24:	01040074 	movhi	r4,4097
-10003b28:	21089484 	addi	r4,r4,8786
+10003b28:	21088e84 	addi	r4,r4,8762
 10003b2c:	d9002c15 	stw	r4,176(sp)
 10003b30:	d8802c17 	ldw	r2,176(sp)
 10003b34:	1c07883a 	add	r3,r3,r16
@@ -6106,7 +6111,7 @@ void UsbPrintMem()
 10003e70:	0005883a 	mov	r2,zero
 10003e74:	003d4006 	br	10003378 <__alt_data_end+0xf8003378>
 10003e78:	01440074 	movhi	r5,4097
-10003e7c:	29489484 	addi	r5,r5,8786
+10003e7c:	29488e84 	addi	r5,r5,8762
 10003e80:	d9402c15 	stw	r5,176(sp)
 10003e84:	d9402c17 	ldw	r5,176(sp)
 10003e88:	1c47883a 	add	r3,r3,r17
@@ -6126,7 +6131,7 @@ void UsbPrintMem()
 10003ec0:	90a4703a 	and	r18,r18,r2
 10003ec4:	003a6106 	br	1000284c <__alt_data_end+0xf800284c>
 10003ec8:	01040074 	movhi	r4,4097
-10003ecc:	21089484 	addi	r4,r4,8786
+10003ecc:	21088e84 	addi	r4,r4,8762
 10003ed0:	d9002c15 	stw	r4,176(sp)
 10003ed4:	003bea06 	br	10002e80 <__alt_data_end+0xf8002e80>
 10003ed8:	d9002d17 	ldw	r4,180(sp)
@@ -6142,7 +6147,7 @@ void UsbPrintMem()
 10003f00:	01000044 	movi	r4,1
 10003f04:	18c00044 	addi	r3,r3,1
 10003f08:	10800044 	addi	r2,r2,1
-10003f0c:	29489404 	addi	r5,r5,8784
+10003f0c:	29488e04 	addi	r5,r5,8760
 10003f10:	41000115 	stw	r4,4(r8)
 10003f14:	41400015 	stw	r5,0(r8)
 10003f18:	d8c02015 	stw	r3,128(sp)
@@ -6172,7 +6177,7 @@ void UsbPrintMem()
 10003f78:	05800404 	movi	r22,16
 10003f7c:	b440860e 	bge	r22,r17,10004198 <___vfprintf_internal_r+0x1cd0>
 10003f80:	01440074 	movhi	r5,4097
-10003f84:	29489484 	addi	r5,r5,8786
+10003f84:	29488e84 	addi	r5,r5,8762
 10003f88:	d9402c15 	stw	r5,176(sp)
 10003f8c:	070001c4 	movi	fp,7
 10003f90:	dcc02d17 	ldw	r19,180(sp)
@@ -6201,7 +6206,7 @@ void UsbPrintMem()
 10003fec:	008011c4 	movi	r2,71
 10003ff0:	1440b816 	blt	r2,r17,100042d4 <___vfprintf_internal_r+0x1e0c>
 10003ff4:	04040074 	movhi	r16,4097
-10003ff8:	84088604 	addi	r16,r16,8728
+10003ff8:	84088004 	addi	r16,r16,8704
 10003ffc:	00c000c4 	movi	r3,3
 10004000:	00bfdfc4 	movi	r2,-129
 10004004:	d8c02915 	stw	r3,164(sp)
@@ -6239,7 +6244,7 @@ void UsbPrintMem()
 10004084:	183dc10e 	bge	r3,zero,1000378c <__alt_data_end+0xf800378c>
 10004088:	003f7506 	br	10003e60 <__alt_data_end+0xf8003e60>
 1000408c:	04040074 	movhi	r16,4097
-10004090:	84088404 	addi	r16,r16,8720
+10004090:	84087e04 	addi	r16,r16,8696
 10004094:	003aa706 	br	10002b34 <__alt_data_end+0xf8002b34>
 10004098:	d9002d17 	ldw	r4,180(sp)
 1000409c:	d9801e04 	addi	r6,sp,120
@@ -6290,7 +6295,7 @@ void UsbPrintMem()
 10004150:	28c7883a 	add	r3,r5,r3
 10004154:	003b5b06 	br	10002ec4 <__alt_data_end+0xf8002ec4>
 10004158:	01040074 	movhi	r4,4097
-1000415c:	21089884 	addi	r4,r4,8802
+1000415c:	21089284 	addi	r4,r4,8778
 10004160:	d9003515 	stw	r4,212(sp)
 10004164:	003af206 	br	10002d30 <__alt_data_end+0xf8002d30>
 10004168:	013fffc4 	movi	r4,-1
@@ -6306,7 +6311,7 @@ void UsbPrintMem()
 10004190:	da000404 	addi	r8,sp,16
 10004194:	003d9406 	br	100037e8 <__alt_data_end+0xf80037e8>
 10004198:	01040074 	movhi	r4,4097
-1000419c:	21089484 	addi	r4,r4,8786
+1000419c:	21088e84 	addi	r4,r4,8762
 100041a0:	d9002c15 	stw	r4,176(sp)
 100041a4:	d9002c17 	ldw	r4,176(sp)
 100041a8:	1c47883a 	add	r3,r3,r17
@@ -6336,7 +6341,7 @@ void UsbPrintMem()
 10004208:	10fbaf26 	beq	r2,r3,100030c8 <__alt_data_end+0xf80030c8>
 1000420c:	003a6d06 	br	10002bc4 <__alt_data_end+0xf8002bc4>
 10004210:	01040074 	movhi	r4,4097
-10004214:	21089884 	addi	r4,r4,8802
+10004214:	21089284 	addi	r4,r4,8778
 10004218:	d9003515 	stw	r4,212(sp)
 1000421c:	003b5406 	br	10002f70 <__alt_data_end+0xf8002f70>
 10004220:	d8802a17 	ldw	r2,168(sp)
@@ -6350,7 +6355,7 @@ void UsbPrintMem()
 10004240:	dcc02e15 	stw	r19,184(sp)
 10004244:	d8002a15 	stw	zero,168(sp)
 10004248:	d8003215 	stw	zero,200(sp)
-1000424c:	84089204 	addi	r16,r16,8776
+1000424c:	84088c04 	addi	r16,r16,8752
 10004250:	0039883a 	mov	fp,zero
 10004254:	003a8006 	br	10002c58 <__alt_data_end+0xf8002c58>
 10004258:	0021883a 	mov	r16,zero
@@ -6385,7 +6390,7 @@ void UsbPrintMem()
 100042cc:	07000b44 	movi	fp,45
 100042d0:	003a5e06 	br	10002c4c <__alt_data_end+0xf8002c4c>
 100042d4:	04040074 	movhi	r16,4097
-100042d8:	84088704 	addi	r16,r16,8732
+100042d8:	84088104 	addi	r16,r16,8708
 100042dc:	003f4706 	br	10003ffc <__alt_data_end+0xf8003ffc>
 100042e0:	d9002e17 	ldw	r4,184(sp)
 100042e4:	d9402f17 	ldw	r5,188(sp)
@@ -6402,7 +6407,7 @@ void UsbPrintMem()
 10004310:	dd803215 	stw	r22,200(sp)
 10004314:	003e8906 	br	10003d3c <__alt_data_end+0xf8003d3c>
 10004318:	01040074 	movhi	r4,4097
-1000431c:	21089484 	addi	r4,r4,8786
+1000431c:	21088e84 	addi	r4,r4,8762
 10004320:	d9002c15 	stw	r4,176(sp)
 10004324:	003c9106 	br	1000356c <__alt_data_end+0xf800356c>
 10004328:	e005883a 	mov	r2,fp
@@ -6695,7 +6700,7 @@ void UsbPrintMem()
 
 100047a4 <__vfprintf_internal>:
 100047a4:	00840074 	movhi	r2,4097
-100047a8:	108fef04 	addi	r2,r2,16316
+100047a8:	108fe904 	addi	r2,r2,16292
 100047ac:	300f883a 	mov	r7,r6
 100047b0:	280d883a 	mov	r6,r5
 100047b4:	200b883a 	mov	r5,r4
@@ -6754,7 +6759,7 @@ void UsbPrintMem()
 1000487c <__swsetup_r>:
 1000487c:	00840074 	movhi	r2,4097
 10004880:	defffd04 	addi	sp,sp,-12
-10004884:	108fef04 	addi	r2,r2,16316
+10004884:	108fe904 	addi	r2,r2,16292
 10004888:	dc400115 	stw	r17,4(sp)
 1000488c:	2023883a 	mov	r17,r4
 10004890:	11000017 	ldw	r4,0(r2)
@@ -7024,7 +7029,7 @@ void UsbPrintMem()
 10004ca0:	10019e26 	beq	r2,zero,1000531c <_dtoa_r+0x724>
 10004ca4:	d8c02517 	ldw	r3,148(sp)
 10004ca8:	00840074 	movhi	r2,4097
-10004cac:	10889444 	addi	r2,r2,8785
+10004cac:	10888e44 	addi	r2,r2,8761
 10004cb0:	18800015 	stw	r2,0(r3)
 10004cb4:	10bfffc4 	addi	r2,r2,-1
 10004cb8:	dfc02117 	ldw	ra,132(sp)
@@ -7044,7 +7049,7 @@ void UsbPrintMem()
 10004cf0:	18800015 	stw	r2,0(r3)
 10004cf4:	90017726 	beq	r18,zero,100052d4 <_dtoa_r+0x6dc>
 10004cf8:	00840074 	movhi	r2,4097
-10004cfc:	1088a004 	addi	r2,r2,8832
+10004cfc:	10889a04 	addi	r2,r2,8808
 10004d00:	d9002517 	ldw	r4,148(sp)
 10004d04:	203fec26 	beq	r4,zero,10004cb8 <__alt_data_end+0xf8004cb8>
 10004d08:	10c000c7 	ldb	r3,3(r2)
@@ -7139,7 +7144,7 @@ void UsbPrintMem()
 10004e6c:	10c27536 	bltu	r2,r3,10005844 <_dtoa_r+0xc4c>
 10004e70:	180490fa 	slli	r2,r3,3
 10004e74:	00c40074 	movhi	r3,4097
-10004e78:	18c8bc04 	addi	r3,r3,8944
+10004e78:	18c8b604 	addi	r3,r3,8920
 10004e7c:	1885883a 	add	r2,r3,r2
 10004e80:	11000017 	ldw	r4,0(r2)
 10004e84:	11400117 	ldw	r5,4(r2)
@@ -7212,14 +7217,14 @@ void UsbPrintMem()
 10004f90:	100490fa 	slli	r2,r2,3
 10004f94:	382bd13a 	srai	r21,r7,4
 10004f98:	00c40074 	movhi	r3,4097
-10004f9c:	18c8bc04 	addi	r3,r3,8944
+10004f9c:	18c8b604 	addi	r3,r3,8920
 10004fa0:	1885883a 	add	r2,r3,r2
 10004fa4:	a8c0040c 	andi	r3,r21,16
 10004fa8:	12400017 	ldw	r9,0(r2)
 10004fac:	12000117 	ldw	r8,4(r2)
 10004fb0:	18037926 	beq	r3,zero,10005d98 <_dtoa_r+0x11a0>
 10004fb4:	00840074 	movhi	r2,4097
-10004fb8:	1088b204 	addi	r2,r2,8904
+10004fb8:	1088ac04 	addi	r2,r2,8880
 10004fbc:	11800817 	ldw	r6,32(r2)
 10004fc0:	11c00917 	ldw	r7,36(r2)
 10004fc4:	9009883a 	mov	r4,r18
@@ -7235,7 +7240,7 @@ void UsbPrintMem()
 10004fec:	1829883a 	mov	r20,r3
 10004ff0:	a8001126 	beq	r21,zero,10005038 <_dtoa_r+0x440>
 10004ff4:	05c40074 	movhi	r23,4097
-10004ff8:	bdc8b204 	addi	r23,r23,8904
+10004ff8:	bdc8ac04 	addi	r23,r23,8880
 10004ffc:	4805883a 	mov	r2,r9
 10005000:	4007883a 	mov	r3,r8
 10005004:	a980004c 	andi	r6,r21,1
@@ -7291,7 +7296,7 @@ void UsbPrintMem()
 100050cc:	60bfffc4 	addi	r2,r12,-1
 100050d0:	100490fa 	slli	r2,r2,3
 100050d4:	00c40074 	movhi	r3,4097
-100050d8:	18c8bc04 	addi	r3,r3,8944
+100050d8:	18c8b604 	addi	r3,r3,8920
 100050dc:	1885883a 	add	r2,r3,r2
 100050e0:	11800017 	ldw	r6,0(r2)
 100050e4:	11c00117 	ldw	r7,4(r2)
@@ -7423,7 +7428,7 @@ void UsbPrintMem()
 100052dc:	88a2703a 	and	r17,r17,r2
 100052e0:	883e851e 	bne	r17,zero,10004cf8 <__alt_data_end+0xf8004cf8>
 100052e4:	00840074 	movhi	r2,4097
-100052e8:	10889d04 	addi	r2,r2,8820
+100052e8:	10889704 	addi	r2,r2,8796
 100052ec:	003e8406 	br	10004d00 <__alt_data_end+0xf8004d00>
 100052f0:	10c00204 	addi	r3,r2,8
 100052f4:	003e8706 	br	10004d14 <__alt_data_end+0xf8004d14>
@@ -7437,7 +7442,7 @@ void UsbPrintMem()
 10005314:	d8001115 	stw	zero,68(sp)
 10005318:	003ea506 	br	10004db0 <__alt_data_end+0xf8004db0>
 1000531c:	00840074 	movhi	r2,4097
-10005320:	10889404 	addi	r2,r2,8784
+10005320:	10888e04 	addi	r2,r2,8760
 10005324:	003e6406 	br	10004cb8 <__alt_data_end+0xf8004cb8>
 10005328:	e0001115 	stw	zero,68(fp)
 1000532c:	000b883a 	mov	r5,zero
@@ -7460,7 +7465,7 @@ void UsbPrintMem()
 10005370:	200490fa 	slli	r2,r4,3
 10005374:	00c40074 	movhi	r3,4097
 10005378:	d9802217 	ldw	r6,136(sp)
-1000537c:	18c8bc04 	addi	r3,r3,8944
+1000537c:	18c8b604 	addi	r3,r3,8920
 10005380:	1885883a 	add	r2,r3,r2
 10005384:	14000017 	ldw	r16,0(r2)
 10005388:	14400117 	ldw	r17,4(r2)
@@ -8136,7 +8141,7 @@ void UsbPrintMem()
 10005e00:	888003cc 	andi	r2,r17,15
 10005e04:	100490fa 	slli	r2,r2,3
 10005e08:	00c40074 	movhi	r3,4097
-10005e0c:	18c8bc04 	addi	r3,r3,8944
+10005e0c:	18c8b604 	addi	r3,r3,8920
 10005e10:	1885883a 	add	r2,r3,r2
 10005e14:	11800017 	ldw	r6,0(r2)
 10005e18:	11c00117 	ldw	r7,4(r2)
@@ -8148,7 +8153,7 @@ void UsbPrintMem()
 10005e30:	d8c01015 	stw	r3,64(sp)
 10005e34:	8800e826 	beq	r17,zero,100061d8 <_dtoa_r+0x15e0>
 10005e38:	05040074 	movhi	r20,4097
-10005e3c:	a508b204 	addi	r20,r20,8904
+10005e3c:	a508ac04 	addi	r20,r20,8880
 10005e40:	04000084 	movi	r16,2
 10005e44:	8980004c 	andi	r6,r17,1
 10005e48:	1009883a 	mov	r4,r2
@@ -8202,7 +8207,7 @@ void UsbPrintMem()
 10005f08:	61bfffc4 	addi	r6,r12,-1
 10005f0c:	300490fa 	slli	r2,r6,3
 10005f10:	00c40074 	movhi	r3,4097
-10005f14:	18c8bc04 	addi	r3,r3,8944
+10005f14:	18c8b604 	addi	r3,r3,8920
 10005f18:	1885883a 	add	r2,r3,r2
 10005f1c:	11000017 	ldw	r4,0(r2)
 10005f20:	11400117 	ldw	r5,4(r2)
@@ -8587,12 +8592,12 @@ void UsbPrintMem()
 100064f8 <fflush>:
 100064f8:	20000526 	beq	r4,zero,10006510 <fflush+0x18>
 100064fc:	00840074 	movhi	r2,4097
-10006500:	108fef04 	addi	r2,r2,16316
+10006500:	108fe904 	addi	r2,r2,16292
 10006504:	200b883a 	mov	r5,r4
 10006508:	11000017 	ldw	r4,0(r2)
 1000650c:	000649c1 	jmpi	1000649c <_fflush_r>
 10006510:	00840074 	movhi	r2,4097
-10006514:	108fee04 	addi	r2,r2,16312
+10006514:	108fe804 	addi	r2,r2,16288
 10006518:	11000017 	ldw	r4,0(r2)
 1000651c:	01440034 	movhi	r5,4096
 10006520:	29592704 	addi	r5,r5,25756
@@ -8752,7 +8757,7 @@ void UsbPrintMem()
 10006758:	defffb04 	addi	sp,sp,-20
 1000675c:	dc000015 	stw	r16,0(sp)
 10006760:	04040074 	movhi	r16,4097
-10006764:	840fee04 	addi	r16,r16,16312
+10006764:	840fe804 	addi	r16,r16,16288
 10006768:	dcc00315 	stw	r19,12(sp)
 1000676c:	2027883a 	mov	r19,r4
 10006770:	81000017 	ldw	r4,0(r16)
@@ -8822,7 +8827,7 @@ void UsbPrintMem()
 
 10006870 <_cleanup>:
 10006870:	00840074 	movhi	r2,4097
-10006874:	108fee04 	addi	r2,r2,16312
+10006874:	108fe804 	addi	r2,r2,16288
 10006878:	11000017 	ldw	r4,0(r2)
 1000687c:	01440074 	movhi	r5,4097
 10006880:	296d0d04 	addi	r5,r5,-19404
@@ -8848,7 +8853,7 @@ void UsbPrintMem()
 
 100068a8 <__fp_lock_all>:
 100068a8:	00840074 	movhi	r2,4097
-100068ac:	108fef04 	addi	r2,r2,16316
+100068ac:	108fe904 	addi	r2,r2,16292
 100068b0:	11000017 	ldw	r4,0(r2)
 100068b4:	01440034 	movhi	r5,4096
 100068b8:	2959b604 	addi	r5,r5,26328
@@ -8856,7 +8861,7 @@ void UsbPrintMem()
 
 100068c0 <__fp_unlock_all>:
 100068c0:	00840074 	movhi	r2,4097
-100068c4:	108fef04 	addi	r2,r2,16316
+100068c4:	108fe904 	addi	r2,r2,16292
 100068c8:	11000017 	ldw	r4,0(r2)
 100068cc:	01440034 	movhi	r5,4096
 100068d0:	29594a04 	addi	r5,r5,25896
@@ -8871,7 +8876,7 @@ void UsbPrintMem()
 100068ec:	dc000015 	stw	r16,0(sp)
 100068f0:	dfc00415 	stw	ra,16(sp)
 100068f4:	2821883a 	mov	r16,r5
-100068f8:	9cca6a04 	addi	r19,r19,10664
+100068f8:	9cca6404 	addi	r19,r19,10640
 100068fc:	2025883a 	mov	r18,r4
 10006900:	000f7cc0 	call	1000f7cc <__malloc_lock>
 10006904:	98800217 	ldw	r2,8(r19)
@@ -8907,7 +8912,7 @@ void UsbPrintMem()
 1000697c:	00ffffc4 	movi	r3,-1
 10006980:	10c00d26 	beq	r2,r3,100069b8 <_malloc_trim_r+0xe0>
 10006984:	00c40074 	movhi	r3,4097
-10006988:	18d6c804 	addi	r3,r3,23328
+10006988:	18d6c204 	addi	r3,r3,23304
 1000698c:	18800017 	ldw	r2,0(r3)
 10006990:	99000217 	ldw	r4,8(r19)
 10006994:	8c23c83a 	sub	r17,r17,r16
@@ -8927,13 +8932,13 @@ void UsbPrintMem()
 100069cc:	1107c83a 	sub	r3,r2,r4
 100069d0:	28ffdd0e 	bge	r5,r3,10006948 <__alt_data_end+0xf8006948>
 100069d4:	01440074 	movhi	r5,4097
-100069d8:	294ff104 	addi	r5,r5,16324
+100069d8:	294feb04 	addi	r5,r5,16300
 100069dc:	29400017 	ldw	r5,0(r5)
 100069e0:	18c00054 	ori	r3,r3,1
 100069e4:	20c00115 	stw	r3,4(r4)
 100069e8:	00c40074 	movhi	r3,4097
 100069ec:	1145c83a 	sub	r2,r2,r5
-100069f0:	18d6c804 	addi	r3,r3,23328
+100069f0:	18d6c204 	addi	r3,r3,23304
 100069f4:	18800015 	stw	r2,0(r3)
 100069f8:	003fd306 	br	10006948 <__alt_data_end+0xf8006948>
 
@@ -8951,7 +8956,7 @@ void UsbPrintMem()
 10006a24:	01040074 	movhi	r4,4097
 10006a28:	81bffe04 	addi	r6,r16,-8
 10006a2c:	3884703a 	and	r2,r7,r2
-10006a30:	210a6a04 	addi	r4,r4,10664
+10006a30:	210a6404 	addi	r4,r4,10640
 10006a34:	308b883a 	add	r5,r6,r2
 10006a38:	2a400117 	ldw	r9,4(r5)
 10006a3c:	22000217 	ldw	r8,8(r4)
@@ -9018,7 +9023,7 @@ void UsbPrintMem()
 10006b30:	20c00017 	ldw	r3,0(r4)
 10006b34:	01c40074 	movhi	r7,4097
 10006b38:	213ffe04 	addi	r4,r4,-8
-10006b3c:	39ca6a04 	addi	r7,r7,10664
+10006b3c:	39ca6404 	addi	r7,r7,10640
 10006b40:	20c04426 	beq	r4,r3,10006c54 <_free_r+0x258>
 10006b44:	01ffff04 	movi	r7,-4
 10006b48:	19400117 	ldw	r5,4(r3)
@@ -9035,7 +9040,7 @@ void UsbPrintMem()
 10006b74:	29c00217 	ldw	r7,8(r5)
 10006b78:	10c5883a 	add	r2,r2,r3
 10006b7c:	00c40074 	movhi	r3,4097
-10006b80:	18ca6c04 	addi	r3,r3,10672
+10006b80:	18ca6604 	addi	r3,r3,10648
 10006b84:	38c03b26 	beq	r7,r3,10006c74 <_free_r+0x278>
 10006b88:	2a000317 	ldw	r8,12(r5)
 10006b8c:	11400054 	ori	r5,r2,1
@@ -9058,12 +9063,12 @@ void UsbPrintMem()
 10006bd0:	10c00054 	ori	r3,r2,1
 10006bd4:	30c00115 	stw	r3,4(r6)
 10006bd8:	00c40074 	movhi	r3,4097
-10006bdc:	18cff204 	addi	r3,r3,16328
+10006bdc:	18cfec04 	addi	r3,r3,16304
 10006be0:	18c00017 	ldw	r3,0(r3)
 10006be4:	21800215 	stw	r6,8(r4)
 10006be8:	10ffc036 	bltu	r2,r3,10006aec <__alt_data_end+0xf8006aec>
 10006bec:	00840074 	movhi	r2,4097
-10006bf0:	1096bf04 	addi	r2,r2,23292
+10006bf0:	1096b904 	addi	r2,r2,23268
 10006bf4:	11400017 	ldw	r5,0(r2)
 10006bf8:	8809883a 	mov	r4,r17
 10006bfc:	00068d80 	call	100068d8 <_malloc_trim_r>
@@ -9549,7 +9554,7 @@ void UsbPrintMem()
 1000735c:	30001b26 	beq	r6,zero,100073cc <_setlocale_r+0x70>
 10007360:	01440074 	movhi	r5,4097
 10007364:	defffe04 	addi	sp,sp,-8
-10007368:	2948a204 	addi	r5,r5,8840
+10007368:	29489c04 	addi	r5,r5,8816
 1000736c:	3009883a 	mov	r4,r6
 10007370:	dc000015 	stw	r16,0(sp)
 10007374:	dfc00115 	stw	ra,4(sp)
@@ -9557,41 +9562,41 @@ void UsbPrintMem()
 1000737c:	0009ad00 	call	10009ad0 <strcmp>
 10007380:	1000061e 	bne	r2,zero,1000739c <_setlocale_r+0x40>
 10007384:	00840074 	movhi	r2,4097
-10007388:	1088a104 	addi	r2,r2,8836
+10007388:	10889b04 	addi	r2,r2,8812
 1000738c:	dfc00117 	ldw	ra,4(sp)
 10007390:	dc000017 	ldw	r16,0(sp)
 10007394:	dec00204 	addi	sp,sp,8
 10007398:	f800283a 	ret
 1000739c:	01440074 	movhi	r5,4097
-100073a0:	2948a104 	addi	r5,r5,8836
+100073a0:	29489b04 	addi	r5,r5,8812
 100073a4:	8009883a 	mov	r4,r16
 100073a8:	0009ad00 	call	10009ad0 <strcmp>
 100073ac:	103ff526 	beq	r2,zero,10007384 <__alt_data_end+0xf8007384>
 100073b0:	01440074 	movhi	r5,4097
-100073b4:	29488c04 	addi	r5,r5,8752
+100073b4:	29488604 	addi	r5,r5,8728
 100073b8:	8009883a 	mov	r4,r16
 100073bc:	0009ad00 	call	10009ad0 <strcmp>
 100073c0:	103ff026 	beq	r2,zero,10007384 <__alt_data_end+0xf8007384>
 100073c4:	0005883a 	mov	r2,zero
 100073c8:	003ff006 	br	1000738c <__alt_data_end+0xf800738c>
 100073cc:	00840074 	movhi	r2,4097
-100073d0:	1088a104 	addi	r2,r2,8836
+100073d0:	10889b04 	addi	r2,r2,8812
 100073d4:	f800283a 	ret
 
 100073d8 <__locale_charset>:
 100073d8:	00840074 	movhi	r2,4097
-100073dc:	108a5404 	addi	r2,r2,10576
+100073dc:	108a4e04 	addi	r2,r2,10552
 100073e0:	f800283a 	ret
 
 100073e4 <__locale_mb_cur_max>:
 100073e4:	00840074 	movhi	r2,4097
-100073e8:	108ff004 	addi	r2,r2,16320
+100073e8:	108fea04 	addi	r2,r2,16296
 100073ec:	10800017 	ldw	r2,0(r2)
 100073f0:	f800283a 	ret
 
 100073f4 <__locale_msgcharset>:
 100073f4:	00840074 	movhi	r2,4097
-100073f8:	108a4c04 	addi	r2,r2,10544
+100073f8:	108a4604 	addi	r2,r2,10520
 100073fc:	f800283a 	ret
 
 10007400 <__locale_cjk_lang>:
@@ -9600,12 +9605,12 @@ void UsbPrintMem()
 
 10007408 <_localeconv_r>:
 10007408:	00840074 	movhi	r2,4097
-1000740c:	108a5c04 	addi	r2,r2,10608
+1000740c:	108a5604 	addi	r2,r2,10584
 10007410:	f800283a 	ret
 
 10007414 <setlocale>:
 10007414:	00840074 	movhi	r2,4097
-10007418:	108fef04 	addi	r2,r2,16316
+10007418:	108fe904 	addi	r2,r2,16292
 1000741c:	280d883a 	mov	r6,r5
 10007420:	200b883a 	mov	r5,r4
 10007424:	11000017 	ldw	r4,0(r2)
@@ -9613,7 +9618,7 @@ void UsbPrintMem()
 
 1000742c <localeconv>:
 1000742c:	00840074 	movhi	r2,4097
-10007430:	108a5c04 	addi	r2,r2,10608
+10007430:	108a5604 	addi	r2,r2,10584
 10007434:	f800283a 	ret
 
 10007438 <__smakebuf_r>:
@@ -9762,7 +9767,7 @@ void UsbPrintMem()
 10007668:	4209883a 	add	r4,r8,r8
 1000766c:	04c40074 	movhi	r19,4097
 10007670:	2109883a 	add	r4,r4,r4
-10007674:	9cca6a04 	addi	r19,r19,10664
+10007674:	9cca6404 	addi	r19,r19,10640
 10007678:	2109883a 	add	r4,r4,r4
 1000767c:	9909883a 	add	r4,r19,r4
 10007680:	24000117 	ldw	r16,4(r4)
@@ -9784,7 +9789,7 @@ void UsbPrintMem()
 100076c0:	3809883a 	mov	r4,r7
 100076c4:	01840074 	movhi	r6,4097
 100076c8:	9c000417 	ldw	r16,16(r19)
-100076cc:	318a6a04 	addi	r6,r6,10664
+100076cc:	318a6404 	addi	r6,r6,10640
 100076d0:	32000204 	addi	r8,r6,8
 100076d4:	82013426 	beq	r16,r8,10007ba8 <_malloc_r+0x5b4>
 100076d8:	80c00117 	ldw	r3,4(r16)
@@ -9879,7 +9884,7 @@ void UsbPrintMem()
 1000783c:	01000084 	movi	r4,2
 10007840:	04c40074 	movhi	r19,4097
 10007844:	1085883a 	add	r2,r2,r2
-10007848:	9cca6a04 	addi	r19,r19,10664
+10007848:	9cca6404 	addi	r19,r19,10640
 1000784c:	1085883a 	add	r2,r2,r2
 10007850:	9885883a 	add	r2,r19,r2
 10007854:	14000117 	ldw	r16,4(r2)
@@ -9941,8 +9946,8 @@ void UsbPrintMem()
 10007934:	18805d16 	blt	r3,r2,10007aac <_malloc_r+0x4b8>
 10007938:	05c40074 	movhi	r23,4097
 1000793c:	00840074 	movhi	r2,4097
-10007940:	1096bf04 	addi	r2,r2,23292
-10007944:	bdcff104 	addi	r23,r23,16324
+10007940:	1096b904 	addi	r2,r2,23268
+10007944:	bdcfeb04 	addi	r23,r23,16300
 10007948:	15400017 	ldw	r21,0(r2)
 1000794c:	b8c00017 	ldw	r3,0(r23)
 10007950:	00bfffc4 	movi	r2,-1
@@ -9962,7 +9967,7 @@ void UsbPrintMem()
 10007988:	a080e826 	beq	r20,r2,10007d2c <_malloc_r+0x738>
 1000798c:	a180a636 	bltu	r20,r6,10007c28 <_malloc_r+0x634>
 10007990:	07040074 	movhi	fp,4097
-10007994:	e716c804 	addi	fp,fp,23328
+10007994:	e716c204 	addi	fp,fp,23304
 10007998:	e0800017 	ldw	r2,0(fp)
 1000799c:	a887883a 	add	r3,r21,r2
 100079a0:	e0c00015 	stw	r3,0(fp)
@@ -10011,12 +10016,12 @@ void UsbPrintMem()
 10007a4c:	21400215 	stw	r5,8(r4)
 10007a50:	3080cd36 	bltu	r6,r2,10007d88 <_malloc_r+0x794>
 10007a54:	00840074 	movhi	r2,4097
-10007a58:	1096be04 	addi	r2,r2,23288
+10007a58:	1096b804 	addi	r2,r2,23264
 10007a5c:	11000017 	ldw	r4,0(r2)
 10007a60:	20c0012e 	bgeu	r4,r3,10007a68 <_malloc_r+0x474>
 10007a64:	10c00015 	stw	r3,0(r2)
 10007a68:	00840074 	movhi	r2,4097
-10007a6c:	1096bd04 	addi	r2,r2,23284
+10007a6c:	1096b704 	addi	r2,r2,23260
 10007a70:	11000017 	ldw	r4,0(r2)
 10007a74:	9c000217 	ldw	r16,8(r19)
 10007a78:	20c0012e 	bgeu	r4,r3,10007a80 <_malloc_r+0x48c>
@@ -10065,7 +10070,7 @@ void UsbPrintMem()
 10007b24:	28800017 	ldw	r2,0(r5)
 10007b28:	01840074 	movhi	r6,4097
 10007b2c:	297ffe04 	addi	r5,r5,-8
-10007b30:	318a6a04 	addi	r6,r6,10664
+10007b30:	318a6404 	addi	r6,r6,10640
 10007b34:	28806526 	beq	r5,r2,10007ccc <_malloc_r+0x6d8>
 10007b38:	01bfff04 	movi	r6,-4
 10007b3c:	10c00117 	ldw	r3,4(r2)
@@ -10129,7 +10134,7 @@ void UsbPrintMem()
 10007c24:	003fbc06 	br	10007b18 <__alt_data_end+0xf8007b18>
 10007c28:	84ff5926 	beq	r16,r19,10007990 <__alt_data_end+0xf8007990>
 10007c2c:	00840074 	movhi	r2,4097
-10007c30:	108a6a04 	addi	r2,r2,10664
+10007c30:	108a6404 	addi	r2,r2,10640
 10007c34:	14000217 	ldw	r16,8(r2)
 10007c38:	00bfff04 	movi	r2,-4
 10007c3c:	80c00117 	ldw	r3,4(r16)
@@ -10209,7 +10214,7 @@ void UsbPrintMem()
 10007d64:	01c01f84 	movi	r7,126
 10007d68:	003e4006 	br	1000766c <__alt_data_end+0xf800766c>
 10007d6c:	00840074 	movhi	r2,4097
-10007d70:	108ff104 	addi	r2,r2,16324
+10007d70:	108feb04 	addi	r2,r2,16300
 10007d74:	15000015 	stw	r20,0(r2)
 10007d78:	003f1106 	br	100079c0 <__alt_data_end+0xf80079c0>
 10007d7c:	00800044 	movi	r2,1
@@ -10219,7 +10224,7 @@ void UsbPrintMem()
 10007d8c:	9009883a 	mov	r4,r18
 10007d90:	00069fc0 	call	100069fc <_free_r>
 10007d94:	00840074 	movhi	r2,4097
-10007d98:	1096c804 	addi	r2,r2,23328
+10007d98:	1096c204 	addi	r2,r2,23304
 10007d9c:	10c00017 	ldw	r3,0(r2)
 10007da0:	003f2c06 	br	10007a54 <__alt_data_end+0xf8007a54>
 10007da4:	00c05504 	movi	r3,340
@@ -11079,7 +11084,7 @@ void UsbPrintMem()
 10008a94:	10bfffc4 	addi	r2,r2,-1
 10008a98:	1085883a 	add	r2,r2,r2
 10008a9c:	00c40074 	movhi	r3,4097
-10008aa0:	18c8a504 	addi	r3,r3,8852
+10008aa0:	18c89f04 	addi	r3,r3,8828
 10008aa4:	1085883a 	add	r2,r2,r2
 10008aa8:	1885883a 	add	r2,r3,r2
 10008aac:	11800017 	ldw	r6,0(r2)
@@ -11584,7 +11589,7 @@ void UsbPrintMem()
 10009238:	f800283a 	ret
 1000923c:	202090fa 	slli	r16,r4,3
 10009240:	00840074 	movhi	r2,4097
-10009244:	1088bc04 	addi	r2,r2,8944
+10009244:	1088b604 	addi	r2,r2,8920
 10009248:	1421883a 	add	r16,r2,r16
 1000924c:	80800017 	ldw	r2,0(r16)
 10009250:	80c00117 	ldw	r3,4(r16)
@@ -11693,7 +11698,7 @@ void UsbPrintMem()
 100093d4:	8c805736 	bltu	r17,r18,10009534 <_realloc_r+0x1cc>
 100093d8:	80c0300e 	bge	r16,r3,1000949c <_realloc_r+0x134>
 100093dc:	07040074 	movhi	fp,4097
-100093e0:	e70a6a04 	addi	fp,fp,10664
+100093e0:	e70a6404 	addi	fp,fp,10640
 100093e4:	e1c00217 	ldw	r7,8(fp)
 100093e8:	9c09883a 	add	r4,r19,r16
 100093ec:	22000117 	ldw	r8,4(r4)
@@ -12045,7 +12050,7 @@ void UsbPrintMem()
 10009944:	dc000015 	stw	r16,0(sp)
 10009948:	04040074 	movhi	r16,4097
 1000994c:	dc400115 	stw	r17,4(sp)
-10009950:	8416c004 	addi	r16,r16,23296
+10009950:	8416ba04 	addi	r16,r16,23272
 10009954:	2023883a 	mov	r17,r4
 10009958:	2809883a 	mov	r4,r5
 1000995c:	dfc00215 	stw	ra,8(sp)
@@ -12324,7 +12329,7 @@ void UsbPrintMem()
 10009d58:	d94019c4 	addi	r5,sp,103
 10009d5c:	04840074 	movhi	r18,4097
 10009d60:	2145c83a 	sub	r2,r4,r5
-10009d64:	9488ee04 	addi	r18,r18,9144
+10009d64:	9488e804 	addi	r18,r18,9120
 10009d68:	d9001e15 	stw	r4,120(sp)
 10009d6c:	d9401f15 	stw	r5,124(sp)
 10009d70:	dec01a15 	stw	sp,104(sp)
@@ -12395,7 +12400,7 @@ void UsbPrintMem()
 10009e74:	1000a81c 	xori	zero,r2,672
 10009e78:	1000a81c 	xori	zero,r2,672
 10009e7c:	1000a81c 	xori	zero,r2,672
-10009e80:	1000a740 	call	11000a74 <_gp+0xfe4abc>
+10009e80:	1000a740 	call	11000a74 <_gp+0xfe4ad4>
 10009e84:	1000a764 	muli	zero,r2,669
 10009e88:	1000a81c 	xori	zero,r2,672
 10009e8c:	1000a05c 	xori	zero,r2,641
@@ -12535,7 +12540,7 @@ void UsbPrintMem()
 1000a0a4:	8c400094 	ori	r17,r17,2
 1000a0a8:	98032a1e 	bne	r19,zero,1000ad54 <___vfiprintf_internal_r+0x1094>
 1000a0ac:	00840074 	movhi	r2,4097
-1000a0b0:	10888d04 	addi	r2,r2,8756
+1000a0b0:	10888704 	addi	r2,r2,8732
 1000a0b4:	d8802615 	stw	r2,152(sp)
 1000a0b8:	002b883a 	mov	r21,zero
 1000a0bc:	8001741e 	bne	r16,zero,1000a690 <___vfiprintf_internal_r+0x9d0>
@@ -12562,7 +12567,7 @@ void UsbPrintMem()
 1000a110:	d8801c17 	ldw	r2,112(sp)
 1000a114:	e543be0e 	bge	fp,r21,1000b010 <___vfiprintf_internal_r+0x1350>
 1000a118:	01440074 	movhi	r5,4097
-1000a11c:	2948f204 	addi	r5,r5,9160
+1000a11c:	2948ec04 	addi	r5,r5,9136
 1000a120:	dc002715 	stw	r16,156(sp)
 1000a124:	d9801b17 	ldw	r6,108(sp)
 1000a128:	a821883a 	mov	r16,r21
@@ -12579,7 +12584,7 @@ void UsbPrintMem()
 1000a154:	01040074 	movhi	r4,4097
 1000a158:	10800404 	addi	r2,r2,16
 1000a15c:	30c00044 	addi	r3,r6,1
-1000a160:	2108f204 	addi	r4,r4,9160
+1000a160:	2108ec04 	addi	r4,r4,9136
 1000a164:	41000015 	stw	r4,0(r8)
 1000a168:	47000115 	stw	fp,4(r8)
 1000a16c:	d8801c15 	stw	r2,112(sp)
@@ -12629,7 +12634,7 @@ void UsbPrintMem()
 1000a21c:	05400404 	movi	r21,16
 1000a220:	af03a90e 	bge	r21,fp,1000b0c8 <___vfiprintf_internal_r+0x1408>
 1000a224:	01440074 	movhi	r5,4097
-1000a228:	2948ee04 	addi	r5,r5,9144
+1000a228:	2948e804 	addi	r5,r5,9120
 1000a22c:	d9402315 	stw	r5,140(sp)
 1000a230:	01c001c4 	movi	r7,7
 1000a234:	00000506 	br	1000a24c <___vfiprintf_internal_r+0x58c>
@@ -12746,7 +12751,7 @@ void UsbPrintMem()
 1000a3f0:	b811883a 	mov	r8,r23
 1000a3f4:	98034f1e 	bne	r19,zero,1000b134 <___vfiprintf_internal_r+0x1474>
 1000a3f8:	00840074 	movhi	r2,4097
-1000a3fc:	10888d04 	addi	r2,r2,8756
+1000a3fc:	10888704 	addi	r2,r2,8732
 1000a400:	d8802615 	stw	r2,152(sp)
 1000a404:	8880080c 	andi	r2,r17,32
 1000a408:	1000ac26 	beq	r2,zero,1000a6bc <___vfiprintf_internal_r+0x9fc>
@@ -12918,7 +12923,7 @@ void UsbPrintMem()
 1000a6a0:	b811883a 	mov	r8,r23
 1000a6a4:	9802c01e 	bne	r19,zero,1000b1a8 <___vfiprintf_internal_r+0x14e8>
 1000a6a8:	01440074 	movhi	r5,4097
-1000a6ac:	29488804 	addi	r5,r5,8736
+1000a6ac:	29488204 	addi	r5,r5,8712
 1000a6b0:	d9402615 	stw	r5,152(sp)
 1000a6b4:	8880080c 	andi	r2,r17,32
 1000a6b8:	103f541e 	bne	r2,zero,1000a40c <__alt_data_end+0xf800a40c>
@@ -13058,7 +13063,7 @@ void UsbPrintMem()
 1000a8d0:	05400404 	movi	r21,16
 1000a8d4:	ac01b00e 	bge	r21,r16,1000af98 <___vfiprintf_internal_r+0x12d8>
 1000a8d8:	01440074 	movhi	r5,4097
-1000a8dc:	2948ee04 	addi	r5,r5,9144
+1000a8dc:	2948e804 	addi	r5,r5,9120
 1000a8e0:	d9402315 	stw	r5,140(sp)
 1000a8e4:	070001c4 	movi	fp,7
 1000a8e8:	00000506 	br	1000a900 <___vfiprintf_internal_r+0xc40>
@@ -13130,7 +13135,7 @@ void UsbPrintMem()
 1000a9f0:	04000404 	movi	r16,16
 1000a9f4:	8441a90e 	bge	r16,r17,1000b09c <___vfiprintf_internal_r+0x13dc>
 1000a9f8:	00c40074 	movhi	r3,4097
-1000a9fc:	18c8f204 	addi	r3,r3,9160
+1000a9fc:	18c8ec04 	addi	r3,r3,9136
 1000aa00:	d9001b17 	ldw	r4,108(sp)
 1000aa04:	d8c02315 	stw	r3,140(sp)
 1000aa08:	050001c4 	movi	r20,7
@@ -13145,7 +13150,7 @@ void UsbPrintMem()
 1000aa2c:	01440074 	movhi	r5,4097
 1000aa30:	10800404 	addi	r2,r2,16
 1000aa34:	20c00044 	addi	r3,r4,1
-1000aa38:	2948f204 	addi	r5,r5,9160
+1000aa38:	2948ec04 	addi	r5,r5,9136
 1000aa3c:	41400015 	stw	r5,0(r8)
 1000aa40:	44000115 	stw	r16,4(r8)
 1000aa44:	d8801c15 	stw	r2,112(sp)
@@ -13335,7 +13340,7 @@ void UsbPrintMem()
 1000ad24:	29400044 	addi	r5,r5,1
 1000ad28:	003d6206 	br	1000a2b4 <__alt_data_end+0xf800a2b4>
 1000ad2c:	01440074 	movhi	r5,4097
-1000ad30:	29488d04 	addi	r5,r5,8756
+1000ad30:	29488704 	addi	r5,r5,8732
 1000ad34:	d9402615 	stw	r5,152(sp)
 1000ad38:	d8c02215 	stw	r3,136(sp)
 1000ad3c:	1023883a 	mov	r17,r2
@@ -13345,7 +13350,7 @@ void UsbPrintMem()
 1000ad4c:	00800084 	movi	r2,2
 1000ad50:	003e4a06 	br	1000a67c <__alt_data_end+0xf800a67c>
 1000ad54:	01440074 	movhi	r5,4097
-1000ad58:	29488d04 	addi	r5,r5,8756
+1000ad58:	29488704 	addi	r5,r5,8732
 1000ad5c:	002b883a 	mov	r21,zero
 1000ad60:	d9402615 	stw	r5,152(sp)
 1000ad64:	003f9e06 	br	1000abe0 <__alt_data_end+0xf800abe0>
@@ -13490,7 +13495,7 @@ void UsbPrintMem()
 1000af90:	d811883a 	mov	r8,sp
 1000af94:	003e9606 	br	1000a9f0 <__alt_data_end+0xf800a9f0>
 1000af98:	01040074 	movhi	r4,4097
-1000af9c:	2108ee04 	addi	r4,r4,9144
+1000af9c:	2108e804 	addi	r4,r4,9120
 1000afa0:	d9002315 	stw	r4,140(sp)
 1000afa4:	003e6306 	br	1000a934 <__alt_data_end+0xf800a934>
 1000afa8:	b0c00043 	ldbu	r3,1(r22)
@@ -13520,7 +13525,7 @@ void UsbPrintMem()
 1000b008:	21400044 	addi	r5,r4,1
 1000b00c:	003e2e06 	br	1000a8c8 <__alt_data_end+0xf800a8c8>
 1000b010:	01040074 	movhi	r4,4097
-1000b014:	2108f204 	addi	r4,r4,9160
+1000b014:	2108ec04 	addi	r4,r4,9136
 1000b018:	d9002315 	stw	r4,140(sp)
 1000b01c:	d9001b17 	ldw	r4,108(sp)
 1000b020:	21000044 	addi	r4,r4,1
@@ -13545,7 +13550,7 @@ void UsbPrintMem()
 1000b06c:	80002216 	blt	r16,zero,1000b0f8 <___vfiprintf_internal_r+0x1438>
 1000b070:	05c40074 	movhi	r23,4097
 1000b074:	df002215 	stw	fp,136(sp)
-1000b078:	bdc89204 	addi	r23,r23,8776
+1000b078:	bdc88c04 	addi	r23,r23,8752
 1000b07c:	003cfb06 	br	1000a46c <__alt_data_end+0xf800a46c>
 1000b080:	d9002217 	ldw	r4,136(sp)
 1000b084:	d9402417 	ldw	r5,144(sp)
@@ -13555,7 +13560,7 @@ void UsbPrintMem()
 1000b094:	11400015 	stw	r5,0(r2)
 1000b098:	003b3d06 	br	10009d90 <__alt_data_end+0xf8009d90>
 1000b09c:	01440074 	movhi	r5,4097
-1000b0a0:	2948f204 	addi	r5,r5,9160
+1000b0a0:	2948ec04 	addi	r5,r5,9136
 1000b0a4:	d9402315 	stw	r5,140(sp)
 1000b0a8:	d9401b17 	ldw	r5,108(sp)
 1000b0ac:	29400044 	addi	r5,r5,1
@@ -13566,7 +13571,7 @@ void UsbPrintMem()
 1000b0c0:	0021883a 	mov	r16,zero
 1000b0c4:	003c0106 	br	1000a0cc <__alt_data_end+0xf800a0cc>
 1000b0c8:	00c40074 	movhi	r3,4097
-1000b0cc:	18c8ee04 	addi	r3,r3,9144
+1000b0cc:	18c8e804 	addi	r3,r3,9120
 1000b0d0:	d8c02315 	stw	r3,140(sp)
 1000b0d4:	280d883a 	mov	r6,r5
 1000b0d8:	003c6906 	br	1000a280 <__alt_data_end+0xf800a280>
@@ -13633,7 +13638,7 @@ void UsbPrintMem()
 
 1000b1cc <__vfiprintf_internal>:
 1000b1cc:	00840074 	movhi	r2,4097
-1000b1d0:	108fef04 	addi	r2,r2,16316
+1000b1d0:	108fe904 	addi	r2,r2,16292
 1000b1d4:	300f883a 	mov	r7,r6
 1000b1d8:	280d883a 	mov	r6,r5
 1000b1dc:	200b883a 	mov	r5,r4
@@ -13696,7 +13701,7 @@ void UsbPrintMem()
 1000b2b0:	04040074 	movhi	r16,4097
 1000b2b4:	dc400115 	stw	r17,4(sp)
 1000b2b8:	300b883a 	mov	r5,r6
-1000b2bc:	8416c004 	addi	r16,r16,23296
+1000b2bc:	8416ba04 	addi	r16,r16,23272
 1000b2c0:	2023883a 	mov	r17,r4
 1000b2c4:	380d883a 	mov	r6,r7
 1000b2c8:	1009883a 	mov	r4,r2
@@ -13720,7 +13725,7 @@ void UsbPrintMem()
 1000b308:	dc000015 	stw	r16,0(sp)
 1000b30c:	04040074 	movhi	r16,4097
 1000b310:	dc400115 	stw	r17,4(sp)
-1000b314:	8416c004 	addi	r16,r16,23296
+1000b314:	8416ba04 	addi	r16,r16,23272
 1000b318:	2023883a 	mov	r17,r4
 1000b31c:	2809883a 	mov	r4,r5
 1000b320:	dfc00215 	stw	ra,8(sp)
@@ -13859,7 +13864,7 @@ void UsbPrintMem()
 
 1000b524 <fclose>:
 1000b524:	00840074 	movhi	r2,4097
-1000b528:	108fef04 	addi	r2,r2,16316
+1000b528:	108fe904 	addi	r2,r2,16292
 1000b52c:	200b883a 	mov	r5,r4
 1000b530:	11000017 	ldw	r4,0(r2)
 1000b534:	000b4341 	jmpi	1000b434 <_fclose_r>
@@ -13969,7 +13974,7 @@ void UsbPrintMem()
 1000b6c0 <fputwc>:
 1000b6c0:	00840074 	movhi	r2,4097
 1000b6c4:	defffc04 	addi	sp,sp,-16
-1000b6c8:	108fef04 	addi	r2,r2,16316
+1000b6c8:	108fe904 	addi	r2,r2,16292
 1000b6cc:	dc000115 	stw	r16,4(sp)
 1000b6d0:	14000017 	ldw	r16,0(r2)
 1000b6d4:	dc400215 	stw	r17,8(sp)
@@ -14006,7 +14011,7 @@ void UsbPrintMem()
 1000b748:	dc000015 	stw	r16,0(sp)
 1000b74c:	04040074 	movhi	r16,4097
 1000b750:	dc400115 	stw	r17,4(sp)
-1000b754:	8416c004 	addi	r16,r16,23296
+1000b754:	8416ba04 	addi	r16,r16,23272
 1000b758:	2023883a 	mov	r17,r4
 1000b75c:	300b883a 	mov	r5,r6
 1000b760:	1009883a 	mov	r4,r2
@@ -14030,7 +14035,7 @@ void UsbPrintMem()
 1000b7a0:	dc000015 	stw	r16,0(sp)
 1000b7a4:	04040074 	movhi	r16,4097
 1000b7a8:	dc400115 	stw	r17,4(sp)
-1000b7ac:	8416c004 	addi	r16,r16,23296
+1000b7ac:	8416ba04 	addi	r16,r16,23272
 1000b7b0:	2023883a 	mov	r17,r4
 1000b7b4:	2809883a 	mov	r4,r5
 1000b7b8:	dfc00215 	stw	ra,8(sp)
@@ -14055,7 +14060,7 @@ void UsbPrintMem()
 1000b7fc:	04040074 	movhi	r16,4097
 1000b800:	dc400115 	stw	r17,4(sp)
 1000b804:	300b883a 	mov	r5,r6
-1000b808:	8416c004 	addi	r16,r16,23296
+1000b808:	8416ba04 	addi	r16,r16,23272
 1000b80c:	2023883a 	mov	r17,r4
 1000b810:	380d883a 	mov	r6,r7
 1000b814:	1009883a 	mov	r4,r2
@@ -14081,7 +14086,7 @@ void UsbPrintMem()
 1000b85c:	04040074 	movhi	r16,4097
 1000b860:	dc400115 	stw	r17,4(sp)
 1000b864:	300b883a 	mov	r5,r6
-1000b868:	8416c004 	addi	r16,r16,23296
+1000b868:	8416ba04 	addi	r16,r16,23272
 1000b86c:	2023883a 	mov	r17,r4
 1000b870:	380d883a 	mov	r6,r7
 1000b874:	1009883a 	mov	r4,r2
@@ -14184,7 +14189,7 @@ void UsbPrintMem()
 
 1000b9f0 <__swbuf>:
 1000b9f0:	00840074 	movhi	r2,4097
-1000b9f4:	108fef04 	addi	r2,r2,16316
+1000b9f4:	108fe904 	addi	r2,r2,16292
 1000b9f8:	280d883a 	mov	r6,r5
 1000b9fc:	200b883a 	mov	r5,r4
 1000ba00:	11000017 	ldw	r4,0(r2)
@@ -14196,7 +14201,7 @@ void UsbPrintMem()
 1000ba10:	dc800815 	stw	r18,32(sp)
 1000ba14:	dc400715 	stw	r17,28(sp)
 1000ba18:	dc000615 	stw	r16,24(sp)
-1000ba1c:	108ff304 	addi	r2,r2,16332
+1000ba1c:	108fed04 	addi	r2,r2,16308
 1000ba20:	dfc00915 	stw	ra,36(sp)
 1000ba24:	2021883a 	mov	r16,r4
 1000ba28:	3823883a 	mov	r17,r7
@@ -14236,7 +14241,7 @@ void UsbPrintMem()
 1000baa8:	00840074 	movhi	r2,4097
 1000baac:	dc800615 	stw	r18,24(sp)
 1000bab0:	dc400515 	stw	r17,20(sp)
-1000bab4:	108fef04 	addi	r2,r2,16316
+1000bab4:	108fe904 	addi	r2,r2,16292
 1000bab8:	dfc00915 	stw	ra,36(sp)
 1000babc:	dd000815 	stw	r20,32(sp)
 1000bac0:	dcc00715 	stw	r19,28(sp)
@@ -14245,7 +14250,7 @@ void UsbPrintMem()
 1000bacc:	14400017 	ldw	r17,0(r2)
 1000bad0:	20001926 	beq	r4,zero,1000bb38 <wcrtomb+0x94>
 1000bad4:	00840074 	movhi	r2,4097
-1000bad8:	108ff304 	addi	r2,r2,16332
+1000bad8:	108fed04 	addi	r2,r2,16308
 1000badc:	15000017 	ldw	r20,0(r2)
 1000bae0:	2021883a 	mov	r16,r4
 1000bae4:	2827883a 	mov	r19,r5
@@ -14270,7 +14275,7 @@ void UsbPrintMem()
 1000bb30:	dec00a04 	addi	sp,sp,40
 1000bb34:	f800283a 	ret
 1000bb38:	00840074 	movhi	r2,4097
-1000bb3c:	108ff304 	addi	r2,r2,16332
+1000bb3c:	108fed04 	addi	r2,r2,16308
 1000bb40:	14000017 	ldw	r16,0(r2)
 1000bb44:	00073d80 	call	100073d8 <__locale_charset>
 1000bb48:	100f883a 	mov	r7,r2
@@ -14298,7 +14303,7 @@ void UsbPrintMem()
 1000bb94 <_wctomb_r>:
 1000bb94:	00840074 	movhi	r2,4097
 1000bb98:	defff904 	addi	sp,sp,-28
-1000bb9c:	108ff304 	addi	r2,r2,16332
+1000bb9c:	108fed04 	addi	r2,r2,16308
 1000bba0:	dfc00615 	stw	ra,24(sp)
 1000bba4:	dc400515 	stw	r17,20(sp)
 1000bba8:	dc000415 	stw	r16,16(sp)
@@ -14346,7 +14351,7 @@ void UsbPrintMem()
 1000bc48:	100490fa 	slli	r2,r2,3
 1000bc4c:	3086d83a 	srl	r3,r6,r2
 1000bc50:	01040074 	movhi	r4,4097
-1000bc54:	2108f604 	addi	r4,r4,9176
+1000bc54:	2108f004 	addi	r4,r4,9152
 1000bc58:	20c7883a 	add	r3,r4,r3
 1000bc5c:	18c00003 	ldbu	r3,0(r3)
 1000bc60:	1885883a 	add	r2,r3,r2
@@ -14414,7 +14419,7 @@ void UsbPrintMem()
 1000bd58:	00800404 	movi	r2,16
 1000bd5c:	3886d83a 	srl	r3,r7,r2
 1000bd60:	01040074 	movhi	r4,4097
-1000bd64:	2108f604 	addi	r4,r4,9176
+1000bd64:	2108f004 	addi	r4,r4,9152
 1000bd68:	20c7883a 	add	r3,r4,r3
 1000bd6c:	18c00003 	ldbu	r3,0(r3)
 1000bd70:	05c00804 	movi	r23,32
@@ -14438,7 +14443,7 @@ void UsbPrintMem()
 1000bdb8:	00800404 	movi	r2,16
 1000bdbc:	8886d83a 	srl	r3,r17,r2
 1000bdc0:	01040074 	movhi	r4,4097
-1000bdc4:	2108f604 	addi	r4,r4,9176
+1000bdc4:	2108f004 	addi	r4,r4,9152
 1000bdc8:	20c7883a 	add	r3,r4,r3
 1000bdcc:	18c00003 	ldbu	r3,0(r3)
 1000bdd0:	1885883a 	add	r2,r3,r2
@@ -14731,7 +14736,7 @@ void UsbPrintMem()
 1000c244:	200890fa 	slli	r4,r4,3
 1000c248:	3104d83a 	srl	r2,r6,r4
 1000c24c:	00c40074 	movhi	r3,4097
-1000c250:	18c8f604 	addi	r3,r3,9176
+1000c250:	18c8f004 	addi	r3,r3,9152
 1000c254:	1885883a 	add	r2,r3,r2
 1000c258:	10c00003 	ldbu	r3,0(r2)
 1000c25c:	00800804 	movi	r2,32
@@ -14794,7 +14799,7 @@ void UsbPrintMem()
 1000c340:	01000404 	movi	r4,16
 1000c344:	3904d83a 	srl	r2,r7,r4
 1000c348:	00c40074 	movhi	r3,4097
-1000c34c:	18c8f604 	addi	r3,r3,9176
+1000c34c:	18c8f004 	addi	r3,r3,9152
 1000c350:	1885883a 	add	r2,r3,r2
 1000c354:	14c00003 	ldbu	r19,0(r2)
 1000c358:	00c00804 	movi	r3,32
@@ -14822,7 +14827,7 @@ void UsbPrintMem()
 1000c3b0:	00800404 	movi	r2,16
 1000c3b4:	9886d83a 	srl	r3,r19,r2
 1000c3b8:	01040074 	movhi	r4,4097
-1000c3bc:	2108f604 	addi	r4,r4,9176
+1000c3bc:	2108f004 	addi	r4,r4,9152
 1000c3c0:	20c7883a 	add	r3,r4,r3
 1000c3c4:	18c00003 	ldbu	r3,0(r3)
 1000c3c8:	1887883a 	add	r3,r3,r2
@@ -17816,7 +17821,7 @@ void UsbPrintMem()
 1000f1f8:	00c00604 	movi	r3,24
 1000f1fc:	20c8d83a 	srl	r4,r4,r3
 1000f200:	00c40074 	movhi	r3,4097
-1000f204:	18c8f604 	addi	r3,r3,9176
+1000f204:	18c8f004 	addi	r3,r3,9152
 1000f208:	1909883a 	add	r4,r3,r4
 1000f20c:	20c00003 	ldbu	r3,0(r4)
 1000f210:	10c5c83a 	sub	r2,r2,r3
@@ -17878,7 +17883,7 @@ int ALT_CLOSE (int fildes)
 1000f290:	000c9640 	call	1000c964 <__mulsi3>
 1000f294:	1007883a 	mov	r3,r2
 1000f298:	00840074 	movhi	r2,4097
-1000f29c:	108b7604 	addi	r2,r2,11736
+1000f29c:	108b7004 	addi	r2,r2,11712
 1000f2a0:	1885883a 	add	r2,r3,r2
 1000f2a4:	00000106 	br	1000f2ac <close+0x40>
 1000f2a8:	0005883a 	mov	r2,zero
@@ -18018,7 +18023,7 @@ int ALT_FSTAT (int file, struct stat *st)
 1000f3d4:	000c9640 	call	1000c964 <__mulsi3>
 1000f3d8:	1007883a 	mov	r3,r2
 1000f3dc:	00840074 	movhi	r2,4097
-1000f3e0:	108b7604 	addi	r2,r2,11736
+1000f3e0:	108b7004 	addi	r2,r2,11712
 1000f3e4:	1885883a 	add	r2,r3,r2
 1000f3e8:	00000106 	br	1000f3f0 <fstat+0x44>
 1000f3ec:	0005883a 	mov	r2,zero
@@ -18125,7 +18130,7 @@ int ALT_ISATTY (int file)
 1000f4c4:	000c9640 	call	1000c964 <__mulsi3>
 1000f4c8:	1007883a 	mov	r3,r2
 1000f4cc:	00840074 	movhi	r2,4097
-1000f4d0:	108b7604 	addi	r2,r2,11736
+1000f4d0:	108b7004 	addi	r2,r2,11712
 1000f4d4:	1885883a 	add	r2,r3,r2
 1000f4d8:	00000106 	br	1000f4e0 <isatty+0x40>
 1000f4dc:	0005883a 	mov	r2,zero
@@ -18249,11 +18254,11 @@ void alt_load (void)
 
   alt_load_section (&__flash_rwdata_start, 
 1000f5c4:	01840074 	movhi	r6,4097
-1000f5c8:	318ffe04 	addi	r6,r6,16376
+1000f5c8:	318ff804 	addi	r6,r6,16352
 1000f5cc:	01440074 	movhi	r5,4097
-1000f5d0:	29494304 	addi	r5,r5,9484
+1000f5d0:	29493d04 	addi	r5,r5,9460
 1000f5d4:	01040074 	movhi	r4,4097
-1000f5d8:	210ffe04 	addi	r4,r4,16376
+1000f5d8:	210ff804 	addi	r4,r4,16352
 1000f5dc:	000f54c0 	call	1000f54c <alt_load_section>
 
   /*
@@ -18275,7 +18280,7 @@ void alt_load (void)
 
   alt_load_section (&__flash_rodata_start, 
 1000f5fc:	01840074 	movhi	r6,4097
-1000f600:	31894304 	addi	r6,r6,9484
+1000f600:	31893d04 	addi	r6,r6,9460
 1000f604:	01440074 	movhi	r5,4097
 1000f608:	29469404 	addi	r5,r5,6736
 1000f60c:	01040074 	movhi	r4,4097
@@ -18353,7 +18358,7 @@ off_t ALT_LSEEK (int file, off_t ptr, int dir)
 1000f6a4:	000c9640 	call	1000c964 <__mulsi3>
 1000f6a8:	1007883a 	mov	r3,r2
 1000f6ac:	00840074 	movhi	r2,4097
-1000f6b0:	108b7604 	addi	r2,r2,11736
+1000f6b0:	108b7004 	addi	r2,r2,11712
 1000f6b4:	1885883a 	add	r2,r3,r2
 1000f6b8:	00000106 	br	1000f6c0 <lseek+0x4c>
 1000f6bc:	0005883a 	mov	r2,zero
@@ -18463,11 +18468,11 @@ void alt_main (void)
     ALT_LOG_PRINT_BOOT("[alt_main.c] Redirecting IO.\r\n");
     alt_io_redirect(ALT_STDOUT, ALT_STDIN, ALT_STDERR);
 1000f770:	01840074 	movhi	r6,4097
-1000f774:	31893904 	addi	r6,r6,9444
+1000f774:	31893304 	addi	r6,r6,9420
 1000f778:	01440074 	movhi	r5,4097
-1000f77c:	29493904 	addi	r5,r5,9444
+1000f77c:	29493304 	addi	r5,r5,9420
 1000f780:	01040074 	movhi	r4,4097
-1000f784:	21093904 	addi	r4,r4,9444
+1000f784:	21093304 	addi	r4,r4,9420
 1000f788:	0010efc0 	call	10010efc <alt_io_redirect>
   /* 
    * Call the C++ constructors 
@@ -18497,7 +18502,7 @@ void alt_main (void)
 1000f7a8:	200d883a 	mov	r6,r4
 1000f7ac:	180b883a 	mov	r5,r3
 1000f7b0:	1009883a 	mov	r4,r2
-1000f7b4:	00003a40 	call	100003a4 <main>
+1000f7b4:	00003cc0 	call	100003cc <main>
 1000f7b8:	e0bfff15 	stw	r2,-4(fp)
   close(STDOUT_FILENO);
 1000f7bc:	01000044 	movi	r4,1
@@ -18594,7 +18599,7 @@ int ALT_READ (int file, void *ptr, size_t len)
 1000f87c:	000c9640 	call	1000c964 <__mulsi3>
 1000f880:	1007883a 	mov	r3,r2
 1000f884:	00840074 	movhi	r2,4097
-1000f888:	108b7604 	addi	r2,r2,11736
+1000f888:	108b7004 	addi	r2,r2,11712
 1000f88c:	1885883a 	add	r2,r3,r2
 1000f890:	00000106 	br	1000f898 <read+0x48>
 1000f894:	0005883a 	mov	r2,zero
@@ -18701,7 +18706,7 @@ void alt_release_fd (int fd)
   {
     alt_fd_list[fd].fd_flags = 0;
 1000f978:	04040074 	movhi	r16,4097
-1000f97c:	840b7604 	addi	r16,r16,11736
+1000f97c:	840b7004 	addi	r16,r16,11712
 1000f980:	e0bffe17 	ldw	r2,-8(fp)
 1000f984:	01400304 	movi	r5,12
 1000f988:	1009883a 	mov	r4,r2
@@ -18711,7 +18716,7 @@ void alt_release_fd (int fd)
 1000f998:	10000015 	stw	zero,0(r2)
     alt_fd_list[fd].dev      = 0;
 1000f99c:	04040074 	movhi	r16,4097
-1000f9a0:	840b7604 	addi	r16,r16,11736
+1000f9a0:	840b7004 	addi	r16,r16,11712
 1000f9a4:	e0bffe17 	ldw	r2,-8(fp)
 1000f9a8:	01400304 	movi	r5,12
 1000f9ac:	1009883a 	mov	r4,r2
@@ -18897,7 +18902,7 @@ int ALT_WRITE (int file, const void *ptr, size_t len)
 1000fb20:	000c9640 	call	1000c964 <__mulsi3>
 1000fb24:	1007883a 	mov	r3,r2
 1000fb28:	00840074 	movhi	r2,4097
-1000fb2c:	108b7604 	addi	r2,r2,11736
+1000fb2c:	108b7004 	addi	r2,r2,11712
 1000fb30:	1885883a 	add	r2,r3,r2
 1000fb34:	00000106 	br	1000fb3c <write+0x48>
 1000fb38:	0005883a 	mov	r2,zero
@@ -19050,10 +19055,10 @@ void alt_sys_init( void )
 1000fc70:	01800144 	movi	r6,5
 1000fc74:	000b883a 	mov	r5,zero
 1000fc78:	01040074 	movhi	r4,4097
-1000fc7c:	210be004 	addi	r4,r4,12160
+1000fc7c:	210bda04 	addi	r4,r4,12136
 1000fc80:	000fe100 	call	1000fe10 <altera_avalon_jtag_uart_init>
 1000fc84:	01040074 	movhi	r4,4097
-1000fc88:	210bd604 	addi	r4,r4,12120
+1000fc88:	210bd004 	addi	r4,r4,12096
 1000fc8c:	000fbf40 	call	1000fbf4 <alt_dev_reg>
     ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID_QSYS_0, sysid_qsys_0);
 1000fc90:	0001883a 	nop
@@ -21142,7 +21147,7 @@ static ALT_INLINE alt_irq_context ALT_ALWAYS_INLINE
 
     alt_irq[id].handler = isr;
 10010d84:	00840074 	movhi	r2,4097
-10010d88:	1096d204 	addi	r2,r2,23368
+10010d88:	1096cc04 	addi	r2,r2,23344
 10010d8c:	e0fff817 	ldw	r3,-32(fp)
 10010d90:	180690fa 	slli	r3,r3,3
 10010d94:	10c5883a 	add	r2,r2,r3
@@ -21150,7 +21155,7 @@ static ALT_INLINE alt_irq_context ALT_ALWAYS_INLINE
 10010d9c:	10c00015 	stw	r3,0(r2)
     alt_irq[id].context = isr_context;
 10010da0:	00840074 	movhi	r2,4097
-10010da4:	1096d204 	addi	r2,r2,23368
+10010da4:	1096cc04 	addi	r2,r2,23344
 10010da8:	e0fff817 	ldw	r3,-32(fp)
 10010dac:	180690fa 	slli	r3,r3,3
 10010db0:	10c5883a 	add	r2,r2,r3
@@ -21225,7 +21230,7 @@ static void alt_open_fd(alt_fd* fd, const char* name, int flags, int mode)
   {
     fd->dev      = alt_fd_list[old].dev;
 10010e58:	04040074 	movhi	r16,4097
-10010e5c:	840b7604 	addi	r16,r16,11736
+10010e5c:	840b7004 	addi	r16,r16,11712
 10010e60:	e0bffa17 	ldw	r2,-24(fp)
 10010e64:	01400304 	movi	r5,12
 10010e68:	1009883a 	mov	r4,r2
@@ -21236,7 +21241,7 @@ static void alt_open_fd(alt_fd* fd, const char* name, int flags, int mode)
 10010e7c:	10c00015 	stw	r3,0(r2)
     fd->priv     = alt_fd_list[old].priv;
 10010e80:	04040074 	movhi	r16,4097
-10010e84:	840b7604 	addi	r16,r16,11736
+10010e84:	840b7004 	addi	r16,r16,11712
 10010e88:	e0bffa17 	ldw	r2,-24(fp)
 10010e8c:	01400304 	movi	r5,12
 10010e90:	1009883a 	mov	r4,r2
@@ -21248,7 +21253,7 @@ static void alt_open_fd(alt_fd* fd, const char* name, int flags, int mode)
 10010ea8:	10c00115 	stw	r3,4(r2)
     fd->fd_flags = alt_fd_list[old].fd_flags;
 10010eac:	04040074 	movhi	r16,4097
-10010eb0:	840b7604 	addi	r16,r16,11736
+10010eb0:	840b7004 	addi	r16,r16,11712
 10010eb4:	e0bffa17 	ldw	r2,-24(fp)
 10010eb8:	01400304 	movi	r5,12
 10010ebc:	1009883a 	mov	r4,r2
@@ -21293,21 +21298,21 @@ void alt_io_redirect(const char* stdout_dev,
 10010f1c:	01800044 	movi	r6,1
 10010f20:	e17ffd17 	ldw	r5,-12(fp)
 10010f24:	01040074 	movhi	r4,4097
-10010f28:	210b7904 	addi	r4,r4,11748
+10010f28:	210b7304 	addi	r4,r4,11724
 10010f2c:	0010e180 	call	10010e18 <alt_open_fd>
   alt_open_fd (&alt_fd_list[STDIN_FILENO], stdin_dev, O_RDONLY, 0777);
 10010f30:	01c07fc4 	movi	r7,511
 10010f34:	000d883a 	mov	r6,zero
 10010f38:	e17ffe17 	ldw	r5,-8(fp)
 10010f3c:	01040074 	movhi	r4,4097
-10010f40:	210b7604 	addi	r4,r4,11736
+10010f40:	210b7004 	addi	r4,r4,11712
 10010f44:	0010e180 	call	10010e18 <alt_open_fd>
   alt_open_fd (&alt_fd_list[STDERR_FILENO], stderr_dev, O_WRONLY, 0777);
 10010f48:	01c07fc4 	movi	r7,511
 10010f4c:	01800044 	movi	r6,1
 10010f50:	e17fff17 	ldw	r5,-4(fp)
 10010f54:	01040074 	movhi	r4,4097
-10010f58:	210b7c04 	addi	r4,r4,11760
+10010f58:	210b7604 	addi	r4,r4,11736
 10010f5c:	0010e180 	call	10010e18 <alt_open_fd>
 }  
 10010f60:	0001883a 	nop
@@ -21377,7 +21382,7 @@ static int alt_file_locked (alt_fd* fd)
   {
     if ((alt_fd_list[i].dev == fd->dev) &&
 10010fe8:	04040074 	movhi	r16,4097
-10010fec:	840b7604 	addi	r16,r16,11736
+10010fec:	840b7004 	addi	r16,r16,11712
 10010ff0:	e0bffd17 	ldw	r2,-12(fp)
 10010ff4:	01400304 	movi	r5,12
 10010ff8:	1009883a 	mov	r4,r2
@@ -21389,7 +21394,7 @@ static int alt_file_locked (alt_fd* fd)
 10011010:	1880151e 	bne	r3,r2,10011068 <alt_file_locked+0xb4>
         (alt_fd_list[i].fd_flags & ALT_FD_EXCL) &&
 10011014:	04040074 	movhi	r16,4097
-10011018:	840b7604 	addi	r16,r16,11736
+10011018:	840b7004 	addi	r16,r16,11712
 1001101c:	e0bffd17 	ldw	r2,-12(fp)
 10011020:	01400304 	movi	r5,12
 10011024:	1009883a 	mov	r4,r2
@@ -21411,7 +21416,7 @@ static int alt_file_locked (alt_fd* fd)
 10011044:	000c9640 	call	1000c964 <__mulsi3>
 10011048:	1007883a 	mov	r3,r2
 1001104c:	00840074 	movhi	r2,4097
-10011050:	108b7604 	addi	r2,r2,11736
+10011050:	108b7004 	addi	r2,r2,11712
 10011054:	1887883a 	add	r3,r3,r2
    */
 
@@ -21529,7 +21534,7 @@ int ALT_OPEN (const char* file, int flags, int mode)
 1001112c:	000c9640 	call	1000c964 <__mulsi3>
 10011130:	1007883a 	mov	r3,r2
 10011134:	00840074 	movhi	r2,4097
-10011138:	108b7604 	addi	r2,r2,11736
+10011138:	108b7004 	addi	r2,r2,11712
 1001113c:	1885883a 	add	r2,r3,r2
 10011140:	e0bffc15 	stw	r2,-16(fp)
       fd->fd_flags = (flags & ~ALT_FD_FLAGS_MASK);
@@ -22074,7 +22079,7 @@ int alt_get_fd (alt_dev* dev)
   {
     if (!alt_fd_list[i].dev)
 10011584:	04040074 	movhi	r16,4097
-10011588:	840b7604 	addi	r16,r16,11736
+10011588:	840b7004 	addi	r16,r16,11712
 1001158c:	e0bffc17 	ldw	r2,-16(fp)
 10011590:	01400304 	movi	r5,12
 10011594:	1009883a 	mov	r4,r2
@@ -22085,7 +22090,7 @@ int alt_get_fd (alt_dev* dev)
     {
       alt_fd_list[i].dev = dev;
 100115a8:	04040074 	movhi	r16,4097
-100115ac:	840b7604 	addi	r16,r16,11736
+100115ac:	840b7004 	addi	r16,r16,11712
 100115b0:	e0bffc17 	ldw	r2,-16(fp)
 100115b4:	01400304 	movi	r5,12
 100115b8:	1009883a 	mov	r4,r2
@@ -22212,7 +22217,7 @@ alt_exception_cause_generated_bad_addr(alt_exception_cause cause)
 100116e0:	2021883a 	mov	r16,r4
 100116e4:	001189c0 	call	1001189c <__call_exitprocs>
 100116e8:	00840074 	movhi	r2,4097
-100116ec:	108fee04 	addi	r2,r2,16312
+100116ec:	108fe804 	addi	r2,r2,16288
 100116f0:	11000017 	ldw	r4,0(r2)
 100116f4:	20800f17 	ldw	r2,60(r4)
 100116f8:	10000126 	beq	r2,zero,10011700 <exit+0x30>
@@ -22257,7 +22262,7 @@ alt_exception_cause_generated_bad_addr(alt_exception_cause cause)
 10011784:	defffa04 	addi	sp,sp,-24
 10011788:	dc000315 	stw	r16,12(sp)
 1001178c:	04040074 	movhi	r16,4097
-10011790:	840fee04 	addi	r16,r16,16312
+10011790:	840fe804 	addi	r16,r16,16288
 10011794:	80c00017 	ldw	r3,0(r16)
 10011798:	dc400415 	stw	r17,16(sp)
 1001179c:	dfc00515 	stw	ra,20(sp)
@@ -22288,7 +22293,7 @@ alt_exception_cause_generated_bad_addr(alt_exception_cause cause)
 10011800:	d9400015 	stw	r5,0(sp)
 10011804:	d9800115 	stw	r6,4(sp)
 10011808:	d9c00215 	stw	r7,8(sp)
-1001180c:	00000000 	call	10000000 <__reset>
+1001180c:	00000000 	call	10000000 <__alt_mem_sdram>
 10011810:	d9400017 	ldw	r5,0(sp)
 10011814:	d9800117 	ldw	r6,4(sp)
 10011818:	d9c00217 	ldw	r7,8(sp)
@@ -22342,7 +22347,7 @@ alt_exception_cause_generated_bad_addr(alt_exception_cause cause)
 100118d0:	04800044 	movi	r18,1
 100118d4:	057fffc4 	movi	r21,-1
 100118d8:	00840074 	movhi	r2,4097
-100118dc:	108fee04 	addi	r2,r2,16312
+100118dc:	108fe804 	addi	r2,r2,16288
 100118e0:	12000017 	ldw	r8,0(r2)
 100118e4:	45005217 	ldw	r20,328(r8)
 100118e8:	44c05204 	addi	r19,r8,328
@@ -22372,7 +22377,7 @@ alt_exception_cause_generated_bad_addr(alt_exception_cause cause)
 10011948:	10003226 	beq	r2,zero,10011a14 <__call_exitprocs+0x178>
 1001194c:	a009883a 	mov	r4,r20
 10011950:	98800015 	stw	r2,0(r19)
-10011954:	00000000 	call	10000000 <__reset>
+10011954:	00000000 	call	10000000 <__alt_mem_sdram>
 10011958:	9d000017 	ldw	r20,0(r19)
 1001195c:	a03fe41e 	bne	r20,zero,100118f0 <__alt_data_end+0xf80118f0>
 10011960:	dfc00a17 	ldw	ra,40(sp)
