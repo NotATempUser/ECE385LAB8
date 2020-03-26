@@ -114,7 +114,7 @@ module lab8( input               CLOCK_50,
     VGA_controller vga_controller_instance(.Reset(Reset_h), .*);
     
     // Which signal should be frame_clk?
-    ball ball_instance(.Clk(Clk), .Reset(Reset_h), .frame_clk(VGA_VS), .DrawX(DrawX), .DrawY(DrawY), .is_ball(is_ball));
+    ball ball_instance(.Clk(Clk), .Reset(Reset_h), .frame_clk(VGA_VS), .DrawX(DrawX), .DrawY(DrawY), .is_ball(is_ball), .keycode(keycode));
     
     color_mapper color_instance(.*);
     
