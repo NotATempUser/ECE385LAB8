@@ -88,23 +88,23 @@ module  ball ( input         Clk,                // 50 MHz clock
             else if ( Ball_X_Pos <= Ball_X_Min + Ball_Size )  // Ball is at the left edge, BOUNCE!
                 Ball_X_Motion_in = Ball_X_Step;
 	
-	    else
-				if(keycode == 8'h1A)begin //Key is 'w'
-					Ball_Y_Motion_in = (~Ball_Y_Step + 1'b1);
-					Ball_X_Motion_in = 0;
-				end
-				if(keycode == 8'h16)begin //Key is 's'
-					Ball_Y_Motion_in = Ball_Y_Step;
-					Ball_X_Motion_in = 0;
-				end	
-				if(keycode == 8'h4)begin //key is 'a'
-					Ball_X_Motion_in = (~(Ball_X_Step) + 1'b1);
-					Ball_Y_Motion_in = 0; 
-				end
-				if(keycode == 8'h7)begin //key is 'd'
-					Ball_X_Motion_in = Ball_X_Step;
-					Ball_Y_Motion_in = 0;
-				end
+				else
+					if(keycode == 8'h1A)begin //Key is 'w'
+						Ball_Y_Motion_in = (~Ball_Y_Step + 1'b1);
+						Ball_X_Motion_in = 0;
+					end
+					if(keycode == 8'h16)begin //Key is 's'
+						Ball_Y_Motion_in = Ball_Y_Step;
+						Ball_X_Motion_in = 0;
+					end	
+					if(keycode == 8'h4)begin //key is 'a'
+						Ball_X_Motion_in = (~(Ball_X_Step) + 1'b1);
+						Ball_Y_Motion_in = 0; 
+					end
+					if(keycode == 8'h7)begin //key is 'd'
+						Ball_X_Motion_in = Ball_X_Step;
+						Ball_Y_Motion_in = 0;
+					end
             // Update the ball's position with its motion
             Ball_X_Pos_in = Ball_X_Pos + Ball_X_Motion;
             Ball_Y_Pos_in = Ball_Y_Pos + Ball_Y_Motion;
