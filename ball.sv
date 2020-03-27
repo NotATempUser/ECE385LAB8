@@ -89,6 +89,7 @@ module  ball ( input         Clk,                // 50 MHz clock
                 Ball_X_Motion_in = Ball_X_Step;
 	
 				else
+				begin
 					if(keycode == 8'h1A)begin //Key is 'w'
 						Ball_Y_Motion_in = (~Ball_Y_Step + 1'b1);
 						Ball_X_Motion_in = 0;
@@ -105,6 +106,7 @@ module  ball ( input         Clk,                // 50 MHz clock
 						Ball_X_Motion_in = Ball_X_Step;
 						Ball_Y_Motion_in = 0;
 					end
+				end
             // Update the ball's position with its motion
             Ball_X_Pos_in = Ball_X_Pos + Ball_X_Motion;
             Ball_Y_Pos_in = Ball_Y_Pos + Ball_Y_Motion;
